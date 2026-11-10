@@ -76,7 +76,7 @@ Ensure PHP 8.0+ is installed on your machine (e.g. via XAMPP, Laragon, or standa
    FRONTEND_URL=http://localhost:5173
    SMTP_HOST=smtp.gmail.com
    SMTP_PORT=465
-   SMTP_USER=yourbusiness@gmail.com
+   SMTP_USER=info.willamscleaning@gmail.com
    SMTP_PASS=your_16_digit_app_password
    SMTP_FROM_NAME="William Cleaning Services"
    RECEIVER_EMAIL=info.willamscleaning@gmail.com
@@ -137,7 +137,7 @@ This backend is specifically designed for standard Hostinger shared or cloud hos
    FRONTEND_URL=https://yourdomain.com,https://www.yourdomain.com
    SMTP_HOST=smtp.gmail.com
    SMTP_PORT=465
-   SMTP_USER=your_gmail@gmail.com
+   SMTP_USER=info.willamscleaning@gmail.com
    SMTP_PASS=your_16_digit_app_password
    SMTP_FROM_NAME="William Cleaning Services"
    RECEIVER_EMAIL=info.willamscleaning@gmail.com
