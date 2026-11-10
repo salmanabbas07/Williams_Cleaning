@@ -1,15 +1,12 @@
-# Dependencies
-node_modules/
-
 # Environment Variables (Never commit real credentials to Git)
 .env
 .env.local
 .env.*.local
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Storage and Cache
+storage/cache/*.json
+storage/logs/*.log
+*.log
 
 # Operating System files
 .DS_Store

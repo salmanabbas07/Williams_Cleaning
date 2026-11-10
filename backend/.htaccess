@@ -1,0 +1,31 @@
+# ==============================================================================
+# Apache Configuration for William Cleaning Services PHP Backend
+# Compatible with Hostinger Shared, Cloud & cPanel Apache Environments
+# ==============================================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Prevent Directory Browsing
+    Options -Indexes
+
+    # Pass Authorization Headers into PHP environment
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Prevent direct web access to sensitive environment and storage files
+    <FilesMatch "^(\.env|\.git|composer\.|package\.)">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+
+    # Front Controller: Redirect all non-static requests to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+# Fallback for servers without mod_rewrite
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 /index.php
+</IfModule>

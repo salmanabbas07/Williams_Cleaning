@@ -1,6 +1,8 @@
 # William Cleaning Services – Fullstack Project
 
 This repository contains the complete frontend and backend for the **William Cleaning Services** website.
+- **Frontend**: React.js + Vite + Tailwind CSS
+- **Backend**: Core PHP 8.x + PHPMailer (Zero Node.js dependency in backend, fully compatible with Hostinger shared & cloud hosting)
 
 ---
 
@@ -12,32 +14,42 @@ cleanup/
 ├── frontend/                     # React + Vite frontend application
 │   ├── public/                   # Static assets & icons
 │   ├── src/                      # React components, pages, styles
-│   ├── .env.example              # Frontend environment variables example
+│   ├── .env.example              # Frontend environment variables template
 │   ├── package.json              # Frontend dependencies
 │   ├── vite.config.js            # Vite build configuration
 │   └── index.html                # HTML entry point
 │
-├── backend/                      # Node.js + Express backend service
+├── backend/                      # Core PHP Backend Service
 │   ├── config/
-│   │   └── mailConfig.js         # Nodemailer Gmail SMTP setup
+│   │   ├── config.php            # Environment loader, CORS & rate limit configuration
+│   │   └── mail.php              # PHPMailer SMTP credentials & settings
 │   │
 │   ├── controllers/
-│   │   └── inquiryController.js  # Email generation & business logic
+│   │   └── InquiryController.php # Inquiry business logic & rate check
+│   │
+│   ├── services/
+│   │   └── EmailService.php      # PHPMailer SMTP email builder & dispatcher
+│   │
+│   ├── helpers/
+│   │   ├── Response.php          # Standardized JSON response handler
+│   │   ├── Validator.php         # Server-side inquiry input validator & sanitizer
+│   │   └── RateLimiter.php       # File-based IP rate limiter (spam protection)
 │   │
 │   ├── routes/
-│   │   └── inquiryRoutes.js      # API route definitions & rate limiting
+│   │   └── api.php               # API route definitions & router dispatcher
 │   │
-│   ├── validators/
-│   │   └── inquiryValidator.js   # Server-side input validation
+│   ├── storage/
+│   │   └── cache/                # Temporary rate-limiting cache (writable)
 │   │
-│   ├── middleware/
-│   │   └── errorHandler.js       # Centralized error handler
+│   ├── vendor/
+│   │   ├── autoload.php          # Standalone PSR-4 autoloader (No composer CLI required)
+│   │   └── phpmailer/            # PHPMailer library
 │   │
+│   ├── .htaccess                 # Apache rewrite rules & file protection
 │   ├── .env                      # Environment credentials (ignored in Git)
 │   ├── .env.example              # Environment variables template
 │   ├── .gitignore                # Git ignore rules
-│   ├── package.json              # Backend dependencies & scripts
-│   └── server.js                 # Express server entry point
+│   └── index.php                 # Application entry point & front controller
 │
 └── README.md                     # Documentation & setup guide
 ```
@@ -48,42 +60,41 @@ cleanup/
 
 Follow these steps to run the backend and frontend on your local machine:
 
-### 1. Backend Setup
+### 1. Backend Setup (Core PHP)
 
-Open your terminal, navigate to the `backend` folder, install the packages, and configure `.env`:
+Ensure PHP 8.0+ is installed on your machine (e.g. via XAMPP, Laragon, or standalone PHP).
 
-```bash
-cd backend
-npm install
-```
+1. Navigate to the `backend` folder:
+   ```bash
+   cd backend
+   ```
 
-#### Configure `.env`
-Open `backend/.env` and enter your Gmail address and **Google App Password**:
+2. Configure `.env`:
+   Create or update `backend/.env` (see `backend/.env.example`):
+   ```env
+   APP_ENV=development
+   FRONTEND_URL=http://localhost:5173
+   SMTP_HOST=smtp.gmail.com
+   SMTP_PORT=465
+   SMTP_USER=yourbusiness@gmail.com
+   SMTP_PASS=your_16_digit_app_password
+   SMTP_FROM_NAME="William Cleaning Services"
+   RECEIVER_EMAIL=info.willamscleaning@gmail.com
+   ```
 
-```env
-PORT=5000
-FRONTEND_URL=http://localhost:5173
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=465
-SMTP_USER=yourbusiness@gmail.com
-SMTP_PASS=your_16_digit_app_password
-RECEIVER_EMAIL=yourbusiness@gmail.com
-```
-
-#### Run the Backend
-- Development mode (auto-reload on save):
-  ```bash
-  npm run dev
-  ```
-- Production mode:
-  ```bash
-  npm start
-  ```
-The backend server runs at `http://localhost:5000`.
+3. Run the PHP Development Server:
+   ```bash
+   php -S localhost:5000 -t backend backend/index.php
+   ```
+   Or from inside the `backend` directory:
+   ```bash
+   php -S localhost:5000 index.php
+   ```
+   The backend API will run at `http://localhost:5000`.
 
 ---
 
-### 2. Frontend Setup
+### 2. Frontend Setup (React)
 
 In a new terminal window, navigate to the `frontend` folder and start the dev server:
 
@@ -110,49 +121,122 @@ Standard Gmail passwords do not work with SMTP. You must create a dedicated 16-c
 
 ---
 
-## 🧪 Testing the API & Email
+## 🌐 Hostinger Deployment Guide
 
-### Option 1: Using the Website
-1. Open `http://localhost:5173/kontakt`.
-2. Fill out the inquiry form and click **"Pošljite povpraševanje"**.
-3. You should see a green success message, and the inquiry email will arrive in `RECEIVER_EMAIL`.
+This backend is specifically designed for standard Hostinger shared or cloud hosting without needing Node.js or SSH access.
 
-### Option 2: Health Check
-Open your browser or run:
-```bash
-curl http://localhost:5000/api/health
-```
-Response:
-```json
-{
-  "success": true,
-  "service": "William Cleaning Services Backend API",
-  "status": "UP"
-}
-```
+### Step 1: Upload Backend to Hostinger
 
-### Option 3: Direct API Request (cURL or Postman)
-```bash
-curl -X POST http://localhost:5000/api/inquiry/send \
-  -H "Content-Type: application/json" \
-  -d '{
+1. Log into your **Hostinger hPanel** and open **File Manager**.
+2. Navigate to your website's root:
+   - If hosting backend on a subdomain (e.g. `api.yourdomain.com`): upload contents of `backend/` directly into `domains/api.yourdomain.com/public_html/`.
+   - If hosting backend inside a subfolder (e.g. `yourdomain.com/backend/`): upload contents of `backend/` into `domains/yourdomain.com/public_html/backend/`.
+3. Create the `.env` file in the uploaded backend directory and populate your production credentials:
+   ```env
+   APP_ENV=production
+   FRONTEND_URL=https://yourdomain.com,https://www.yourdomain.com
+   SMTP_HOST=smtp.gmail.com
+   SMTP_PORT=465
+   SMTP_USER=your_gmail@gmail.com
+   SMTP_PASS=your_16_digit_app_password
+   SMTP_FROM_NAME="William Cleaning Services"
+   RECEIVER_EMAIL=info.willamscleaning@gmail.com
+   ```
+4. Verify that `storage/cache/` has write permissions (`0755` or `0775`).
+
+### Step 2: Configure Frontend Production URL
+
+1. In `frontend/.env`:
+   ```env
+   VITE_BACKEND_URL=https://api.yourdomain.com
+   # Or if subfolder:
+   # VITE_BACKEND_URL=https://yourdomain.com/backend
+   ```
+2. Build the frontend:
+   ```bash
+   cd frontend
+   npm run build
+   ```
+3. Upload the contents of `frontend/dist/` to your frontend's `public_html/`.
+
+---
+
+## 🧪 API Endpoints
+
+### 1. Root Welcome
+- **Method**: `GET /`
+- **Response**:
+  ```json
+  {
+    "success": true,
+    "message": "William Cleaning Services Backend is running.",
+    "healthCheck": "/api/health",
+    "inquiryEndpoint": "POST /api/inquiry/send"
+  }
+  ```
+
+### 2. Health Check
+- **Method**: `GET /api/health`
+- **Response**:
+  ```json
+  {
+    "success": true,
+    "service": "William Cleaning Services Backend API",
+    "status": "UP",
+    "timestamp": "2026-11-10T14:00:00Z"
+  }
+  ```
+
+### 3. Send Inquiry
+- **Method**: `POST /api/inquiry/send` (or alias `POST /api/inquiry`)
+- **Headers**: `Content-Type: application/json`
+- **Request Body**:
+  ```json
+  {
     "name": "Janez Novak",
     "email": "janez@primer.si",
     "phone": "+386 69 803 622",
     "subject": "hotel-housekeeping",
     "message": "Pozdravljeni, zanimamo se za čiščenje hotelskih prostorov za prihajajočo sezono."
-  }'
-```
+  }
+  ```
+- **Success Response (200 OK)**:
+  ```json
+  {
+    "success": true,
+    "message": "Your inquiry has been sent successfully."
+  }
+  ```
+- **Validation Error Response (400 Bad Request)**:
+  ```json
+  {
+    "success": false,
+    "message": "Vnesite veljaven e-poštni naslov (Invalid email address).",
+    "errors": [
+      {
+        "field": "email",
+        "message": "Vnesite veljaven e-poštni naslov (Invalid email address)."
+      }
+    ]
+  }
+  ```
+- **Rate Limit Response (429 Too Many Requests)**:
+  ```json
+  {
+    "success": false,
+    "message": "Prejeli smo preveč povpraševanj iz vašega naslova. Prosimo, poskusite znova čez 15 minut (Too many requests, please try again later)."
+  }
+  ```
 
 ---
 
 ## 🔒 Security Features
 
-1. **Helmet**: Secures HTTP response headers against clickjacking, sniffing, and XSS.
-2. **Restricted CORS**: Limits API requests only to the designated frontend origin.
-3. **Double Rate Limiting**:
-   - Global rate limiter (100 requests per 15 min across API).
-   - Strict inquiry limiter (5 submissions per 15 min per IP) to prevent spam.
-4. **HTML Escaping**: User input is sanitized before embedding into HTML emails to prevent script/injection attacks in email clients.
-5. **Payload Size Limits**: Request bodies are capped at 10KB to protect against buffer overflow/DoS attacks.
-6. **Input Validation**: Backend validation with `express-validator` verifies all fields independently of frontend validations.
+1. **Strict CORS**: Cross-Origin requests are restricted exclusively to origins declared in `FRONTEND_URL`.
+2. **Double Rate Limiting**:
+   - Global rate limiter (100 requests per 15 min across API endpoints).
+   - Inquiry spam protector (5 submissions per 15 min per IP) with temporary file-based storage.
+3. **Server-Side Validation**: All fields validated and sanitized independently of client inputs.
+4. **Header Injection Prevention**: Rejects newlines in email, name, and subject fields.
+5. **Payload Size Guard**: Request body capped at 10KB to prevent memory exhaustion attacks.
+6. **No Information Leaks**: Raw PHP notices, warnings, and stack traces are suppressed in production mode.
