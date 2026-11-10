@@ -22,7 +22,7 @@ export default function BlogCard({
       <div className="blog-card-img-wrapper">
         <ImagePlaceholder
           src={image}
-          alt={title}
+          alt={`Članek: ${title} — Williams Housekeeping blog`}
           aspectRatio="aspect-[16/10]"
           rounded="rounded-xl"
           label={`Slika: ${title}`}

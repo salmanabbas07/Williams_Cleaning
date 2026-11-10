@@ -3,6 +3,7 @@ import PageBanner from '../../components/PageBanner/PageBanner';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import BlogCard from '../../components/BlogCard/BlogCard';
 import CTASection from '../../components/CTASection/CTASection';
+import SEO from '../../components/SEO/SEO';
 import { blogPostsData } from '../../data/blogPosts';
 import './Blog.css';
 
@@ -17,6 +18,11 @@ export default function Blog() {
 
   return (
     <div className="blog-page">
+      <SEO
+        title="Blog in novice | Williams Housekeeping hotelsko čiščenje"
+        description="Preberite strokovne članke in nasvete o hotelskem gospodinjstvu, optimizaciji čiščenja, higienskih standardih in učinkovitem vodenju ekip v turizmu."
+        canonical="https://www.williamscleaning.si/blog"
+      />
       <PageBanner
         title="Blog in novice"
         subtitle="Strokovni vpogledi, nasveti za vodenje gospodinjstva in najnovejši trendi v hotelirstvu."

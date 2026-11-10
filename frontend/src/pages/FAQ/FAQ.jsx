@@ -3,6 +3,7 @@ import { ChevronDown, Sparkles, HelpCircle } from 'lucide-react';
 import PageBanner from '../../components/PageBanner/PageBanner';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import CTASection from '../../components/CTASection/CTASection';
+import SEO from '../../components/SEO/SEO';
 import './FAQ.css';
 
 export default function FAQ() {
@@ -47,8 +48,27 @@ export default function FAQ() {
     setOpenIndex(prev => (prev === index ? null : index));
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a
+      }
+    }))
+  };
+
   return (
     <div className="faq-page">
+      <SEO
+        title="Pogosta vprašanja | Williams Housekeeping čiščenje"
+        description="Poiščite odgovore na pogosta vprašanja o hotelskem gospodinjstvu, odzivnem času, standardih kakovosti in najemu ekip za čiščenje pri Williams Housekeeping."
+        canonical="https://www.williamscleaning.si/pogosta-vprasanja"
+        schemaJson={faqSchema}
+      />
       <PageBanner
         title="Pogosta vprašanja"
         subtitle="Odgovori na najpogostejša vprašanja o naših storitvah, organizaciji dela in sodelovanju."

@@ -129,11 +129,11 @@ export default function Navbar() {
             to="/"
             onClick={closeMobileMenu}
             className="nav-brand"
-            aria-label="Domov - Williams Čiščenje Storitve"
+            aria-label="Domov - Williams Housekeeping hotelsko in poslovno čiščenje"
           >
             <img
               src="/images/main_logo.svg"
-              alt="Williams Čiščenje Storitve"
+              alt="Williams Housekeeping — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
               className="nav-logo-img"
               width="180"
               height="70"

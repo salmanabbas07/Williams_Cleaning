@@ -35,7 +35,7 @@ export default function ServiceCard({
       <div className="service-card-img-wrapper">
         <ImagePlaceholder
           src={image}
-          alt={title}
+          alt={`Storitve čiščenja: ${title} — Williams Housekeeping`}
           aspectRatio={aspectRatio}
           rounded="rounded-xl"
           label={`Slika: ${title}`}

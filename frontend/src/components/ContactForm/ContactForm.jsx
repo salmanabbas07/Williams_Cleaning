@@ -198,7 +198,7 @@ export default function ContactForm({ className = '' }) {
             {/* Telefon */}
             <div>
               <label htmlFor="phone" className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1.5">
-                Telefonska številka <span className="text-gray-400 font-normal text-[11px]">(neobvezno)</span>
+                Telefonska številka <span className="text-gray-500 font-normal text-[11px]">(neobvezno)</span>
               </label>
               <input
                 id="phone"
@@ -295,7 +295,7 @@ export default function ContactForm({ className = '' }) {
               {isSubmitting ? 'Pošiljanje...' : 'Pošljite povpraševanje'}
             </Button>
 
-            <span className="text-xs text-gray-400 text-center sm:text-right">
+            <span className="text-xs text-gray-500 text-center sm:text-right">
               Polja z zvezdico (<span className="text-red-500">*</span>) so obvezna.
             </span>
           </div>

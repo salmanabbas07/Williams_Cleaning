@@ -5,6 +5,7 @@ import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import ImagePlaceholder from '../../components/ImagePlaceholder/ImagePlaceholder';
 import Button from '../../components/Button/Button';
+import SEO from '../../components/SEO/SEO';
 import './Contact.css';
 
 export default function Contact() {
@@ -43,6 +44,11 @@ export default function Contact() {
 
   return (
     <div className="contact-page">
+      <SEO
+        title="Kontakt | Williams Housekeeping čiščenje Ljubljana"
+        description="Stopite v stik z Williams Housekeeping za ponudbo hotelskega gospodinjstva in poslovnega čiščenja: +386 69 803 622, Kotnikova ulica 28, 1000 Ljubljana."
+        canonical="https://www.williamscleaning.si/kontakt"
+      />
       {/* 1. Page Banner */}
       <PageBanner
         title="Kontakt"
@@ -96,7 +102,7 @@ export default function Contact() {
                       </p>
                     )}
                   </div>
-                  <div className="mt-4 pt-3 border-t border-gray-100 text-xs text-gray-400">
+                  <div className="mt-4 pt-3 border-t border-gray-100 text-xs text-gray-500">
                     {item.note}
                   </div>
                 </div>
@@ -228,7 +234,14 @@ export default function Contact() {
                       <MapPin className="w-3.5 h-3.5 text-brand-blue" />
                       Kotnikova ulica 28, Ljubljana
                     </span>
-                    <span className="text-[#0B70A6] font-semibold">Odpri v Google Maps</span>
+                    <a
+                      href="https://maps.google.com/?q=Kotnikova+ulica+28,+1000+Ljubljana"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#0B70A6] font-semibold hover:underline"
+                    >
+                      Odpri v Google Maps
+                    </a>
                   </div>
                 </div>
               </div>

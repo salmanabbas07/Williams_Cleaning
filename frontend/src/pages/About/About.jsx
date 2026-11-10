@@ -15,6 +15,7 @@ import ImagePlaceholder from '../../components/ImagePlaceholder/ImagePlaceholder
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import CTASection from '../../components/CTASection/CTASection';
 import Button from '../../components/Button/Button';
+import SEO from '../../components/SEO/SEO';
 import { testimonialsData } from '../../data/testimonials';
 import './About.css';
 
@@ -68,6 +69,11 @@ export default function About() {
 
   return (
     <div className="about-page">
+      <SEO
+        title="O nas | Williams Housekeeping strokovno hotelsko čiščenje"
+        description="Spoznajte Williams Housekeeping — vaš zanesljiv partner za profesionalno hotelsko gospodinjstvo, poslovno čiščenje in vzdrževanje objektov po Sloveniji."
+        canonical="https://www.williamscleaning.si/o-nas"
+      />
       {/* 1. Page Banner */}
       <PageBanner
         title="O nas"
@@ -85,7 +91,7 @@ export default function About() {
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <ImagePlaceholder
                   src="/images/about_image.jpeg"
-                  alt="Predstavitev ekipe Williams Housekeeping"
+                  alt="Predstavitev ekipe Williams Housekeeping za hotelsko gospodinjstvo in poslovno čiščenje"
                   aspectRatio="aspect-[4/5]"
                   rounded="rounded-2xl"
                   label="Predstavitev ekipe Williams"

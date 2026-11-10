@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import PageBanner from '../../components/PageBanner/PageBanner';
 import Button from '../../components/Button/Button';
+import SEO from '../../components/SEO/SEO';
 import { servicesData, getServiceBySlug } from '../../data/services';
 import './Services.css';
 
@@ -47,6 +48,11 @@ export default function Services() {
 
   return (
     <div className="services-page">
+      <SEO
+        title="Storitve čiščenja | Williams Hotelsko gospodinjstvo"
+        description="Celovite storitve čiščenja: hotelsko gospodinjstvo, sezonske ekipe, poslovno in pisarniško čiščenje ter globinsko vzdrževanje objektov po vsej Sloveniji."
+        canonical="https://www.williamscleaning.si/storitve"
+      />
       {/* 1. Page Banner */}
       <PageBanner
         title="Storitve"
@@ -66,7 +72,7 @@ export default function Services() {
             <div className="service-detail-image-box mb-6 sm:mb-8">
               <img
                 src={activeService.image}
-                alt={activeService.title}
+                alt={`${activeService.title} — Profesionalne storitve Williams Housekeeping`}
                 className="w-full h-auto max-h-[460px] object-cover rounded-2xl sm:rounded-3xl shadow-sm border border-gray-100"
               />
             </div>
@@ -228,7 +234,7 @@ export default function Services() {
                         className={`w-4 h-4 shrink-0 transition-transform ${
                           isCurrent
                             ? 'text-[#EEA800]'
-                            : 'text-gray-400 group-hover:text-[#0B4D26] group-hover:translate-x-0.5'
+                            : 'text-gray-500 group-hover:text-[#0B4D26] group-hover:translate-x-0.5'
                         }`}
                       />
                     </button>

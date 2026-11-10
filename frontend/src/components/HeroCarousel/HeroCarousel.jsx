@@ -23,7 +23,7 @@ const heroSlidesData = [
     id: 1,
     image: '/images/bannerLP1.png',
     badge: 'Williams Housekeeping • Zanesljiva hotelska podpora',
-    title: 'Vrhunske ekipe za hotelsko gospodinjstvo, letovišča in poslovne prostore',
+    title: 'Vrhunske ekipe za hotelsko gospodinjstvo in poslovno čiščenje',
     description:
       'Zanesljive, usposobljene in strokovno vodene ekipe za brezhibno čistočo vaših hotelov, letovišč in poslovnih prostorov. Prilagodljive kadrovske rešitve z najvišjo stopnjo evropske kakovosti in 24/7 podporo.',
     primaryBtn: {
@@ -228,10 +228,16 @@ export default function HeroCarousel() {
                         <span>{slide.badge}</span>
                       </div>
 
-                      {/* Heading */}
-                      <h1 className="hero-slide-title">
-                        {slide.title}
-                      </h1>
+                      {/* Heading: single H1 for primary slide, H2 for secondary slides */}
+                      {idx === 0 ? (
+                        <h1 className="hero-slide-title">
+                          {slide.title}
+                        </h1>
+                      ) : (
+                        <h2 className="hero-slide-title">
+                          {slide.title}
+                        </h2>
+                      )}
 
                       {/* Description */}
                       <p className="hero-slide-desc">

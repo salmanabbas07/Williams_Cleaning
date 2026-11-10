@@ -85,11 +85,24 @@ function NotFound() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+
+    >
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-white text-gray-800">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:bg-white focus:text-[#0B4D26] focus:font-bold focus:px-4 focus:py-2 focus:rounded-md focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#EEA800]"
+        >
+          Preskoči na glavno vsebino
+        </a>
         <Navbar />
-        <main className="flex-1 page-container">
+        <main id="main-content" className="flex-1 page-container">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/o-nas" element={<About />} />

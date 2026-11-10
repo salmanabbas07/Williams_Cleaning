@@ -10,6 +10,7 @@ import {
   Target,
   Handshake
 } from 'lucide-react';
+import SEO from '../SEO/SEO';
 import HeroCarousel from '../HeroCarousel/HeroCarousel';
 import ReviewCarousel from '../ReviewCarousel/ReviewCarousel';
 import SectionHeading from '../SectionHeading/SectionHeading';
@@ -67,6 +68,11 @@ export default function Home() {
 
   return (
     <div className="home-page">
+      <SEO
+        title="Williams Housekeeping | Hotelsko gospodinjstvo in čiščenje"
+        description="Williams Housekeeping ponuja profesionalno hotelsko gospodinjstvo, zanesljive ekipe za čiščenje hotelov ter vrhunsko poslovno čiščenje po vsej Sloveniji."
+        canonical="https://www.williamscleaning.si/"
+      />
       {/* 1. HERO BANNER CAROUSEL */}
       <HeroCarousel />
 
@@ -79,7 +85,7 @@ export default function Home() {
               <div className="about-main-img-card">
                 <ImagePlaceholder
                   src="/images/about_image.jpeg"
-                  alt="Williams Housekeeping"
+                  alt="Williams Housekeeping — Profesionalne ekipe za hotelsko in poslovno čiščenje"
                   aspectRatio="aspect-[4/5]"
                   rounded="rounded-2xl"
                   label="Glavna predstavitvena slika podjetja"
@@ -214,6 +220,7 @@ export default function Home() {
       {/* 5. MISSION & WORK WITH US */}
       <section className="mission-section" aria-label="Poslanstvo in sodelovanje">
         <div className="home-section-container">
+          <h2 className="sr-only">Poslanstvo podjetja in poslovno sodelovanje</h2>
           <div className="mission-grid">
             {/* Card 1: Poslanstvo */}
             <div className="mission-card">

@@ -19,14 +19,14 @@ export default function ReviewCarousel() {
   return (
     <section
       className="review-carousel-section"
-      aria-label="Testimonials"
+      aria-label="Mnenja partnerjev"
     >
       <div className="review-carousel-container">
         {/* Section Heading */}
         <SectionHeading
-          badge="Testimonials"
+          badge="Mnenja partnerjev"
           iconSrc="/images/title_icon.svg"
-          title="What Our Hotel Partners Say About Us"
+          title="Kaj o naših storitvah pravijo hotelski partnerji"
           centered={true}
         />
 

@@ -17,10 +17,10 @@ export default function Footer() {
         <div className="footer-columns-grid">
           {/* Column 1: Brand & Logo */}
           <div>
-            <Link to="/" className="footer-brand-logo-card" aria-label="Domov - Williams Čiščenje Storitve">
+            <Link to="/" className="footer-brand-logo-card" aria-label="Domov - Williams Housekeeping hotelsko in poslovno čiščenje">
               <img
                 src="/images/main_logo.svg"
-                alt="Williams Čiščenje Storitve"
+                alt="Williams Housekeeping — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
                 className="footer-logo-img"
               />
             </Link>
