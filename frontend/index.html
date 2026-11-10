@@ -83,8 +83,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body class="bg-white text-gray-800 antialiased font-sans">
-    <div id="root">
-      <!-- Semantic and accessible fallback content for search engine crawlers; replaced upon client mount -->
+    <div id="root"></div>
+    <noscript>
+      <!-- Semantic and accessible fallback content for search engine crawlers with JavaScript disabled -->
       <header role="banner" class="site-header">
         <nav aria-label="Glavni meni" class="desktop-nav">
           <a href="/">Domov</a>
@@ -249,7 +250,7 @@
         <p>Splet: <a href="https://williamshousekeeping.com">www.williamshousekeeping.com</a></p>
         <p>Družbena omrežja: <a href="https://www.facebook.com/Williams.Cleanings">Facebook Business</a> | <a href="https://www.instagram.com/williams.cleaners.slovenia">Instagram</a> | <a href="https://wa.me/38669803622">WhatsApp</a></p>
       </footer>
-    </div>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
