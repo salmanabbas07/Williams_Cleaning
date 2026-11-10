@@ -285,7 +285,7 @@ export default function Services() {
                 </a>
 
                 <a
-                  href="mailto:info@williams-housekeeping.com"
+                  href="mailto:info.willamscleaning@gmail.com"
                   className="flex items-center gap-3 text-xs sm:text-sm text-slate-200 hover:text-[#EEA800] transition-colors"
                 >
                   <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
@@ -293,7 +293,7 @@ export default function Services() {
                   </div>
                   <div>
                     <div className="text-[11px] text-slate-400">E-pošta:</div>
-                    <div className="font-semibold truncate">info@williams-housekeeping.com</div>
+                    <div className="font-semibold truncate">info.willamscleaning@gmail.com</div>
                   </div>
                 </a>
               </div>

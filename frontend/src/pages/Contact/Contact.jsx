@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Globe, ShieldCheck, Sparkles } from 'lucide-react';
+import { MapPin, Phone, Mail, Globe, Sparkles } from 'lucide-react';
 import PageBanner from '../../components/PageBanner/PageBanner';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import ContactForm from '../../components/ContactForm/ContactForm';
@@ -29,9 +29,9 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'Elektronski naslov',
-      content: 'info@wservicess.com',
+      content: 'info.willamscleaning@gmail.com',
       note: 'Odziv v roku 24 ur',
-      link: 'mailto:info@wservicess.com'
+      link: 'mailto:info.willamscleaning@gmail.com'
     },
     {
       icon: Globe,
@@ -170,11 +170,11 @@ export default function Contact() {
                   </a>
 
                   <a
-                    href="mailto:info@wservicess.com"
+                    href="mailto:info.willamscleaning@gmail.com"
                     className="text-sm font-semibold text-[#0B4D26] hover:underline flex items-center gap-2"
                   >
                     <Mail className="w-4 h-4 text-[#EEA800] shrink-0" />
-                    <span>info@wservicess.com</span>
+                    <span>info.willamscleaning@gmail.com</span>
                   </a>
 
                   <a

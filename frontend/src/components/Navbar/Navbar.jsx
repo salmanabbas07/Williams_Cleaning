@@ -59,15 +59,15 @@ export default function Navbar() {
             </a>
             <span className="top-bar-divider">|</span>
             <a
-              href="mailto:info@wservicess.com"
+              href="mailto:info.willamscleaning@gmail.com"
               className="top-bar-link"
-              aria-label="Pošljite nam e-pošto na info@wservicess.com"
+              aria-label="Pošljite nam e-pošto na info.willamscleaning@gmail.com"
             >
               <Mail className="top-bar-icon" />
-              <span>E-pošta: <strong>info@wservicess.com</strong></span>
+              <span>E-pošta: <strong>info.willamscleaning@gmail.com</strong></span>
             </a>
             <span className="top-bar-divider">|</span>
-            <a
+            {/* <a
               href="https://williamshousekeeping.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -76,7 +76,7 @@ export default function Navbar() {
             >
               <Globe className="top-bar-icon" />
               <span>Splet: <strong>www.williamshousekeeping.com</strong></span>
-            </a>
+            </a> */}
           </div>
 
           {/* Social Media Links */}
@@ -250,11 +250,11 @@ export default function Navbar() {
                 <span>WhatsApp: +386 69 803 622</span>
               </a>
               <a
-                href="mailto:info@wservicess.com"
+                href="mailto:info.willamscleaning@gmail.com"
                 className="mobile-drawer-contact-item"
               >
                 <Mail className="w-4 h-4 text-[#EEA800]" />
-                <span>info@wservicess.com</span>
+                <span>info.willamscleaning@gmail.com</span>
               </a>
               <a
                 href="https://williamshousekeeping.com"

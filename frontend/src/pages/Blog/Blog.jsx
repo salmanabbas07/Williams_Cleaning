@@ -33,7 +33,7 @@ export default function Blog() {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            badge="Novice &amp; Članki"
+            badge="Novice & Članki"
             title="Aktualne novice in strokovne objave"
             subtitle="Preberite najnovejše članke naših strokovnjakov za hotelsko in poslovno čiščenje."
             centered={true}

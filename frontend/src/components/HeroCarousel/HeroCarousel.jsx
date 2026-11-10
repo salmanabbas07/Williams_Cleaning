@@ -215,7 +215,7 @@ export default function HeroCarousel() {
                         alt={slide.title}
                         className="hero-slide-img"
                         loading={isInitial ? 'eager' : 'lazy'}
-                        fetchPriority={isInitial ? 'high' : 'auto'}
+                        fetchpriority={isInitial ? 'high' : 'auto'}
                       />
                       <div className="hero-slide-media-overlay" aria-hidden="true" />
                     </div>

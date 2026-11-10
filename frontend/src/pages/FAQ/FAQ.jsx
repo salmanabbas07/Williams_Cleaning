@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Sparkles, HelpCircle } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import PageBanner from '../../components/PageBanner/PageBanner';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import CTASection from '../../components/CTASection/CTASection';

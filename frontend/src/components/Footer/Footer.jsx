@@ -224,10 +224,10 @@ export default function Footer() {
                 <div>
                   <div className="footer-contact-label">E-pošta</div>
                   <a
-                    href="mailto:info@wservicess.com"
+                    href="mailto:info.willamscleaning@gmail.com"
                     className="footer-contact-val"
                   >
-                    info@wservicess.com
+                    info.willamscleaning@gmail.com
                   </a>
                 </div>
               </div>
