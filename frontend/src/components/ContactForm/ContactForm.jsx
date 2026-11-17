@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import Button from '../Button/Button';
 import './ContactForm.css';
 
@@ -22,6 +23,8 @@ export default function ContactForm({ className = '' }) {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [serverError, setServerError] = useState(null);
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const recaptchaRef = useRef(null);
 
   const validate = () => {
     const errs = {};
@@ -41,7 +44,24 @@ export default function ContactForm({ className = '' }) {
     } else if (formData.message.trim().length < 10) {
       errs.message = 'Sporočilo mora vsebovati vsaj 10 znakov.';
     }
+    if (!captchaToken) {
+      errs.captcha = 'Prosimo, potrdite, da niste robot.';
+    }
     return errs;
+  };
+
+  const handleCaptchaChange = (token) => {
+    setCaptchaToken(token);
+    if (errors.captcha) {
+      setErrors(prev => ({ ...prev, captcha: null }));
+    }
+    if (serverError) {
+      setServerError(null);
+    }
+  };
+
+  const handleCaptchaExpired = () => {
+    setCaptchaToken(null);
   };
 
   const handleChange = (e) => {
@@ -81,7 +101,10 @@ export default function ContactForm({ className = '' }) {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          captchaToken,
+        }),
       });
 
       const result = await response.json();
@@ -100,10 +123,14 @@ export default function ContactForm({ className = '' }) {
         subject: '',
         message: ''
       });
+      setCaptchaToken(null);
+      recaptchaRef.current?.reset();
       setErrors({});
       setServerError(null);
     } catch (err) {
       setIsSubmitting(false);
+      setCaptchaToken(null);
+      recaptchaRef.current?.reset();
       setServerError(
         err.message || 'Prišlo je do napake pri povezavi s strežnikom. Prosimo, preverite internetno povezavo ali poskusite znova.'
       );
@@ -127,6 +154,8 @@ export default function ContactForm({ className = '' }) {
             onClick={() => {
               setSubmitted(false);
               setServerError(null);
+              setCaptchaToken(null);
+              recaptchaRef.current?.reset();
             }}
             variant="primary"
             size="md"
@@ -270,6 +299,24 @@ export default function ContactForm({ className = '' }) {
               <p id="message-error" className="mt-1.5 text-xs text-red-600 flex items-center gap-1">
                 <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                 <span>{errors.message}</span>
+              </p>
+            )}
+          </div>
+
+          {/* reCAPTCHA "I'm not a robot" Checkbox */}
+          <div className="pt-1">
+            <div className="overflow-x-auto py-1">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || ''}
+                onChange={handleCaptchaChange}
+                onExpired={handleCaptchaExpired}
+              />
+            </div>
+            {errors.captcha && (
+              <p className="mt-1.5 text-xs text-red-600 flex items-center gap-1">
+                <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                <span>{errors.captcha}</span>
               </p>
             )}
           </div>
