@@ -72,10 +72,10 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="footer-heading">
+            <h3 className="footer-heading">
               <span className="footer-heading-dot" />
               Hitre povezave
-            </h4>
+            </h3>
             <ul className="footer-links-list">
               <li className="footer-link-item">
                 <Link to="/">
@@ -118,10 +118,10 @@ export default function Footer() {
 
           {/* Column 3: Our Services */}
           <div>
-            <h4 className="footer-heading">
+            <h3 className="footer-heading">
               <span className="footer-heading-dot" />
               Naše storitve
-            </h4>
+            </h3>
             <ul className="footer-links-list">
               <li className="footer-link-item">
                 <Link to="/service/hotel-housekeeping">
@@ -158,10 +158,10 @@ export default function Footer() {
 
           {/* Column 4: Contact Us & Quick Call Widget */}
           <div>
-            <h4 className="footer-heading">
+            <h3 className="footer-heading">
               <span className="footer-heading-dot" />
               Kontakt
-            </h4>
+            </h3>
             <div className="footer-contact-list">
               <div className="footer-contact-item">
                 <div className="footer-contact-icon-box">

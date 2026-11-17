@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Star, Quote } from 'lucide-react';
-import SectionHeading from '../SectionHeading/SectionHeading';
-import { testimonialsData } from '../../data/testimonials';
-import './ReviewCarousel.css';
+import React, { useState } from "react";
+import { Star, Quote } from "lucide-react";
+import SectionHeading from "../SectionHeading/SectionHeading";
+import { testimonialsData } from "../../data/testimonials";
+import "./ReviewCarousel.css";
 
 /**
  * ReviewCarousel Component
@@ -17,10 +17,7 @@ export default function ReviewCarousel() {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <section
-      className="review-carousel-section"
-      aria-label="Mnenja partnerjev"
-    >
+    <section className="review-carousel-section" aria-label="Mnenja partnerjev">
       <div className="review-carousel-container">
         {/* Section Heading */}
         <SectionHeading
@@ -42,15 +39,15 @@ export default function ReviewCarousel() {
         >
           <div
             className="review-carousel-marquee"
-            style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+            style={{ animationPlayState: isPaused ? "paused" : "running" }}
           >
             {/* Set 1: 5 Testimonial Cards */}
             <div className="review-marquee-set">
               {testimonialsData.map((testimonial) => {
                 const initials = testimonial.author
-                  .split(' ')
+                  .split(" ")
                   .map((n) => n[0])
-                  .join('')
+                  .join("")
                   .slice(0, 2);
 
                 return (
@@ -64,16 +61,17 @@ export default function ReviewCarousel() {
                         <div className="review-card-top">
                           <div
                             className="review-stars"
+                            role="img"
                             aria-label={`Ocena: ${testimonial.rating} od 5 zvezdic`}
                           >
                             {Array.from({ length: 5 }).map((_, i) => (
-                              <Star
-                                key={i}
-                                className="review-star-icon"
-                              />
+                              <Star key={i} className="review-star-icon" />
                             ))}
                           </div>
-                          <div className="review-quote-badge" aria-hidden="true">
+                          <div
+                            className="review-quote-badge"
+                            aria-hidden="true"
+                          >
                             <Quote className="w-4 h-4" />
                           </div>
                         </div>
@@ -87,7 +85,7 @@ export default function ReviewCarousel() {
                       {/* Author Metadata */}
                       <div className="review-author-row">
                         <div className="review-avatar" aria-hidden="true">
-                          {initials || 'WH'}
+                          {initials || "WH"}
                         </div>
                         <div className="review-author-meta">
                           <div className="review-author-name">
@@ -113,9 +111,9 @@ export default function ReviewCarousel() {
             <div className="review-marquee-set" aria-hidden="true">
               {testimonialsData.map((testimonial) => {
                 const initials = testimonial.author
-                  .split(' ')
+                  .split(" ")
                   .map((n) => n[0])
-                  .join('')
+                  .join("")
                   .slice(0, 2);
 
                 return (
@@ -129,16 +127,17 @@ export default function ReviewCarousel() {
                         <div className="review-card-top">
                           <div
                             className="review-stars"
+                            role="img"
                             aria-label={`Ocena: ${testimonial.rating} od 5 zvezdic`}
                           >
                             {Array.from({ length: 5 }).map((_, i) => (
-                              <Star
-                                key={i}
-                                className="review-star-icon"
-                              />
+                              <Star key={i} className="review-star-icon" />
                             ))}
                           </div>
-                          <div className="review-quote-badge" aria-hidden="true">
+                          <div
+                            className="review-quote-badge"
+                            aria-hidden="true"
+                          >
                             <Quote className="w-4 h-4" />
                           </div>
                         </div>
@@ -152,7 +151,7 @@ export default function ReviewCarousel() {
                       {/* Author Metadata */}
                       <div className="review-author-row">
                         <div className="review-avatar" aria-hidden="true">
-                          {initials || 'WH'}
+                          {initials || "WH"}
                         </div>
                         <div className="review-author-meta">
                           <div className="review-author-name">
