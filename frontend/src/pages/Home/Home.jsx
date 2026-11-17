@@ -113,6 +113,10 @@ export default function Home() {
                 Ne glede na to, ali gre za osvežitev vašega doma, vzdrževanje higienskega in navdihujočega pisarniškega delovnega prostora, vrhunsko oskrbo vrtov in urejanje okolice ali ponudbo globinskega čiščenja in vzdrževanja za hotele ter nastanitvene obrate — poskrbimo za vse. Naše strokovno znanje zajema vse vrste specializiranih storitev čiščenja, s čimer zagotavljamo, da vsak kotiček prejme skrb in pozornost, ki si jo zasluži.
               </p>
 
+              <p className="about-desc-secondary">
+                Zavedamo se, da vsak objekt zahteva individualen pristop. Pred pričetkom sodelovanja natančno analiziramo vaše operativne potrebe, pripravimo prilagojen načrt vzdrževanja ter določimo natančne standarde kakovosti. Naše strokovne ekipe zagotavljajo 24/7 operativno podporo ter zanesljivo izvedbo del po celotni Sloveniji.
+              </p>
+
               {/* 4 Feature Bullet points with checkmarks */}
               <div className="about-features-grid">
                 <div className="about-feature-item">

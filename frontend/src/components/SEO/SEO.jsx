@@ -34,8 +34,14 @@ export default function SEO({
       metaDesc.setAttribute('content', description);
     }
 
-    // 3. Canonical Link
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    // 3. Canonical Link - ensure exactly one canonical link exists and points to preferred URL
+    const existingCanonicals = document.querySelectorAll('link[rel="canonical"]');
+    if (existingCanonicals.length > 1) {
+      for (let i = 1; i < existingCanonicals.length; i++) {
+        existingCanonicals[i].remove();
+      }
+    }
+    let canonicalLink = existingCanonicals[0];
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
       canonicalLink.setAttribute('rel', 'canonical');

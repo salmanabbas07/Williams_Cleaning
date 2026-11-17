@@ -36,9 +36,9 @@ export default function Contact() {
     {
       icon: Globe,
       title: 'Uradna spletna stran',
-      content: 'www.williamshousekeeping.com',
-      note: 'williamshousekeeping.com',
-      link: 'https://williamshousekeeping.com'
+      content: 'www.williamscleaning.si',
+      note: 'williamscleaning.si',
+      link: 'https://www.williamscleaning.si'
     }
   ];
 
@@ -178,13 +178,13 @@ export default function Contact() {
                   </a>
 
                   <a
-                    href="https://williamshousekeeping.com"
+                    href="https://www.williamscleaning.si"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs text-gray-600 hover:text-[#0B4D26] flex items-center gap-2 pt-1 border-t border-amber-200/60"
                   >
                     <Globe className="w-3.5 h-3.5 text-[#EEA800] shrink-0" />
-                    <span>www.williamshousekeeping.com</span>
+                    <span>www.williamscleaning.si</span>
                   </a>
 
                   <div className="pt-2 border-t border-amber-200/60 flex items-center gap-3">

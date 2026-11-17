@@ -239,12 +239,12 @@ export default function Footer() {
                 <div>
                   <div className="footer-contact-label">Spletna stran</div>
                   <a
-                    href="https://williamshousekeeping.com"
+                    href="https://www.williamscleaning.si"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="footer-contact-val"
                   >
-                    www.williamshousekeeping.com
+                    www.williamscleaning.si
                   </a>
                 </div>
               </div>
@@ -272,12 +272,12 @@ export default function Footer() {
           <p>
             Uradna stran:{' '}
             <a
-              href="https://williamshousekeeping.com"
+              href="https://www.williamscleaning.si"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: '#cbd5e1', fontWeight: 600, textDecoration: 'none' }}
             >
-              williamshousekeeping.com
+              williamscleaning.si
             </a>
           </p>
         </div>

@@ -68,14 +68,14 @@ export default function Navbar() {
             </a>
             <span className="top-bar-divider">|</span>
             {/* <a
-              href="https://williamshousekeeping.com"
+              href="https://www.williamscleaning.si"
               target="_blank"
               rel="noopener noreferrer"
               className="top-bar-link"
               aria-label="Obiščite našo spletno stran"
             >
               <Globe className="top-bar-icon" />
-              <span>Splet: <strong>www.williamshousekeeping.com</strong></span>
+              <span>Splet: <strong>www.williamscleaning.si</strong></span>
             </a> */}
           </div>
 
@@ -257,13 +257,13 @@ export default function Navbar() {
                 <span>info.willamscleaning@gmail.com</span>
               </a>
               <a
-                href="https://williamshousekeeping.com"
+                href="https://www.williamscleaning.si"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mobile-drawer-contact-item"
               >
                 <Globe className="w-4 h-4 text-[#EEA800]" />
-                <span>www.williamshousekeeping.com</span>
+                <span>www.williamscleaning.si</span>
               </a>
             </div>
           </div>

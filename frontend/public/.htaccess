@@ -1,6 +1,11 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # 301 Canonical redirect: enforce preferred production domain (https://www.williamscleaning.si)
+  RewriteCond %{HTTP_HOST} ^williamscleaning\.si$ [NC]
+  RewriteRule ^(.*)$ https://www.williamscleaning.si/$1 [R=301,L]
+
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
