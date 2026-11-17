@@ -218,7 +218,7 @@ export default function Contact() {
               </div>
 
               {/* Map Placeholder */}
-              <div>
+              {/* <div>
                 <h4 className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">
                   Lokacija na zemljevidu (Ljubljana)
                 </h4>
@@ -244,7 +244,7 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Right: Validated Contact Form */}
