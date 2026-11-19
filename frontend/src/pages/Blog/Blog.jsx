@@ -27,7 +27,7 @@ export default function Blog() {
         title="Blog in novice"
         subtitle="Strokovni vpogledi, nasveti za vodenje gospodinjstva in najnovejši trendi v hotelirstvu."
         breadcrumbs={[{ name: 'Domov', path: '/' }]}
-        image="/images/blog_lp.png"
+        image="/images/blog_lp.webp"
       />
 
       <section className="py-16 sm:py-24 bg-white">
@@ -47,8 +47,8 @@ export default function Blog() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all ${
                   selectedCategory === cat
-                    ? 'bg-[#0B70A6] text-white shadow-sm'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    ? 'bg-[#D4AF37] text-[#0B0B0C] font-bold shadow-sm'
+                    : 'bg-[#F8F5ED] text-[#252525] border border-[#98752C]/35 hover:bg-white'
                 }`}
               >
                 {cat === 'all' ? 'Vsi prispevki' : cat}

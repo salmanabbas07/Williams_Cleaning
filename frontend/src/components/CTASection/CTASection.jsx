@@ -28,7 +28,7 @@ export default function CTASection({
       <div className="cta-content">
         {badge && (
           <div className="cta-badge">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+            <Sparkles className="w-3.5 h-3.5 text-[#F8F5ED]" />
             <span>{badge}</span>
           </div>
         )}

@@ -54,11 +54,11 @@ export default function Contact() {
         title="Kontakt"
         subtitle="Stopite v stik z našo strokovno ekipo za brezplačno svetovanje in neobvezujočo ponudbo."
         breadcrumbs={[{ name: 'Domov', path: '/' }]}
-        image="/images/contact_lp.png"
+        image="/images/contact_lp.webp"
       />
 
       {/* 2. Contact Info Cards */}
-      <section className="py-16 sm:py-20 bg-gray-50/70 border-b border-gray-100">
+      <section className="py-16 sm:py-20 bg-[#F8F5ED] border-b border-[#98752C]/25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactDetails.map((item, index) => {
@@ -66,10 +66,10 @@ export default function Contact() {
               return (
                 <div
                   key={index}
-                  className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group"
+                  className="bg-white p-6 sm:p-7 rounded-2xl border border-[#98752C]/35 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-amber-50 text-[#EEA800] flex items-center justify-center mb-4 border border-amber-100 group-hover:bg-[#EEA800] group-hover:text-[#0B4D26] transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/12 text-[#D4AF37] flex items-center justify-center mb-4 border border-[#98752C]/30 group-hover:bg-[#D4AF37] group-hover:text-[#0B0B0C] transition-colors">
                       <IconComp className="w-6 h-6" />
                     </div>
                     <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">
@@ -81,7 +81,7 @@ export default function Contact() {
                           <a
                             key={pIdx}
                             href={phone.link}
-                            className="text-base font-bold text-[#0B4D26] hover:text-[#EEA800] transition-colors block break-words"
+                            className="text-base font-bold text-[#0B0B0C] hover:text-[#D4AF37] transition-colors block break-words"
                           >
                             {phone.text}
                           </a>
@@ -92,17 +92,17 @@ export default function Contact() {
                         href={item.link}
                         target={item.link.startsWith('http') ? '_blank' : undefined}
                         rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="text-base font-bold text-[#0B4D26] hover:text-[#EEA800] transition-colors block break-words"
+                        className="text-base font-bold text-[#0B0B0C] hover:text-[#D4AF37] transition-colors block break-words"
                       >
                         {item.content}
                       </a>
                     ) : (
-                      <p className="text-base font-bold text-gray-900 leading-snug">
+                      <p className="text-base font-bold text-[#0B0B0C] leading-snug">
                         {item.content}
                       </p>
                     )}
                   </div>
-                  <div className="mt-4 pt-3 border-t border-gray-100 text-xs text-gray-500">
+                  <div className="mt-4 pt-3 border-t border-[#98752C]/25 text-xs text-gray-500">
                     {item.note}
                   </div>
                 </div>
@@ -118,21 +118,21 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             {/* Left: Section intro and details */}
             <div className="lg:col-span-5">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200/80 mb-3">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#D4AF37]/12 text-[#0B0B0C] border border-[#98752C]/35 mb-3">
+                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>Stopite v stik</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-green leading-tight mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B0B0C] leading-tight mb-4">
                 Pošljite nam vaše povpraševanje
               </h2>
 
-              <p className="text-gray-600 text-base leading-relaxed mb-6">
+              <p className="text-[#252525] text-base leading-relaxed mb-6">
                 Izpolnite obrazec s podatki o vašem objektu ali nas neposredno pokličite. Z veseljem vam bomo svetovali in pripravili optimalno rešitev.
               </p>
 
-              {/* Call Widget directly matching user uploaded image */}
-              <div className="bg-amber-50/70 p-6 rounded-3xl border border-amber-200/80 mb-8 shadow-sm">
+              {/* Call Widget */}
+              <div className="bg-[#F8F5ED] p-6 rounded-3xl border border-[#98752C]/35 mb-8 shadow-sm">
                 <Button
                   href="tel:+38669803622"
                   variant="primary"
@@ -145,14 +145,14 @@ export default function Contact() {
                 <div className="space-y-2 pt-1 text-left">
                   <a
                     href="tel:+38669803622"
-                    className="text-2xl font-black text-[#0B4D26] hover:underline block tracking-tight leading-tight"
+                    className="text-2xl font-black text-[#0B0B0C] hover:text-[#D4AF37] hover:underline block tracking-tight leading-tight"
                   >
                     + 386 69 803 622
                   </a>
 
                   <a
                     href="tel:040791618"
-                    className="text-2xl font-black text-[#0B4D26] hover:underline block tracking-tight leading-tight"
+                    className="text-2xl font-black text-[#0B0B0C] hover:text-[#D4AF37] hover:underline block tracking-tight leading-tight"
                   >
                     040 791 618
                   </a>
@@ -161,9 +161,9 @@ export default function Contact() {
                     href="https://wa.me/38669803622"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-[#0B4D26] hover:underline flex items-center gap-2"
+                    className="text-sm font-semibold text-[#0B0B0C] hover:text-[#D4AF37] hover:underline flex items-center gap-2"
                   >
-                    <svg className="w-4 h-4 text-[#EEA800] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#D4AF37] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12.031 0C5.396 0 .029 5.367.029 11.987c0 2.112.551 4.177 1.6 6l-1.7 6.2 6.35-1.66c1.76.96 3.75 1.46 5.752 1.46h.005c6.634 0 12.001-5.367 12.001-11.988 0-3.205-1.248-6.218-3.518-8.487C18.25 1.252 15.238 0 12.031 0zm0 21.98c-1.79 0-3.55-.48-5.09-1.39l-.36-.22-3.78.99 1.01-3.68-.24-.38a9.98 9.98 0 01-1.53-5.31c0-5.52 4.49-10.01 10.01-10.01 2.67 0 5.18 1.04 7.07 2.93 1.89 1.89 2.93 4.4 2.93 7.07 0 5.52-4.49 10-9.99 10zm5.48-7.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.89-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z" />
                     </svg>
                     <span>WhatsApp: +386 69 803 622</span>
@@ -171,9 +171,9 @@ export default function Contact() {
 
                   <a
                     href="mailto:info.willamscleaning@gmail.com"
-                    className="text-sm font-semibold text-[#0B4D26] hover:underline flex items-center gap-2"
+                    className="text-sm font-semibold text-[#0B0B0C] hover:text-[#D4AF37] hover:underline flex items-center gap-2"
                   >
-                    <Mail className="w-4 h-4 text-[#EEA800] shrink-0" />
+                    <Mail className="w-4 h-4 text-[#D4AF37] shrink-0" />
                     <span>info.willamscleaning@gmail.com</span>
                   </a>
 
@@ -181,19 +181,19 @@ export default function Contact() {
                     href="https://www.williamscleaning.si"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-gray-600 hover:text-[#0B4D26] flex items-center gap-2 pt-1 border-t border-amber-200/60"
+                    className="text-xs text-[#252525] hover:text-[#D4AF37] flex items-center gap-2 pt-1 border-t border-[#98752C]/25"
                   >
-                    <Globe className="w-3.5 h-3.5 text-[#EEA800] shrink-0" />
+                    <Globe className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
                     <span>www.williamscleaning.si</span>
                   </a>
 
-                  <div className="pt-2 border-t border-amber-200/60 flex items-center gap-3">
+                  <div className="pt-2 border-t border-[#98752C]/25 flex items-center gap-3">
                     <span className="text-xs text-gray-500 font-medium">Sledite nam:</span>
                     <a
                       href="https://www.facebook.com/Williams.Cleanings"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-[#0B4D26] transition-colors"
+                      className="text-gray-600 hover:text-[#D4AF37] transition-colors"
                       title="Facebook Business"
                       aria-label="Facebook Business"
                     >
@@ -205,7 +205,7 @@ export default function Contact() {
                       href="https://www.instagram.com/williams.cleaners.slovenia?rpxt=YnB3Zm1vcm1rOXpk"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-[#0B4D26] transition-colors"
+                      className="text-gray-600 hover:text-[#D4AF37] transition-colors"
                       title="Instagram"
                       aria-label="Instagram"
                     >
@@ -216,35 +216,6 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-
-              {/* Map Placeholder */}
-              {/* <div>
-                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">
-                  Lokacija na zemljevidu (Ljubljana)
-                </h4>
-                <div className="relative rounded-2xl overflow-hidden border border-gray-200">
-                  <ImagePlaceholder
-                    aspectRatio="aspect-[16/9]"
-                    rounded="rounded-none"
-                    label="Zemljevid: Kotnikova ulica 28, Ljubljana"
-                    className="bg-slate-100"
-                  />
-                  <div className="p-3 bg-white border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
-                    <span className="flex items-center gap-1.5 font-medium">
-                      <MapPin className="w-3.5 h-3.5 text-brand-blue" />
-                      Kotnikova ulica 28, Ljubljana
-                    </span>
-                    <a
-                      href="https://maps.google.com/?q=Kotnikova+ulica+28,+1000+Ljubljana"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#0B70A6] font-semibold hover:underline"
-                    >
-                      Odpri v Google Maps
-                    </a>
-                  </div>
-                </div>
-              </div> */}
             </div>
 
             {/* Right: Validated Contact Form */}

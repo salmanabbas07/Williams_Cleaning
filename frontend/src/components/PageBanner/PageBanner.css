@@ -4,7 +4,7 @@
   width: 100%;
   height: 290px;
   overflow: hidden;
-  background-color: #081738;
+  background: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
 }
 
 @media (min-width: 640px) {

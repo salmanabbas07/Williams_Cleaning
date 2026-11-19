@@ -79,7 +79,7 @@ export default function About() {
         title="O nas"
         subtitle="Dobrodošli pri Williams Housekeeping — vašem zanesljivem partnerju za brezhibno čiste in zdrave prostore."
         breadcrumbs={[{ name: 'Domov', path: '/' }]}
-        image="/images/about_lp.png"
+        image="/images/about_lp.webp"
       />
 
       {/* 2. Company Introduction */}
@@ -90,50 +90,50 @@ export default function About() {
             <div className="lg:col-span-5 relative">
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <ImagePlaceholder
-                  src="/images/about_image.jpeg"
+                  src="/images/about_image.webp"
                   alt="Predstavitev ekipe Williams Housekeeping za hotelsko gospodinjstvo in poslovno čiščenje"
                   aspectRatio="aspect-[4/5]"
                   rounded="rounded-2xl"
                   label="Predstavitev ekipe Williams"
-                  className="shadow-xl border-2 border-gray-100"
+                  className="shadow-xl border-2 border-[#98752C]/35"
                 />
               </div>
             </div>
 
             {/* Right Column: Company Info */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200/80 mb-3">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#D4AF37]/12 text-[#0B0B0C] border border-[#98752C]/35 mb-3">
+                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>O nas &bull; Williams Housekeeping</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-green leading-tight mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B0B0C] leading-tight mb-4">
                 Dobrodošli pri Williams Housekeeping — Vaš zanesljiv partner za brezhibne in zdrave prostore
               </h2>
 
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
+              <p className="text-[#252525] text-base leading-relaxed mb-4">
                 Pri Williams Housekeeping verjamemo, da je čisto okolje temelj zdravja, produktivnosti in miru. Smo ponudnik profesionalnih rešitev za čiščenje, predan zagotavljanju vrhunskih storitev, prilagojenih edinstvenim potrebam stanovanjskih, poslovnih in komercialnih naročnikov.
               </p>
 
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              <p className="text-[#252525] text-sm leading-relaxed mb-6">
                 Ne glede na to, ali gre za osvežitev vašega doma, vzdrževanje higienskega in navdihujočega pisarniškega delovnega prostora, vrhunsko oskrbo vrtov in urejanje okolice ali ponudbo globinskega čiščenja in vzdrževanja za hotele ter nastanitvene obrate — poskrbimo za vse. Naše strokovno znanje zajema vse vrste specializiranih storitev čiščenja, s čimer zagotavljamo, da vsak kotiček prejme skrb in pozornost, ki si jo zasluži.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-8">
-                <div className="flex items-center gap-2.5 text-sm font-semibold text-gray-800">
-                  <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0" />
+                <div className="flex items-center gap-2.5 text-sm font-semibold text-[#0B0B0C]">
+                  <CheckCircle2 className="w-5 h-5 text-[#D4AF37] shrink-0" />
                   <span>Osvežitev domov in stanovanj</span>
                 </div>
-                <div className="flex items-center gap-2.5 text-sm font-semibold text-gray-800">
-                  <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0" />
+                <div className="flex items-center gap-2.5 text-sm font-semibold text-[#0B0B0C]">
+                  <CheckCircle2 className="w-5 h-5 text-[#D4AF37] shrink-0" />
                   <span>Higienski pisarniški in poslovni prostori</span>
                 </div>
-                <div className="flex items-center gap-2.5 text-sm font-semibold text-gray-800">
-                  <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0" />
+                <div className="flex items-center gap-2.5 text-sm font-semibold text-[#0B0B0C]">
+                  <CheckCircle2 className="w-5 h-5 text-[#D4AF37] shrink-0" />
                   <span>Vrhunska oskrba vrtov in urejanje okolice</span>
                 </div>
-                <div className="flex items-center gap-2.5 text-sm font-semibold text-gray-800">
-                  <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0" />
+                <div className="flex items-center gap-2.5 text-sm font-semibold text-[#0B0B0C]">
+                  <CheckCircle2 className="w-5 h-5 text-[#D4AF37] shrink-0" />
                   <span>Globinsko čiščenje hotelov in nastanitev</span>
                 </div>
               </div>
@@ -149,41 +149,41 @@ export default function About() {
       </section>
 
       {/* 3. Preobrazba prostorov in brezskrbnost naročnikov */}
-      <section className="py-16 bg-gray-50/70 border-y border-gray-100">
+      <section className="py-16 bg-[#F8F5ED] border-y border-[#98752C]/25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-8 sm:p-10 rounded-2xl border border-gray-200 bg-white shadow-sm flex flex-col justify-between">
+            <div className="p-8 sm:p-10 rounded-2xl border border-[#98752C]/35 bg-white shadow-sm flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/15 text-[#D4AF37] flex items-center justify-center mb-6">
                   <Sparkles className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-brand-green mb-3">
+                <h3 className="text-2xl font-bold text-[#0B0B0C] mb-3">
                   Preoblikujemo vaše prostore
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <p className="text-[#252525] text-sm leading-relaxed mb-6">
                   Pri Williams Housekeeping ne le čistimo prostorov — preoblikujemo jih v bolj zdrava, svetlejša in prijetnejša okolja za bivanje ter delo.
                 </p>
               </div>
-              <div className="pt-4 border-t border-gray-100">
+              <div className="pt-4 border-t border-[#98752C]/25">
                 <Button to="/storitve" variant="ghost" size="sm" icon={ArrowRight}>
                   Oglejte si naše storitve
                 </Button>
               </div>
             </div>
 
-            <div className="p-8 sm:p-10 rounded-2xl border border-gray-200 bg-white shadow-sm flex flex-col justify-between">
+            <div className="p-8 sm:p-10 rounded-2xl border border-[#98752C]/35 bg-white shadow-sm flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-xl bg-amber-50 text-[#F3B209] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/15 text-[#D4AF37] flex items-center justify-center mb-6">
                   <HeartHandshake className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-brand-green mb-3">
+                <h3 className="text-2xl font-bold text-[#0B0B0C] mb-3">
                   Osredotočite se na pomembno
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <p className="text-[#252525] text-sm leading-relaxed mb-6">
                   Prepustite nam skrb za čistočo in nered, da se vi lahko brezskrbno posvetite tistemu, kar je za vas najpomembnejše.
                 </p>
               </div>
-              <div className="pt-4 border-t border-gray-100">
+              <div className="pt-4 border-t border-[#98752C]/25">
                 <Button to="/kontakt" variant="ghost" size="sm" icon={ArrowRight}>
                   Stopite v stik z nami
                 </Button>
@@ -191,7 +191,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-8 py-3.5 px-6 rounded-xl bg-white border border-gray-200 text-center text-xs sm:text-sm text-gray-600 font-medium">
+          <div className="mt-8 py-3.5 px-6 rounded-xl bg-white border border-[#98752C]/30 text-center text-xs sm:text-sm text-[#252525] font-medium">
             Williams Housekeeping &bull; Zaupanja vreden partner za brezhibne prostore &bull; Vrhunska kakovost in zanesljivost
           </div>
         </div>
@@ -213,24 +213,24 @@ export default function About() {
               return (
                 <div
                   key={idx}
-                  className="bg-white p-7 sm:p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+                  className="bg-white p-7 sm:p-8 rounded-2xl border border-[#98752C]/35 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-5">
+                    <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/15 text-[#D4AF37] flex items-center justify-center mb-5">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-bold text-brand-green mb-3">
+                    <h3 className="text-xl font-bold text-[#0B0B0C] mb-3">
                       {feature.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-5">
+                    <p className="text-xs sm:text-sm text-[#252525] leading-relaxed mb-5">
                       {feature.description}
                     </p>
                   </div>
 
-                  <ul className="space-y-2.5 text-xs sm:text-sm text-gray-700 pt-4 border-t border-gray-100">
+                  <ul className="space-y-2.5 text-xs sm:text-sm text-[#252525] pt-4 border-t border-[#98752C]/25">
                     {feature.bullets.map((bullet, bIdx) => (
                       <li key={bIdx} className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -243,7 +243,7 @@ export default function About() {
       </section>
 
       {/* 5. Testimonials Section */}
-      <section className="py-16 sm:py-24 bg-gray-50/70 border-t border-gray-100">
+      <section className="py-16 sm:py-24 bg-[#F8F5ED] border-t border-[#98752C]/25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Mnenja partnerjev"

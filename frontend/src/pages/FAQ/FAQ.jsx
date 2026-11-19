@@ -73,7 +73,7 @@ export default function FAQ() {
         title="Pogosta vprašanja"
         subtitle="Odgovori na najpogostejša vprašanja o naših storitvah, organizaciji dela in sodelovanju."
         breadcrumbs={[{ name: 'Domov', path: '/' }]}
-        image="/images/FAQ_lp.png"
+        image="/images/FAQ_lp.webp"
       />
 
       <section className="py-16 sm:py-24 bg-white">
@@ -91,26 +91,26 @@ export default function FAQ() {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl border border-gray-200 overflow-hidden transition-all bg-white shadow-sm"
+                  className="rounded-2xl border border-[#98752C]/35 overflow-hidden transition-all bg-white shadow-sm"
                 >
                   <button
                     type="button"
                     onClick={() => toggleFAQ(index)}
-                    className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 hover:bg-gray-50/70 transition-colors focus:outline-none focus:ring-2 focus:ring-[#0B70A6] focus:ring-inset"
+                    className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 hover:bg-[#F8F5ED] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:ring-inset"
                     aria-expanded={isOpen}
                   >
-                    <span className="font-bold text-gray-900 text-base sm:text-lg leading-snug">
+                    <span className="font-bold text-[#0B0B0C] text-base sm:text-lg leading-snug">
                       {faq.q}
                     </span>
                     <ChevronDown
-                      className={`w-5 h-5 text-[#0B70A6] shrink-0 transition-transform duration-200 ${
+                      className={`w-5 h-5 text-[#D4AF37] shrink-0 transition-transform duration-200 ${
                         isOpen ? 'transform rotate-180' : ''
                       }`}
                     />
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 sm:px-6 pb-6 pt-1 text-gray-600 text-sm leading-relaxed border-t border-gray-100 bg-gray-50/40 animate-fadeIn">
+                    <div className="px-5 sm:px-6 pb-6 pt-1 text-[#252525] text-sm leading-relaxed border-t border-[#98752C]/25 bg-[#F8F5ED] animate-fadeIn">
                       <p>{faq.a}</p>
                     </div>
                   )}

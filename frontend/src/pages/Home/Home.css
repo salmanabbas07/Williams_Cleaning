@@ -67,7 +67,7 @@
 
 .about-main-img-card {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
-  border: 2px solid #f1f5f9;
+  border: 2px solid rgba(152, 117, 44, 0.35);
   border-radius: 1.25rem;
   overflow: hidden;
 }
@@ -82,7 +82,7 @@
   padding: 0.5rem;
   border-radius: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(11, 112, 166, 0.15);
+  border: 1px solid rgba(152, 117, 44, 0.35);
 }
 
 @media (min-width: 640px) {
@@ -107,9 +107,9 @@
   letter-spacing: 0.05em;
   padding: 0.35rem 0.85rem;
   border-radius: 9999px;
-  background-color: #ecfdf5;
-  color: #047857;
-  border: 1px solid rgba(5, 150, 105, 0.2);
+  background-color: rgba(212, 175, 55, 0.12);
+  color: #0B0B0C;
+  border: 1px solid rgba(152, 117, 44, 0.35);
   margin-bottom: 0.875rem;
   width: fit-content;
 }
@@ -117,7 +117,7 @@
 .about-title {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #0B4D26;
+  color: #0B0B0C;
   line-height: 1.25;
   letter-spacing: -0.02em;
   margin: 0 0 1rem 0;
@@ -138,14 +138,14 @@
 .about-desc-primary {
   font-size: 1rem;
   line-height: 1.65;
-  color: #374151;
+  color: #252525;
   margin: 0 0 0.875rem 0;
 }
 
 .about-desc-secondary {
   font-size: 0.875rem;
   line-height: 1.65;
-  color: #4b5563;
+  color: #252525;
   margin: 0 0 1.5rem 0;
 }
 
@@ -168,13 +168,13 @@
   gap: 0.625rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #252525;
 }
 
 .about-feature-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: #0B70A6;
+  color: #D4AF37;
   flex-shrink: 0;
 }
 
@@ -182,9 +182,9 @@
 .services-overview-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: rgba(249, 250, 251, 0.7);
-  border-top: 1px solid #f1f5f9;
-  border-bottom: 1px solid #f1f5f9;
+  background-color: #F8F5ED;
+  border-top: 1px solid rgba(152, 117, 44, 0.25);
+  border-bottom: 1px solid rgba(152, 117, 44, 0.25);
 }
 
 @media (min-width: 640px) {
@@ -223,7 +223,7 @@
 .why-choose-section {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
-  background-color: #081738;
+  background: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
   color: #ffffff;
   position: relative;
 }
@@ -261,8 +261,8 @@
 }
 
 .why-feature-card {
-  background-color: rgba(15, 23, 42, 0.65);
-  border: 1px solid #1e293b;
+  background-color: rgba(32, 32, 32, 0.85);
+  border: 1px solid rgba(152, 117, 44, 0.3);
   border-radius: 1rem;
   padding: 1.5rem 1.25rem;
   display: flex;
@@ -273,31 +273,31 @@
 }
 
 .why-feature-card:hover {
-  background-color: rgba(30, 41, 59, 0.7);
-  border-color: rgba(123, 182, 208, 0.6);
+  background-color: rgba(20, 20, 20, 0.95);
+  border-color: rgba(212, 175, 55, 0.7);
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
 }
 
 .why-icon-box {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 0.875rem;
-  background-color: rgba(11, 112, 166, 0.15);
-  border: 1px solid rgba(123, 182, 208, 0.3);
+  background-color: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(152, 117, 44, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #7BB6D0;
+  color: #D4AF37;
   margin-bottom: 1.25rem;
   transition: all 0.3s ease;
 }
 
 .why-feature-card:hover .why-icon-box {
   transform: scale(1.1);
-  color: #EEA800;
-  background-color: rgba(238, 168, 0, 0.15);
-  border-color: rgba(238, 168, 0, 0.4);
+  color: #0B0B0C;
+  background-color: #D4AF37;
+  border-color: #D4AF37;
 }
 
 .why-card-title {
@@ -311,7 +311,7 @@
 .why-card-desc {
   font-size: 0.75rem;
   line-height: 1.6;
-  color: #94a3b8;
+  color: #F8F5ED;
   margin: 0;
 }
 
@@ -344,8 +344,8 @@
 .mission-card {
   padding: 2rem 1.75rem;
   border-radius: 1.25rem;
-  border: 1px solid #e2e8f0;
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(152, 117, 44, 0.3);
+  background: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
@@ -363,7 +363,7 @@
 .mission-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07);
-  border-color: #cbd5e1;
+  border-color: rgba(212, 175, 55, 0.5);
 }
 
 .mission-icon-box {
@@ -376,46 +376,41 @@
   margin-bottom: 1.5rem;
 }
 
-.mission-icon-box.blue {
-  background-color: #eff6ff;
-  color: #0B70A6;
-  border: 1px solid #dbeafe;
-}
-
+.mission-icon-box.blue,
 .mission-icon-box.gold {
-  background-color: #fefce8;
-  color: #EEA800;
-  border: 1px solid #fef08a;
+  background-color: rgba(212, 175, 55, 0.15);
+  color: #D4AF37;
+  border: 1px solid rgba(152, 117, 44, 0.3);
 }
 
 .mission-card-title {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #0B4D26;
+  color: #0B0B0C;
   margin: 0 0 0.75rem 0;
 }
 
 .mission-card-desc {
   font-size: 0.875rem;
   line-height: 1.65;
-  color: #4b5563;
+  color: #252525;
   margin: 0 0 1.5rem 0;
 }
 
 .mission-card-footer {
   padding-top: 1rem;
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid rgba(152, 117, 44, 0.25);
 }
 
 .mission-banner-pill {
   margin-top: 2.5rem;
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background-color: #F8F5ED;
+  border: 1px solid rgba(152, 117, 44, 0.3);
   text-align: center;
   font-size: 0.8125rem;
-  color: #475569;
+  color: #252525;
   font-weight: 500;
 }
 
@@ -466,7 +461,7 @@
   top: 1.25rem;
   bottom: 1.25rem;
   width: 2px;
-  background-color: #bfdbfe;
+  background-color: rgba(152, 117, 44, 0.3);
 }
 
 @media (min-width: 640px) {
@@ -487,8 +482,8 @@
   height: 2.25rem;
   border-radius: 9999px;
   background-color: #ffffff;
-  border: 2px solid #0B70A6;
-  color: #0B70A6;
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,8 +504,8 @@
 }
 
 .process-step-item:hover .process-step-badge {
-  background-color: #0B70A6;
-  color: #ffffff;
+  background-color: #D4AF37;
+  color: #0B0B0C;
   transform: scale(1.08);
 }
 
@@ -519,7 +514,7 @@
   background-color: #ffffff;
   padding: 1.5rem 1.25rem;
   border-radius: 1rem;
-  border: 1px solid #f1f5f9;
+  border: 1px solid rgba(152, 117, 44, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: all 0.25s ease;
 }
@@ -534,13 +529,13 @@
 
 .process-step-card:hover {
   box-shadow: 0 8px 16px -2px rgba(0, 0, 0, 0.08);
-  border-color: #e2e8f0;
+  border-color: rgba(212, 175, 55, 0.5);
 }
 
 .process-step-title {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #0B4D26;
+  color: #0B0B0C;
   margin: 0 0 0.5rem 0;
 }
 
@@ -552,7 +547,7 @@
 
 .process-step-desc {
   font-size: 0.8125rem;
-  color: #64748b;
+  color: #252525;
   margin: 0 0 1rem 0;
   line-height: 1.55;
 }
@@ -565,7 +560,7 @@
   padding: 0;
   margin: 0;
   font-size: 0.8125rem;
-  color: #374151;
+  color: #252525;
 }
 
 .process-bullet-item {
@@ -577,7 +572,7 @@
 .process-check-icon {
   width: 1rem;
   height: 1rem;
-  color: #059669;
+  color: #D4AF37;
   flex-shrink: 0;
 }
 
@@ -585,8 +580,8 @@
 .blog-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: rgba(249, 250, 251, 0.7);
-  border-top: 1px solid #f1f5f9;
+  background-color: #F8F5ED;
+  border-top: 1px solid rgba(152, 117, 44, 0.25);
 }
 
 @media (min-width: 640px) {

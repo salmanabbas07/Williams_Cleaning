@@ -4,14 +4,59 @@
 
 @layer base {
   :root {
-    --color-primary-blue: #0B70A6;
-    --color-primary-yellow: #F3B209;
-    --color-light-blue: #7BB6D0;
-    --color-golden: #F3C75B;
-    --color-pale-yellow: #FCE4A9;
-    --color-heading-green: #166534;
+    --color-royal-obsidian: #0B0B0C;
+    --color-midnight-black: #141414;
+    --color-graphite-black: #202020;
+    --color-rich-metallic-gold: #D4AF37;
+    --color-royal-gold: #C69B32;
+    --color-champagne-gold: #F5DF9B;
+    --color-antique-gold: #98752C;
+    --color-warm-ivory: #F8F5ED;
+    --color-pure-white: #FFFFFF;
+    --color-dark-charcoal: #252525;
+
+    /* Theme gradients specified by PRD */
+    --gradient-royal-gold: linear-gradient(135deg, #98752C 0%, #D4AF37 35%, #F5DF9B 55%, #C69B32 80%, #98752C 100%);
+    --gradient-premium-black: linear-gradient(135deg, #0B0B0C 0%, #141414 55%, #202020 100%);
+    --gradient-black-gold-luxury: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
+    --gradient-primary: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
+    --gradient-luxury-primary: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
+    --gradient-dark: linear-gradient(135deg, #0B0B0C 0%, #141414 55%, #202020 100%);
+    --gradient-gold: linear-gradient(135deg, #98752C 0%, #D4AF37 35%, #F5DF9B 55%, #C69B32 80%, #98752C 100%);
+    --gradient-champagne: linear-gradient(135deg, #D4AF37 0%, #F5DF9B 100%);
+    --gradient-warm-white: linear-gradient(135deg, #FFFFFF 0%, #F8F5ED 100%);
+
+    /* Aliases for backwards compatibility */
+    --color-obsidian-black: #0B0B0C;
+    --color-deep-black: #141414;
+    --color-metallic-gold: #D4AF37;
+    --color-warm-white: #F8F5ED;
+    --color-dark-text: #252525;
+    --color-rich-walnut: #0B0B0C;
+    --color-wood-brown: #141414;
+    --color-golden-caramel: #D4AF37;
+    --color-warm-gold: #F5DF9B;
+    --color-cream: #F8F5ED;
+    --color-white: #FFFFFF;
+    --color-secondary-text: #555555;
+    --color-light-border: #98752C;
+    --gradient-walnut-primary: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
+    --gradient-caramel: linear-gradient(135deg, #98752C 0%, #D4AF37 35%, #F5DF9B 55%, #C69B32 80%, #98752C 100%);
+    --gradient-cream: linear-gradient(135deg, #FFFFFF 0%, #F8F5ED 100%);
+    --gradient-rustic-primary: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
+    --gradient-olive-beige: linear-gradient(135deg, #D4AF37 0%, #F5DF9B 100%);
+    --gradient-dark-wood: linear-gradient(135deg, #0B0B0C 0%, #141414 55%, #202020 100%);
+    --gradient-ivory: linear-gradient(135deg, #FFFFFF 0%, #F8F5ED 100%);
+    --gradient-copper: linear-gradient(135deg, #D4AF37 0%, #F5DF9B 100%);
+
+    --color-primary-blue: #0B0B0C;
+    --color-primary-yellow: #D4AF37;
+    --color-light-blue: #141414;
+    --color-golden: #D4AF37;
+    --color-pale-yellow: #F8F5ED;
+    --color-heading-green: #0B0B0C;
     --color-bg-white: #FFFFFF;
-    --color-dark-navy: #081738;
+    --color-dark-navy: #141414;
   }
 
   html {
@@ -20,12 +65,12 @@
   }
 
   body {
-    @apply bg-white text-gray-800 antialiased overflow-x-hidden;
+    @apply bg-white text-[#252525] antialiased overflow-x-hidden;
   }
 
-  /* Consistent green tone for headings as required by PRD Section 5 */
+  /* Consistent Royal Obsidian tone for headings as required by PRD */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight text-brand-green;
+    @apply font-bold tracking-tight text-[#0B0B0C];
   }
 
   /* When headings are inside dark containers, they can be overridden with text-white */

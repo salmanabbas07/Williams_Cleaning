@@ -5,10 +5,11 @@ import './Button.css';
 
 /**
  * Reusable Button Component
- * Styled after reference & user-specified design:
- * - Golden yellow pill background (#EEA800 / #F3B209)
- * - White circular badge on the left with dark green arrow (#0B4D26)
- * - Bold dark green text (#0B4D26)
+ * Styled after Premium Royal Black & Gold Luxury Theme:
+ * - Primary buttons: Royal Gold Gradient (#98752C -> #D4AF37 -> #F5DF9B -> #C69B32 -> #98752C)
+ * - Text: Royal Obsidian (#0B0B0C)
+ * - Hover: Champagne Gold (#F5DF9B)
+ * - Royal Obsidian circular badge (#0B0B0C) with Rich Metallic Gold arrow (#D4AF37)
  * - Smooth interactive hover animation with elevation and sliding arrow
  */
 export default function Button({
@@ -46,18 +47,18 @@ export default function Button({
   };
 
   const variantStyles = {
-    // User requested golden button with dark green text and white circle icon
-    primary: 'bg-[#EEA800] hover:bg-[#DE9800] text-[#0B4D26] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#EEA800]',
-    golden: 'bg-[#EEA800] hover:bg-[#DE9800] text-[#0B4D26] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#EEA800]',
-    blue: 'bg-[#0B70A6] hover:bg-[#095b87] text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#0B70A6]',
-    darkNavy: 'bg-[#081738] hover:bg-[#0c2456] text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#081738]',
-    outline: 'border-2 border-[#0B4D26] text-[#0B4D26] hover:bg-[#EEA800] hover:border-[#EEA800] hover:shadow-md hover:-translate-y-0.5 focus:ring-[#0B4D26]',
-    outlineWhite: 'border-2 border-white text-white hover:bg-white hover:text-[#081738] hover:shadow-md hover:-translate-y-0.5 focus:ring-white',
-    ghost: 'text-[#0B70A6] hover:bg-blue-50 focus:ring-[#0B70A6]'
+    // Theme-based Royal Gold Gradient button with Royal Obsidian text and dark circle icon
+    primary: 'btn-royal-gold text-[#0B0B0C] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#D4AF37]',
+    golden: 'btn-royal-gold text-[#0B0B0C] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#D4AF37]',
+    blue: 'btn-royal-gold text-[#0B0B0C] hover:shadow-md hover:-translate-y-0.5 focus:ring-[#D4AF37]',
+    darkNavy: 'bg-[#141414] hover:bg-[#0B0B0C] text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#141414]',
+    outline: 'border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:border-[#D4AF37] hover:text-[#0B0B0C] hover:shadow-md hover:-translate-y-0.5 focus:ring-[#D4AF37]',
+    outlineWhite: 'border-2 border-white text-white hover:bg-white hover:text-[#0B0B0C] hover:shadow-md hover:-translate-y-0.5 focus:ring-white',
+    ghost: 'text-[#D4AF37] hover:text-[#F5DF9B] hover:bg-[#F8F5ED] focus:ring-[#D4AF37]'
   };
 
-  const isGolden = variant === 'primary' || variant === 'golden';
-  const circleBg = isGolden ? 'bg-white text-[#0B4D26]' : 'bg-white/20 text-current';
+  const isPrimary = variant === 'primary' || variant === 'golden' || variant === 'blue';
+  const circleBg = isPrimary ? 'bg-[#0B0B0C] text-[#D4AF37]' : 'bg-white/20 text-current';
 
   const content = (
     <>

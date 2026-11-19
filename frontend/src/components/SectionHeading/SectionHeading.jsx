@@ -4,7 +4,7 @@ import './SectionHeading.css';
 
 /**
  * Reusable Section Heading
- * Consistent green headings (#0B4D26) or white on dark
+ * Consistent Dark Charcoal headings (#292929) or white on dark
  */
 export default function SectionHeading({
   badge,

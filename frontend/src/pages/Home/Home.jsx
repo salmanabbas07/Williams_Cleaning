@@ -85,7 +85,7 @@ export default function Home() {
             <div className="about-media-stack">
               <div className="about-main-img-card">
                 <ImagePlaceholder
-                  src="/images/about_image.jpeg"
+                  src="/images/about_image.webp"
                   alt="Williams Housekeeping — Profesionalne ekipe za hotelsko in poslovno čiščenje"
                   aspectRatio="aspect-[4/5]"
                   rounded="rounded-2xl"
@@ -97,7 +97,7 @@ export default function Home() {
             {/* Right Column: Information & Bullet Points */}
             <div className="about-content-col">
               <div className="about-pill-badge">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>O nas &bull; Williams Housekeeping</span>
               </div>
 

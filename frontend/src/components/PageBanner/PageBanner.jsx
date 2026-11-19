@@ -33,8 +33,8 @@ export default function PageBanner({
         />
       ) : (
         <>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-[#081738] to-[#050e24] opacity-90 pointer-events-none" />
-          <div className="absolute right-0 top-0 w-96 h-96 bg-[#0B70A6]/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/20 via-[#141414] to-[#0B0B0C] opacity-90 pointer-events-none" />
+          <div className="absolute right-0 top-0 w-96 h-96 bg-[#D4AF37]/15 rounded-full blur-3xl pointer-events-none" />
         </>
       )}
 
@@ -57,17 +57,17 @@ export default function PageBanner({
               {crumb.path ? (
                 <Link
                   to={crumb.path}
-                  className="hover:text-[#F3B209] transition-colors"
+                  className="hover:text-[#D4AF37] transition-colors"
                 >
                   {crumb.name}
                 </Link>
               ) : (
-                <span className="text-[#F3B209] font-semibold">{crumb.name}</span>
+                <span className="text-[#D4AF37] font-semibold">{crumb.name}</span>
               )}
             </React.Fragment>
           ))}
           <ChevronRight className="w-4 h-4 text-slate-300 drop-shadow" />
-          <span className="text-[#F3B209] font-semibold">{title}</span>
+          <span className="text-[#D4AF37] font-semibold">{title}</span>
         </nav>
       </div>
     </section>

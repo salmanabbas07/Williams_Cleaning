@@ -17,13 +17,13 @@
 }
 
 .service-note-box.amber-note {
-  background-color: rgba(254, 243, 199, 0.5);
-  border-left: 4px solid #EEA800;
+  background-color: rgba(212, 175, 55, 0.08);
+  border-left: 4px solid #D4AF37;
 }
 
 .service-note-box.emerald-note {
-  background-color: rgba(236, 253, 245, 0.7);
-  border-left: 4px solid #0B4D26;
+  background-color: #F8F5ED;
+  border-left: 4px solid #0B0B0C;
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
@@ -35,7 +35,7 @@
   gap: 0.875rem;
   padding: 1rem 1.25rem;
   border-radius: 1rem;
-  background: linear-gradient(135deg, #062b15 0%, #0B4D26 100%);
+  background: linear-gradient(135deg, #0B0B0C 0%, #141414 100%);
   color: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }

@@ -138,16 +138,16 @@ export default function ContactForm({ className = '' }) {
   };
 
   return (
-    <div className={`contact-form-wrapper bg-white p-6 sm:p-8 md:p-10 rounded-2xl border border-gray-100 shadow-sm ${className}`}>
+    <div className={`contact-form-wrapper bg-white p-6 sm:p-8 md:p-10 rounded-2xl border border-[#98752C]/35 shadow-sm ${className}`}>
       {submitted ? (
         <div className="py-10 text-center animate-fadeIn">
-          <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-5">
+          <div className="w-16 h-16 rounded-full bg-[#D4AF37]/15 text-[#D4AF37] mx-auto flex items-center justify-center mb-5">
             <CheckCircle2 className="w-9 h-9" />
           </div>
-          <h3 className="text-2xl font-bold text-brand-green mb-3">
+          <h3 className="text-2xl font-bold text-[#0B0B0C] mb-3">
             Sporočilo je bilo uspešno poslano!
           </h3>
-          <p className="text-gray-600 text-sm max-w-md mx-auto mb-6 leading-relaxed">
+          <p className="text-[#252525] text-sm max-w-md mx-auto mb-6 leading-relaxed">
             Hvala za vaše povpraševanje! Vaše sporočilo smo uspešno prejeli. Naša strokovna ekipa vam bo odgovorila v najkrajšem možnem času.
           </p>
           <Button
@@ -181,7 +181,7 @@ export default function ContactForm({ className = '' }) {
                 className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 ${
                   errors.name
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-gray-200 focus:border-[#0B70A6] focus:ring-[#0B70A6]/20'
+                    : 'border-[#98752C]/40 focus:border-[#D4AF37] focus:ring-[#D4AF37]/20'
                 }`}
                 aria-invalid={!!errors.name}
                 aria-describedby={errors.name ? 'name-error' : undefined}
@@ -209,7 +209,7 @@ export default function ContactForm({ className = '' }) {
                 className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 ${
                   errors.email
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-gray-200 focus:border-[#0B70A6] focus:ring-[#0B70A6]/20'
+                    : 'border-[#98752C]/40 focus:border-[#D4AF37] focus:ring-[#D4AF37]/20'
                 }`}
                 aria-invalid={!!errors.email}
                 aria-describedby={errors.email ? 'email-error' : undefined}
@@ -236,7 +236,7 @@ export default function ContactForm({ className = '' }) {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="+386 69 803 622"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:border-[#0B70A6] focus:ring-2 focus:ring-[#0B70A6]/20 transition-all focus:outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-[#98752C]/40 text-sm focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 transition-all focus:outline-none"
               />
             </div>
 
@@ -253,7 +253,7 @@ export default function ContactForm({ className = '' }) {
                 className={`w-full px-4 py-3 rounded-xl border text-sm transition-all bg-white focus:outline-none focus:ring-2 ${
                   errors.subject
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-gray-200 focus:border-[#0B70A6] focus:ring-[#0B70A6]/20'
+                    : 'border-[#98752C]/40 focus:border-[#D4AF37] focus:ring-[#D4AF37]/20'
                 }`}
                 aria-invalid={!!errors.subject}
               >
@@ -290,7 +290,7 @@ export default function ContactForm({ className = '' }) {
               className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 resize-y ${
                 errors.message
                   ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                  : 'border-gray-200 focus:border-[#0B70A6] focus:ring-[#0B70A6]/20'
+                  : 'border-[#98752C]/40 focus:border-[#D4AF37] focus:ring-[#D4AF37]/20'
               }`}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? 'message-error' : undefined}

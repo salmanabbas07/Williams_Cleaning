@@ -7,7 +7,7 @@
   background-color: #ffffff;
   padding: 1.75rem 1.5rem;
   border-radius: 1.25rem;
-  border: 1px solid #f1f5f9;
+  border: 1px solid rgba(152, 117, 44, 0.3);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.02);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -33,7 +33,7 @@
 .testimonial-card-quote {
   font-size: 0.9375rem;
   line-height: 1.65;
-  color: #374151;
+  color: #252525;
   font-style: italic;
   margin: 0 0 1.5rem 0;
 }
@@ -43,22 +43,22 @@
   align-items: center;
   gap: 0.875rem;
   padding-top: 1rem;
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid rgba(152, 117, 44, 0.25);
 }
 
 .testimonial-card-author-name {
   font-weight: 700;
-  color: #0f172a;
+  color: #0B0B0C;
   font-size: 0.875rem;
 }
 
 .testimonial-card-author-role {
   font-size: 0.75rem;
-  color: #0B70A6;
+  color: #D4AF37;
   font-weight: 600;
 }
 
 .testimonial-card-author-company {
   font-size: 0.75rem;
-  color: #64748b;
+  color: #555555;
 }

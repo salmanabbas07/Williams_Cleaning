@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="footer-brand-logo-card" aria-label="Domov - Williams Housekeeping hotelsko in poslovno čiščenje">
               <img
-                src="/images/main_logo.svg"
+                src="/images/main_logo.webp"
                 alt="Williams Housekeeping — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
                 className="footer-logo-img"
               />
@@ -79,37 +79,37 @@ export default function Footer() {
             <ul className="footer-links-list">
               <li className="footer-link-item">
                 <Link to="/">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#EEA800]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Domov</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/o-nas">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#EEA800]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>O nas</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/storitve">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#EEA800]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Storitve</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/pogosta-vprasanja">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#EEA800]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Pogosta vprašanja</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/blog">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#EEA800]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Blog</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/kontakt">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#EEA800]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Kontakt</span>
                 </Link>
               </li>
@@ -125,31 +125,31 @@ export default function Footer() {
             <ul className="footer-links-list">
               <li className="footer-link-item">
                 <Link to="/service/hotel-housekeeping">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#7BB6D0]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Hotelsko gospodinjstvo</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/service/seasonal-housekeeping-teams">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#7BB6D0]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Sezonske ekipe za čiščenje</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/service/temporary-housekeeping-support">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#7BB6D0]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Začasna podpora gospodinjstvu</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/service/flexible-subcontracting">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#7BB6D0]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Prilagodljivo podizvajanje</span>
                 </Link>
               </li>
               <li className="footer-link-item">
                 <Link to="/service/business-and-office-cleaning">
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#7BB6D0]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Poslovno in pisarniško čiščenje</span>
                 </Link>
               </li>
@@ -200,7 +200,7 @@ export default function Footer() {
 
               <div className="footer-contact-item">
                 <div className="footer-contact-icon-box">
-                  <svg className="w-4 h-4 text-[#EEA800]" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#D4AF37]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12.031 0C5.396 0 .029 5.367.029 11.987c0 2.112.551 4.177 1.6 6l-1.7 6.2 6.35-1.66c1.76.96 3.75 1.46 5.752 1.46h.005c6.634 0 12.001-5.367 12.001-11.988 0-3.205-1.248-6.218-3.518-8.487C18.25 1.252 15.238 0 12.031 0zm0 21.98c-1.79 0-3.55-.48-5.09-1.39l-.36-.22-3.78.99 1.01-3.68-.24-.38a9.98 9.98 0 01-1.53-5.31c0-5.52 4.49-10.01 10.01-10.01 2.67 0 5.18 1.04 7.07 2.93 1.89 1.89 2.93 4.4 2.93 7.07 0 5.52-4.49 10-9.99 10zm5.48-7.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.89-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z" />
                   </svg>
                 </div>
@@ -275,7 +275,7 @@ export default function Footer() {
               href="https://www.williamscleaning.si"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#cbd5e1', fontWeight: 600, textDecoration: 'none' }}
+              style={{ color: '#D4AF37', fontWeight: 600, textDecoration: 'none' }}
             >
               williamscleaning.si
             </a>
