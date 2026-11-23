@@ -1,17 +1,37 @@
-/* Button Component Styles - Clarivo Teal & Turquoise Theme */
-.btn-royal-gold {
-  background: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
+/* Button Component Styles - Clarivo Deep Navy Primary & Primary Teal Secondary */
+.btn-royal-gold,
+.btn-deep-navy {
+  background-color: #123B50;
   color: #FFFFFF !important;
-  border: 1px solid rgba(64, 199, 206, 0.4);
-  box-shadow: 0 4px 14px rgba(10, 84, 99, 0.25);
+  border: 1px solid #123B50;
+  box-shadow: 0 4px 14px rgba(18, 59, 80, 0.18);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.btn-royal-gold:hover {
-  background: linear-gradient(135deg, #073842 0%, #0A5463 35%, #09768C 70%, #168B9F 100%) !important;
+.btn-royal-gold:hover,
+.btn-deep-navy:hover {
+  background-color: #0B3042 !important;
+  border-color: #0B3042 !important;
   color: #FFFFFF !important;
-  box-shadow: 0 6px 20px rgba(10, 84, 99, 0.35);
-  border-color: #32B3BF;
+  box-shadow: 0 6px 20px rgba(18, 59, 80, 0.28);
+}
+
+/* Secondary Button: Primary Teal (#168B9F) */
+.btn-teal-gradient,
+.btn-secondary-teal {
+  background-color: #168B9F;
+  color: #FFFFFF !important;
+  border: 1px solid #168B9F;
+  box-shadow: 0 4px 14px rgba(22, 139, 159, 0.16);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-teal-gradient:hover,
+.btn-secondary-teal:hover {
+  background-color: #09768C !important;
+  border-color: #09768C !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(9, 118, 140, 0.26);
 }
 
 .btn-golden-pill {

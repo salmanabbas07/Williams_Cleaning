@@ -17,13 +17,13 @@ export default function TestimonialCard({
   return (
     <div className={`testimonial-card-component ${className}`}>
       <div>
-        {/* Rating Stars using Clarivo Turquoise / Teal */}
+        {/* Rating Stars using Clarivo Champagne Gold */}
         <div className="testimonial-card-stars" aria-label={`Ocena: ${rating} od 5 zvezdic`}>
           {Array.from({ length: 5 }).map((_, i) => (
             <Star
               key={i}
               className={`w-4 h-4 ${
-                i < rating ? 'text-[#168B9F] fill-[#168B9F]' : 'text-gray-200'
+                i < rating ? 'text-[#C5A46D] fill-[#C5A46D]' : 'text-[#D8ECEE]'
               }`}
             />
           ))}

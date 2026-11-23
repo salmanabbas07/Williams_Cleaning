@@ -1,4 +1,4 @@
-/* Services Page Styles - Clarivo Teal & Turquoise Theme */
+/* Services Page Styles - Clarivo Warm Cream & Teal Theme */
 .services-page {
   position: relative;
   width: 100%;
@@ -17,17 +17,17 @@
 }
 
 .service-note-box.amber-note {
-  background-color: #FFFFFF;
-  border: 1px solid #D8ECEE;
+  background-color: #F8F4EB;
+  border: 1px solid rgba(10, 84, 99, 0.10);
   border-left: 4px solid #168B9F;
-  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.05);
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.04);
 }
 
 .service-note-box.emerald-note {
-  background-color: #FFFFFF;
-  border: 1px solid #D8ECEE;
+  background-color: #F8F4EB;
+  border: 1px solid rgba(10, 84, 99, 0.10);
   border-left: 4px solid #32B3BF;
-  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.05);
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.04);
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
@@ -39,7 +39,8 @@
   gap: 0.875rem;
   padding: 1rem 1.25rem;
   border-radius: 1rem;
-  background: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
-  color: #ffffff;
-  box-shadow: 0 4px 6px -1px rgba(10, 84, 99, 0.15);
+  background-color: #F8F4EB;
+  border: 1px solid rgba(10, 84, 99, 0.10);
+  color: #0A5463;
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.04);
 }

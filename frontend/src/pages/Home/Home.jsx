@@ -97,7 +97,7 @@ export default function Home() {
             {/* Right Column: Information & Bullet Points */}
             <div className="about-content-col">
               <div className="about-pill-badge">
-                <Sparkles className="w-3.5 h-3.5 text-[#168B9F]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#C5A46D]" />
                 <span>O nas &bull; Williams Housekeeping</span>
               </div>
 
@@ -198,7 +198,6 @@ export default function Home() {
             title="Zakaj izbrati naše storitve?"
             subtitle="Zagotavljamo visoke standarde, stabilnost in profesionalnost pri vsakem projektu."
             centered={true}
-            onDark={true}
           />
 
           <div className="why-features-grid">

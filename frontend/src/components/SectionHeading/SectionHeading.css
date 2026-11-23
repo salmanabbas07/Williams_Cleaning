@@ -45,10 +45,10 @@
 }
 
 .section-heading-badge.light {
-  background-color: #FFFFFF;
+  background-color: #F8F4EB;
   color: #0A5463;
-  border: 1px solid #D8ECEE;
-  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.06);
+  border: 1px solid rgba(10, 84, 99, 0.10);
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.05);
 }
 
 .section-heading-badge.dark {
@@ -98,7 +98,7 @@
 }
 
 .section-heading-subtitle.light {
-  color: #252525;
+  color: #46545A;
 }
 
 .section-heading-subtitle.dark {

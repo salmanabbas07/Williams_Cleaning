@@ -28,7 +28,7 @@ export default function CTASection({
       <div className="cta-content">
         {badge && (
           <div className="cta-badge">
-            <Sparkles className="w-3.5 h-3.5 text-[#32B3BF]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#C5A46D]" />
             <span>{badge}</span>
           </div>
         )}
@@ -55,7 +55,7 @@ export default function CTASection({
           {secondaryBtnHref && (
             <Button
               href={secondaryBtnHref}
-              variant="outlineWhite"
+              variant="secondary"
               size="lg"
               icon={PhoneCall}
               className="w-full sm:w-auto"
@@ -67,7 +67,7 @@ export default function CTASection({
           {secondaryBtn2Href && (
             <Button
               href={secondaryBtn2Href}
-              variant="outlineWhite"
+              variant="secondary"
               size="lg"
               icon={PhoneCall}
               className="w-full sm:w-auto"

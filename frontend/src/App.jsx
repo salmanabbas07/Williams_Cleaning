@@ -72,7 +72,7 @@ function NotFound() {
         <h2 className="text-2xl font-bold text-[#0A5463] mb-3">
           Stran ni bila najdena
         </h2>
-        <p className="text-[#252525] text-sm mb-6 leading-relaxed">
+        <p className="text-[#46545A] text-sm mb-6 leading-relaxed">
           Stran, ki jo iščete, ne obstaja ali pa je bila premaknjena na drug naslov.
         </p>
         <Button to="/" variant="primary" size="md">
@@ -92,7 +92,7 @@ export default function App() {
       }}
     >
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen bg-transparent text-[#252525]">
+      <div className="flex flex-col min-h-screen bg-transparent text-[#46545A]">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:bg-[#FFFFFF] focus:text-[#0A5463] focus:font-bold focus:px-4 focus:py-2 focus:rounded-md focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#168B9F]"

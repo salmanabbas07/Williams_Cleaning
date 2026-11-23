@@ -28,7 +28,7 @@
 .about-intro-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #FFFFFF;
+  background-color: #F5F0E6;
 }
 
 @media (min-width: 640px) {
@@ -66,8 +66,8 @@
 }
 
 .about-main-img-card {
-  box-shadow: 0 20px 25px -5px rgba(10, 84, 99, 0.08), 0 8px 10px -6px rgba(10, 84, 99, 0.03);
-  border: 2px solid #D8ECEE;
+  box-shadow: 0 20px 25px -5px rgba(10, 84, 99, 0.06), 0 8px 10px -6px rgba(10, 84, 99, 0.02);
+  border: 1px solid rgba(10, 84, 99, 0.10);
   border-radius: 1.25rem;
   overflow: hidden;
 }
@@ -78,11 +78,11 @@
   right: -1rem;
   width: 50%;
   max-width: 14rem;
-  background-color: #FFFFFF;
+  background-color: #F8F4EB;
   padding: 0.5rem;
   border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(10, 84, 99, 0.12);
-  border: 1px solid #D8ECEE;
+  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.07);
+  border: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 @media (min-width: 640px) {
@@ -107,10 +107,10 @@
   letter-spacing: 0.05em;
   padding: 0.35rem 0.85rem;
   border-radius: 9999px;
-  background-color: #F0FAFA;
+  background-color: #F8F4EB;
   color: #0A5463;
-  border: 1px solid #D8ECEE;
-  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.06);
+  border: 1px solid rgba(10, 84, 99, 0.10);
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.05);
   margin-bottom: 0.875rem;
   width: fit-content;
 }
@@ -139,14 +139,14 @@
 .about-desc-primary {
   font-size: 1rem;
   line-height: 1.65;
-  color: #252525;
+  color: #46545A;
   margin: 0 0 0.875rem 0;
 }
 
 .about-desc-secondary {
   font-size: 0.875rem;
   line-height: 1.65;
-  color: #252525;
+  color: #46545A;
   margin: 0 0 1.5rem 0;
 }
 
@@ -169,7 +169,7 @@
   gap: 0.625rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #252525;
+  color: #46545A;
 }
 
 .about-feature-icon {
@@ -183,9 +183,9 @@
 .services-overview-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F0FAFA;
-  border-top: 1px solid #D8ECEE;
-  border-bottom: 1px solid #D8ECEE;
+  background-color: #F5F0E6;
+  border-top: 1px solid rgba(10, 84, 99, 0.10);
+  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 @media (min-width: 640px) {
@@ -220,12 +220,13 @@
   margin-top: 2.5rem;
 }
 
-/* 3. Why Choose Us (Dark Section) */
+/* 3. Why Choose Us Section */
 .why-choose-section {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
-  background: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
-  color: #ffffff;
+  background-color: #F5F0E6;
+  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
+  color: #46545A;
   position: relative;
 }
 
@@ -262,8 +263,8 @@
 }
 
 .why-feature-card {
-  background-color: rgba(7, 56, 66, 0.85);
-  border: 1px solid rgba(216, 236, 238, 0.25);
+  background-color: #F8F4EB;
+  border: 1px solid rgba(10, 84, 99, 0.10);
   border-radius: 1rem;
   padding: 1.5rem 1.25rem;
   display: flex;
@@ -271,25 +272,26 @@
   align-items: center;
   text-align: center;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.07);
 }
 
 .why-feature-card:hover {
-  background-color: rgba(10, 84, 99, 0.95);
-  border-color: #32B3BF;
+  background-color: #F8F4EB;
+  border-color: #249FAF;
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 20px -5px rgba(10, 84, 99, 0.12);
 }
 
 .why-icon-box {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 0.875rem;
-  background-color: rgba(50, 179, 191, 0.15);
-  border: 1px solid rgba(216, 236, 238, 0.3);
+  background-color: rgba(22, 139, 159, 0.12);
+  border: 1px solid rgba(10, 84, 99, 0.10);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #40C7CE;
+  color: #168B9F;
   margin-bottom: 1.25rem;
   transition: all 0.3s ease;
 }
@@ -297,14 +299,14 @@
 .why-feature-card:hover .why-icon-box {
   transform: scale(1.1);
   color: #FFFFFF;
-  background-color: #32B3BF;
-  border-color: #32B3BF;
+  background-color: #168B9F;
+  border-color: #168B9F;
 }
 
 .why-card-title {
   font-size: 0.9375rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #0A5463;
   margin: 0 0 0.5rem 0;
   line-height: 1.35;
 }
@@ -312,7 +314,7 @@
 .why-card-desc {
   font-size: 0.75rem;
   line-height: 1.6;
-  color: #D8ECEE;
+  color: #46545A;
   margin: 0;
 }
 
@@ -320,7 +322,8 @@
 .mission-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #EAF7F8;
+  background-color: #F5F0E6;
+  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 @media (min-width: 640px) {
@@ -345,9 +348,9 @@
 .mission-card {
   padding: 2rem 1.75rem;
   border-radius: 1.25rem;
-  border: 1px solid #D8ECEE;
-  background: #FFFFFF;
-  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.08);
+  border: 1px solid rgba(10, 84, 99, 0.10);
+  background-color: #F8F4EB;
+  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.07);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -364,7 +367,7 @@
 .mission-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px -3px rgba(10, 84, 99, 0.12);
-  border-color: #32B3BF;
+  border-color: #249FAF;
 }
 
 .mission-icon-box {
@@ -381,7 +384,7 @@
 .mission-icon-box.gold {
   background-color: rgba(22, 139, 159, 0.12);
   color: #168B9F;
-  border: 1px solid #D8ECEE;
+  border: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 .mission-card-title {
@@ -394,33 +397,34 @@
 .mission-card-desc {
   font-size: 0.875rem;
   line-height: 1.65;
-  color: #252525;
+  color: #46545A;
   margin: 0 0 1.5rem 0;
 }
 
 .mission-card-footer {
   padding-top: 1rem;
-  border-top: 1px solid #D8ECEE;
+  border-top: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 .mission-banner-pill {
   margin-top: 2.5rem;
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
-  background-color: #FFFFFF;
-  border: 1px solid #D8ECEE;
+  background-color: #F8F4EB;
+  border: 1px solid rgba(10, 84, 99, 0.10);
   text-align: center;
   font-size: 0.8125rem;
   color: #0A5463;
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.06);
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.05);
 }
 
 /* 5. 5-Step Hiring Timeline */
 .process-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F0FAFA;
+  background-color: #F5F0E6;
+  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 @media (min-width: 640px) {
@@ -463,7 +467,7 @@
   top: 1.25rem;
   bottom: 1.25rem;
   width: 2px;
-  background-color: #D8ECEE;
+  background-color: rgba(10, 84, 99, 0.15);
 }
 
 @media (min-width: 640px) {
@@ -483,7 +487,7 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 9999px;
-  background-color: #FFFFFF;
+  background-color: #F8F4EB;
   border: 2px solid #168B9F;
   color: #168B9F;
   display: flex;
@@ -506,19 +510,19 @@
 }
 
 .process-step-item:hover .process-step-badge {
-  background-color: #0A5463;
+  background-color: #123B50;
   color: #FFFFFF;
-  border-color: #0A5463;
+  border-color: #123B50;
   transform: scale(1.08);
 }
 
 .process-step-card {
   margin-left: 1rem;
-  background-color: #FFFFFF;
+  background-color: #F8F4EB;
   padding: 1.5rem 1.25rem;
   border-radius: 1rem;
-  border: 1px solid #D8ECEE;
-  box-shadow: 0 2px 8px rgba(10, 84, 99, 0.05);
+  border: 1px solid rgba(10, 84, 99, 0.10);
+  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.07);
   transition: all 0.25s ease;
 }
 
@@ -531,8 +535,8 @@
 }
 
 .process-step-card:hover {
-  box-shadow: 0 8px 16px -2px rgba(10, 84, 99, 0.1);
-  border-color: #32B3BF;
+  box-shadow: 0 8px 20px -2px rgba(10, 84, 99, 0.12);
+  border-color: #249FAF;
 }
 
 .process-step-title {
@@ -550,7 +554,7 @@
 
 .process-step-desc {
   font-size: 0.8125rem;
-  color: #252525;
+  color: #46545A;
   margin: 0 0 1rem 0;
   line-height: 1.55;
 }
@@ -563,7 +567,7 @@
   padding: 0;
   margin: 0;
   font-size: 0.8125rem;
-  color: #252525;
+  color: #46545A;
 }
 
 .process-bullet-item {
@@ -583,8 +587,8 @@
 .blog-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #FFFFFF;
-  border-top: 1px solid #D8ECEE;
+  background-color: #F5F0E6;
+  border-top: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 @media (min-width: 640px) {

@@ -138,7 +138,7 @@ export default function ContactForm({ className = '' }) {
   };
 
   return (
-    <div className={`contact-form-wrapper bg-[#FFFFFF] p-6 sm:p-8 md:p-10 rounded-2xl border border-[#D8ECEE] shadow-md ${className}`}>
+    <div className={`contact-form-wrapper bg-[#F8F4EB] p-6 sm:p-8 md:p-10 rounded-2xl border border-[rgba(10,84,99,0.10)] shadow-md ${className}`}>
       {submitted ? (
         <div className="py-10 text-center animate-fadeIn">
           <div className="w-16 h-16 rounded-full bg-[#168B9F]/15 text-[#168B9F] mx-auto flex items-center justify-center mb-5">
@@ -147,7 +147,7 @@ export default function ContactForm({ className = '' }) {
           <h3 className="text-2xl font-bold text-[#0A5463] mb-3">
             Sporočilo je bilo uspešno poslano!
           </h3>
-          <p className="text-[#252525] text-sm max-w-md mx-auto mb-6 leading-relaxed">
+          <p className="text-[#46545A] text-sm max-w-md mx-auto mb-6 leading-relaxed">
             Hvala za vaše povpraševanje! Vaše sporočilo smo uspešno prejeli. Naša strokovna ekipa vam bo odgovorila v najkrajšem možnem času.
           </p>
           <Button
@@ -178,10 +178,10 @@ export default function ContactForm({ className = '' }) {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Npr. Janez Novak"
-                className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 ${
+                className={`w-full px-4 py-3 rounded-xl border text-sm transition-all text-[#46545A] focus:outline-none focus:ring-2 ${
                   errors.name
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-[#D8ECEE] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
+                    : 'border-[rgba(10,84,99,0.15)] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
                 }`}
                 aria-invalid={!!errors.name}
                 aria-describedby={errors.name ? 'name-error' : undefined}
@@ -206,10 +206,10 @@ export default function ContactForm({ className = '' }) {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="ime@primer.si"
-                className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 ${
+                className={`w-full px-4 py-3 rounded-xl border text-sm transition-all text-[#46545A] focus:outline-none focus:ring-2 ${
                   errors.email
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-[#D8ECEE] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
+                    : 'border-[rgba(10,84,99,0.15)] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
                 }`}
                 aria-invalid={!!errors.email}
                 aria-describedby={errors.email ? 'email-error' : undefined}
@@ -236,7 +236,7 @@ export default function ContactForm({ className = '' }) {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="+386 69 803 622"
-                className="w-full px-4 py-3 rounded-xl border border-[#D8ECEE] text-sm focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)] transition-all focus:outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-[rgba(10,84,99,0.15)] text-sm text-[#46545A] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)] transition-all focus:outline-none"
               />
             </div>
 
@@ -250,10 +250,10 @@ export default function ContactForm({ className = '' }) {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-xl border text-sm transition-all bg-white focus:outline-none focus:ring-2 ${
+                className={`w-full px-4 py-3 rounded-xl border text-sm transition-all text-[#46545A] bg-white focus:outline-none focus:ring-2 ${
                   errors.subject
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-[#D8ECEE] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
+                    : 'border-[rgba(10,84,99,0.15)] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
                 }`}
                 aria-invalid={!!errors.subject}
               >
@@ -287,10 +287,10 @@ export default function ContactForm({ className = '' }) {
               value={formData.message}
               onChange={handleChange}
               placeholder="Opišite vaše zahteve, lokacijo objekta, pričakovan obseg dela ali vprašanje..."
-              className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 resize-y ${
+              className={`w-full px-4 py-3 rounded-xl border text-sm transition-all text-[#46545A] focus:outline-none focus:ring-2 resize-y ${
                 errors.message
                   ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                  : 'border-[#D8ECEE] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
+                  : 'border-[rgba(10,84,99,0.15)] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
               }`}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? 'message-error' : undefined}

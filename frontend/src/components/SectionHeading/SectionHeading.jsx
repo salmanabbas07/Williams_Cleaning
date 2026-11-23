@@ -35,7 +35,7 @@ export default function SectionHeading({
               aria-hidden="true"
             />
           ) : (
-            <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
+            <Sparkles className="w-3.5 h-3.5 text-[#C5A46D]" aria-hidden="true" />
           )}
           <span>{badge}</span>
         </div>

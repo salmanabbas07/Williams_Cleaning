@@ -76,7 +76,7 @@ export default function FAQ() {
         image="/images/FAQ_lp.webp"
       />
 
-      <section className="py-16 sm:py-24 bg-[#F0FAFA]">
+      <section className="py-16 sm:py-24 bg-[#F5F0E6]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Pogosta vprašanja"
@@ -91,12 +91,12 @@ export default function FAQ() {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl border border-[#D8ECEE] overflow-hidden transition-all bg-white shadow-md"
+                  className="rounded-2xl border border-[rgba(10,84,99,0.10)] overflow-hidden transition-all bg-[#F8F4EB] shadow-sm"
                 >
                   <button
                     type="button"
                     onClick={() => toggleFAQ(index)}
-                    className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 hover:bg-[#EAF7F8] transition-colors focus:outline-none focus:ring-2 focus:ring-[#168B9F] focus:ring-inset"
+                    className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 hover:bg-[#EFE9DC] transition-colors focus:outline-none focus:ring-2 focus:ring-[#168B9F] focus:ring-inset"
                     aria-expanded={isOpen}
                   >
                     <span className="font-bold text-[#0A5463] text-base sm:text-lg leading-snug">
@@ -110,7 +110,7 @@ export default function FAQ() {
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 sm:px-6 pb-6 pt-1 text-[#252525] text-sm leading-relaxed border-t border-[#D8ECEE] bg-[#F0FAFA]/60 animate-fadeIn">
+                    <div className="px-5 sm:px-6 pb-6 pt-1 text-[#46545A] text-sm leading-relaxed border-t border-[rgba(10,84,99,0.10)] bg-[#F5F0E6]/80 animate-fadeIn">
                       <p>{faq.a}</p>
                     </div>
                   )}

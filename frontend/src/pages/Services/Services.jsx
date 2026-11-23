@@ -61,7 +61,7 @@ export default function Services() {
         image="/images/service_lp.webp"
       />
 
-      <div className="bg-[#F0FAFA] py-12 sm:py-16">
+      <div className="bg-[#F5F0E6] py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* 2-Column Content & Sidebar Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
@@ -73,27 +73,27 @@ export default function Services() {
               <img
                 src={activeService.image}
                 alt={`${activeService.title} — Profesionalne storitve Williams Housekeeping`}
-                className="w-full h-auto max-h-[460px] object-cover rounded-2xl sm:rounded-3xl shadow-sm border border-[#D8ECEE]"
+                className="w-full h-auto max-h-[460px] object-cover rounded-2xl sm:rounded-3xl shadow-sm border border-[rgba(10,84,99,0.10)]"
               />
             </div>
 
             {/* Badge, Title & Intro Description */}
             <div className="mb-10">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white text-[#0A5463] text-xs font-bold mb-3 border border-[#D8ECEE] shadow-sm">
-                <Sparkles className="w-3.5 h-3.5 text-[#168B9F]" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F8F4EB] text-[#0A5463] text-xs font-bold mb-3 border border-[rgba(10,84,99,0.10)] shadow-sm">
+                <Sparkles className="w-3.5 h-3.5 text-[#C5A46D]" />
                 <span>Podroben pregled</span>
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0A5463] tracking-tight mb-4">
                 {activeService.title}
               </h1>
-              <p className="text-base sm:text-lg text-[#252525] leading-relaxed">
+              <p className="text-base sm:text-lg text-[#46545A] leading-relaxed">
                 {activeService.intro || activeService.description}
               </p>
             </div>
 
             {/* Section: Primerno za (Perfect For) */}
             {activeService.perfectFor && activeService.perfectFor.length > 0 && (
-              <div className="service-detail-section mb-10 pb-8 border-b border-[#D8ECEE]">
+              <div className="service-detail-section mb-10 pb-8 border-b border-[rgba(10,84,99,0.10)]">
                 <h2 className="text-xl sm:text-2xl font-bold text-[#0A5463] mb-4 flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#168B9F] inline-block" />
                   Primerno za
@@ -101,7 +101,7 @@ export default function Services() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                   {activeService.perfectFor.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-sm text-[#252525] bg-white p-3 rounded-xl border border-[#D8ECEE] shadow-sm">
+                    <div key={idx} className="flex items-start gap-2.5 text-sm text-[#46545A] bg-[#F8F4EB] p-3 rounded-xl border border-[rgba(10,84,99,0.10)] shadow-sm">
                       <CheckCircle2 className="w-4 h-4 text-[#168B9F] shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </div>
@@ -110,7 +110,7 @@ export default function Services() {
 
                 {activeService.perfectForNote && (
                   <div className="service-note-box amber-note">
-                    <p className="text-xs sm:text-sm text-[#252525] italic">
+                    <p className="text-xs sm:text-sm text-[#46545A] italic">
                       {activeService.perfectForNote}
                     </p>
                   </div>
@@ -120,7 +120,7 @@ export default function Services() {
 
             {/* Section: Kaj vključujejo naše storitve (What Our Teams Include) */}
             {activeService.includes && activeService.includes.length > 0 && (
-              <div className="service-detail-section mb-10 pb-8 border-b border-[#D8ECEE]">
+              <div className="service-detail-section mb-10 pb-8 border-b border-[rgba(10,84,99,0.10)]">
                 <h2 className="text-xl sm:text-2xl font-bold text-[#0A5463] mb-4 flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#168B9F] inline-block" />
                   Kaj vključujejo naše storitve
@@ -128,7 +128,7 @@ export default function Services() {
 
                 <ul className="space-y-3 mb-5">
                   {activeService.includes.map((inc, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-[#252525]">
+                    <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-[#46545A]">
                       <div className="w-5 h-5 rounded-full bg-[#168B9F]/15 text-[#168B9F] flex items-center justify-center shrink-0 mt-0.5">
                         <CheckCircle2 className="w-3.5 h-3.5" />
                       </div>
@@ -140,7 +140,7 @@ export default function Services() {
                 {activeService.supervisorNote && (
                   <div className="service-note-box emerald-note">
                     <ShieldCheck className="w-5 h-5 text-[#168B9F] shrink-0 mt-0.5" />
-                    <p className="text-xs sm:text-sm text-[#252525]">
+                    <p className="text-xs sm:text-sm text-[#46545A]">
                       {activeService.supervisorNote}
                     </p>
                   </div>
@@ -150,7 +150,7 @@ export default function Services() {
 
             {/* Section: Zakaj hoteli izberejo naše storitve (Why Hotels Choose Us) */}
             {activeService.whyChooseUs && activeService.whyChooseUs.length > 0 && (
-              <div className="service-detail-section mb-10 pb-8 border-b border-[#D8ECEE]">
+              <div className="service-detail-section mb-10 pb-8 border-b border-[rgba(10,84,99,0.10)]">
                 <h2 className="text-xl sm:text-2xl font-bold text-[#0A5463] mb-4 flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#168B9F] inline-block" />
                   Zakaj hoteli izberejo naše storitve
@@ -158,7 +158,7 @@ export default function Services() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
                   {activeService.whyChooseUs.map((reason, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-sm text-[#252525] bg-white p-3.5 rounded-xl border border-[#D8ECEE] shadow-sm">
+                    <div key={idx} className="flex items-start gap-2.5 text-sm text-[#46545A] bg-[#F8F4EB] p-3.5 rounded-xl border border-[rgba(10,84,99,0.10)] shadow-sm">
                       <CheckCircle2 className="w-4 h-4 text-[#168B9F] shrink-0 mt-0.5" />
                       <span>{reason}</span>
                     </div>
@@ -178,7 +178,7 @@ export default function Services() {
 
             {/* Section: Zagotovljene kadrovske kategorije (Staff Categories Provided) */}
             {activeService.staffCategories && activeService.staffCategories.length > 0 && (
-              <div className="service-detail-section mb-10 pb-8 border-b border-[#D8ECEE]">
+              <div className="service-detail-section mb-10 pb-8 border-b border-[rgba(10,84,99,0.10)]">
                 <h2 className="text-xl sm:text-2xl font-bold text-[#0A5463] mb-4 flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#168B9F] inline-block" />
                   Zagotovljene kadrovske kategorije
@@ -186,7 +186,7 @@ export default function Services() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-3">
                   {activeService.staffCategories.map((cat, idx) => (
-                    <div key={idx} className="flex items-center gap-2.5 text-sm text-[#252525] bg-white px-3.5 py-2.5 rounded-lg border border-[#D8ECEE] shadow-sm">
+                    <div key={idx} className="flex items-center gap-2.5 text-sm text-[#46545A] bg-[#F8F4EB] px-3.5 py-2.5 rounded-lg border border-[rgba(10,84,99,0.10)] shadow-sm">
                       <Users className="w-4 h-4 text-[#168B9F] shrink-0" />
                       <span className="font-medium">{cat}</span>
                     </div>
@@ -194,7 +194,7 @@ export default function Services() {
                 </div>
 
                 {activeService.staffNote && (
-                  <p className="text-xs sm:text-sm text-gray-500 italic mt-2">
+                  <p className="text-xs sm:text-sm text-[#46545A]/70 italic mt-2">
                     {activeService.staffNote}
                   </p>
                 )}
@@ -206,8 +206,8 @@ export default function Services() {
           <aside className="lg:col-span-4 sticky top-28 space-y-6">
             
             {/* All Services Navigation Card */}
-            <div className="bg-white rounded-2xl border border-[#D8ECEE] p-5 sm:p-6 shadow-md">
-              <h3 className="text-base sm:text-lg font-bold text-[#0A5463] mb-4 pb-3 border-b border-[#D8ECEE] flex items-center justify-between">
+            <div className="bg-[#F8F4EB] rounded-2xl border border-[rgba(10,84,99,0.10)] p-5 sm:p-6 shadow-sm">
+              <h3 className="text-base sm:text-lg font-bold text-[#0A5463] mb-4 pb-3 border-b border-[rgba(10,84,99,0.10)] flex items-center justify-between">
                 <span>Vse storitve</span>
                 <span className="text-xs font-semibold text-[#0A5463] bg-[#168B9F]/15 px-2.5 py-0.5 rounded-full">
                   {servicesData.length}
@@ -225,8 +225,8 @@ export default function Services() {
                       onClick={() => handleSelectService(s.slug)}
                       className={`w-full text-left group flex items-center justify-between px-4 py-3 rounded-xl text-xs sm:text-sm transition-all ${
                         isCurrent
-                          ? 'bg-[#0A5463] text-white font-bold shadow-sm'
-                          : 'bg-[#EAF7F8] hover:bg-[#D8ECEE] text-[#252525] hover:text-[#0A5463] border border-[#D8ECEE]'
+                          ? 'bg-[#123B50] text-white font-bold shadow-sm'
+                          : 'bg-[#F8F4EB] hover:bg-[#EFE9DC] text-[#0A5463] hover:text-[#0A5463] border border-[rgba(10,84,99,0.10)]'
                       }`}
                     >
                       <span className="truncate pr-2">{s.title}</span>
@@ -234,7 +234,7 @@ export default function Services() {
                         className={`w-4 h-4 shrink-0 transition-transform ${
                           isCurrent
                             ? 'text-white'
-                            : 'text-gray-400 group-hover:text-[#168B9F] group-hover:translate-x-0.5'
+                            : 'text-[#46545A]/50 group-hover:text-[#168B9F] group-hover:translate-x-0.5'
                         }`}
                       />
                     </button>
@@ -244,56 +244,56 @@ export default function Services() {
             </div>
 
             {/* Quick Inquiry / Contact Card */}
-            <div className="bg-gradient-to-br from-[#073842] to-[#0A5463] text-white rounded-2xl p-6 shadow-md border border-[#32B3BF]/30">
-              <div className="inline-flex items-center gap-1.5 bg-[#32B3BF]/20 text-[#D8ECEE] text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full mb-3">
-                <Clock className="w-3.5 h-3.5 text-[#32B3BF]" />
+            <div className="bg-[#F8F4EB] text-[#46545A] rounded-2xl p-6 shadow-sm border border-[rgba(10,84,99,0.10)]">
+              <div className="inline-flex items-center gap-1.5 bg-[#168B9F]/10 text-[#0A5463] text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full mb-3 border border-[rgba(10,84,99,0.10)]">
+                <Clock className="w-3.5 h-3.5 text-[#168B9F]" />
                 <span>Hitra ponudba v 24h</span>
               </div>
 
-              <h4 className="text-lg font-bold text-white mb-2">
+              <h4 className="text-lg font-bold text-[#0A5463] mb-2">
                 Potrebujete hotelsko osebje?
               </h4>
-              <p className="text-xs text-slate-300 leading-relaxed mb-5">
+              <p className="text-xs text-[#46545A] leading-relaxed mb-5">
                 Stopite v stik z nami za neobvezujoč posvet in prilagojeno ponudbo za vaš objekt.
               </p>
 
               <div className="space-y-3 mb-6">
                 <a
                   href="tel:+38669803622"
-                  className="flex items-center gap-3 text-xs sm:text-sm text-slate-200 hover:text-[#40C7CE] transition-colors"
+                  className="flex items-center gap-3 text-xs sm:text-sm text-[#46545A] hover:text-[#168B9F] transition-colors"
                 >
-                  <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                    <Phone className="w-4 h-4 text-[#32B3BF]" />
+                  <div className="w-8 h-8 rounded-lg bg-[#168B9F]/10 flex items-center justify-center shrink-0">
+                    <Phone className="w-4 h-4 text-[#168B9F]" />
                   </div>
                   <div>
-                    <div className="text-[11px] text-slate-400">Telefon:</div>
-                    <div className="font-semibold">+386 69 803 622</div>
+                    <div className="text-[11px] text-[#46545A]/70">Telefon:</div>
+                    <div className="font-semibold text-[#0A5463]">+386 69 803 622</div>
                   </div>
                 </a>
 
                 <a
                   href="tel:040791618"
-                  className="flex items-center gap-3 text-xs sm:text-sm text-slate-200 hover:text-[#40C7CE] transition-colors"
+                  className="flex items-center gap-3 text-xs sm:text-sm text-[#46545A] hover:text-[#168B9F] transition-colors"
                 >
-                  <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                    <Phone className="w-4 h-4 text-[#32B3BF]" />
+                  <div className="w-8 h-8 rounded-lg bg-[#168B9F]/10 flex items-center justify-center shrink-0">
+                    <Phone className="w-4 h-4 text-[#168B9F]" />
                   </div>
                   <div>
-                    <div className="text-[11px] text-slate-400">Telefon:</div>
-                    <div className="font-semibold">040 791 618</div>
+                    <div className="text-[11px] text-[#46545A]/70">Telefon:</div>
+                    <div className="font-semibold text-[#0A5463]">040 791 618</div>
                   </div>
                 </a>
 
                 <a
                   href="mailto:info.willamscleaning@gmail.com"
-                  className="flex items-center gap-3 text-xs sm:text-sm text-slate-200 hover:text-[#40C7CE] transition-colors"
+                  className="flex items-center gap-3 text-xs sm:text-sm text-[#46545A] hover:text-[#168B9F] transition-colors"
                 >
-                  <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-4 h-4 text-[#32B3BF]" />
+                  <div className="w-8 h-8 rounded-lg bg-[#168B9F]/10 flex items-center justify-center shrink-0">
+                    <Mail className="w-4 h-4 text-[#168B9F]" />
                   </div>
                   <div>
-                    <div className="text-[11px] text-slate-400">E-pošta:</div>
-                    <div className="font-semibold truncate">info.willamscleaning@gmail.com</div>
+                    <div className="text-[11px] text-[#46545A]/70">E-pošta:</div>
+                    <div className="font-semibold text-[#0A5463] truncate">info.willamscleaning@gmail.com</div>
                   </div>
                 </a>
               </div>

@@ -1,10 +1,10 @@
-/* Review / Testimonials Continuous Carousel Styles - Clarivo Teal & Turquoise Theme */
+/* Review / Testimonials Continuous Carousel Styles - Clarivo Warm Cream Theme */
 .review-carousel-section {
   padding-top: 4rem;
   padding-bottom: 5rem;
-  background: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 100%);
-  border-top: 1px solid #D8ECEE;
-  border-bottom: 1px solid #D8ECEE;
+  background-color: #F5F0E6;
+  border-top: 1px solid rgba(10, 84, 99, 0.10);
+  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -90,11 +90,11 @@
 
 /* Individual Review Card */
 .review-card {
-  background-color: #FFFFFF;
-  border: 1px solid #D8ECEE;
+  background-color: #F8F4EB;
+  border: 1px solid rgba(10, 84, 99, 0.10);
   border-radius: 1.25rem;
   padding: 1.5rem 1.25rem;
-  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.08);
+  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.07);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -121,7 +121,7 @@
 .review-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 20px -3px rgba(10, 84, 99, 0.12), 0 4px 6px -4px rgba(10, 84, 99, 0.04);
-  border-color: #32B3BF;
+  border-color: #249FAF;
 }
 
 .review-card-top {
@@ -140,16 +140,16 @@
 .review-star-icon {
   width: 1.125rem;
   height: 1.125rem;
-  color: #168B9F;
-  fill: #168B9F;
+  color: #C5A46D;
+  fill: #C5A46D;
 }
 
 .review-quote-badge {
   width: 2rem;
   height: 2rem;
   border-radius: 0.5rem;
-  background-color: rgba(22, 139, 159, 0.12);
-  color: #168B9F;
+  background-color: rgba(197, 164, 109, 0.15);
+  color: #C5A46D;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,7 +158,7 @@
 .review-text {
   font-size: 0.9375rem;
   line-height: 1.65;
-  color: #252525;
+  color: #46545A;
   font-style: italic;
   margin: 0 0 1.5rem 0;
   display: -webkit-box;
@@ -179,7 +179,7 @@
   align-items: center;
   gap: 0.875rem;
   padding-top: 1rem;
-  border-top: 1px solid #D8ECEE;
+  border-top: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 .review-avatar {
@@ -195,7 +195,7 @@
   font-size: 1rem;
   flex-shrink: 0;
   box-shadow: 0 2px 4px rgba(10, 84, 99, 0.2);
-  border: 2px solid #32B3BF;
+  border: 2px solid #C5A46D;
 }
 
 .review-author-meta {
@@ -222,7 +222,7 @@
 
 .review-author-company {
   font-size: 0.75rem;
-  color: #555555;
+  color: #82969C;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

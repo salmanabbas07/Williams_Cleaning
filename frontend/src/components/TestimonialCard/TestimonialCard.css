@@ -1,14 +1,14 @@
-/* Testimonial Card Styles - Clarivo Teal & Turquoise Theme */
+/* Testimonial Card Styles - Clarivo Warm Cream Theme */
 .testimonial-card-component {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FFFFFF;
+  background-color: #F8F4EB;
   padding: 1.75rem 1.5rem;
   border-radius: 1.25rem;
-  border: 1px solid #D8ECEE;
-  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.08);
+  border: 1px solid rgba(10, 84, 99, 0.10);
+  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.07);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
@@ -21,7 +21,7 @@
 .testimonial-card-component:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 20px -3px rgba(10, 84, 99, 0.12);
-  border-color: #32B3BF;
+  border-color: #249FAF;
 }
 
 .testimonial-card-stars {
@@ -34,7 +34,7 @@
 .testimonial-card-quote {
   font-size: 0.9375rem;
   line-height: 1.65;
-  color: #252525;
+  color: #46545A;
   font-style: italic;
   margin: 0 0 1.5rem 0;
 }
@@ -44,7 +44,7 @@
   align-items: center;
   gap: 0.875rem;
   padding-top: 1rem;
-  border-top: 1px solid #D8ECEE;
+  border-top: 1px solid rgba(10, 84, 99, 0.10);
 }
 
 .testimonial-card-author-name {
@@ -61,5 +61,5 @@
 
 .testimonial-card-author-company {
   font-size: 0.75rem;
-  color: #555555;
+  color: #82969C;
 }

@@ -83,7 +83,7 @@ export default function About() {
       />
 
       {/* 2. Company Introduction */}
-      <section className="py-16 sm:py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-[#F5F0E6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Left Column: Image */}
@@ -95,15 +95,15 @@ export default function About() {
                   aspectRatio="aspect-[4/5]"
                   rounded="rounded-2xl"
                   label="Predstavitev ekipe Williams"
-                  className="shadow-xl border-2 border-[#D8ECEE]"
+                  className="shadow-xl border-2 border-[rgba(10,84,99,0.10)]"
                 />
               </div>
             </div>
 
             {/* Right Column: Company Info */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#F0FAFA] text-[#0A5463] border border-[#D8ECEE] shadow-sm mb-3">
-                <Sparkles className="w-3.5 h-3.5 text-[#168B9F]" />
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#F8F4EB] text-[#0A5463] border border-[rgba(10,84,99,0.10)] shadow-sm mb-3">
+                <Sparkles className="w-3.5 h-3.5 text-[#C5A46D]" />
                 <span>O nas &bull; Williams Housekeeping</span>
               </div>
 
@@ -111,11 +111,11 @@ export default function About() {
                 Dobrodošli pri Williams Housekeeping — Vaš zanesljiv partner za brezhibne in zdrave prostore
               </h2>
 
-              <p className="text-[#252525] text-base leading-relaxed mb-4">
+              <p className="text-[#46545A] text-base leading-relaxed mb-4">
                 Pri Williams Housekeeping verjamemo, da je čisto okolje temelj zdravja, produktivnosti in miru. Smo ponudnik profesionalnih rešitev za čiščenje, predan zagotavljanju vrhunskih storitev, prilagojenih edinstvenim potrebam stanovanjskih, poslovnih in komercialnih naročnikov.
               </p>
 
-              <p className="text-[#252525] text-sm leading-relaxed mb-6">
+              <p className="text-[#46545A] text-sm leading-relaxed mb-6">
                 Ne glede na to, ali gre za osvežitev vašega doma, vzdrževanje higienskega in navdihujočega pisarniškega delovnega prostora, vrhunsko oskrbo vrtov in urejanje okolice ali ponudbo globinskega čiščenja in vzdrževanja za hotele ter nastanitvene obrate — poskrbimo za vse. Naše strokovno znanje zajema vse vrste specializiranih storitev čiščenja, s čimer zagotavljamo, da vsak kotiček prejme skrb in pozornost, ki si jo zasluži.
               </p>
 
@@ -149,29 +149,29 @@ export default function About() {
       </section>
 
       {/* 3. Preobrazba prostorov in brezskrbnost naročnikov */}
-      <section className="py-16 bg-[#F0FAFA] border-y border-[#D8ECEE]">
+      <section className="py-16 bg-[#F5F0E6] border-y border-[rgba(10,84,99,0.10)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-8 sm:p-10 rounded-2xl border border-[#D8ECEE] bg-white shadow-md flex flex-col justify-between">
+            <div className="p-8 sm:p-10 rounded-2xl border border-[rgba(10,84,99,0.10)] bg-[#F8F4EB] shadow-sm flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-[#168B9F]/15 text-[#168B9F] flex items-center justify-center mb-6">
-                  <Sparkles className="w-6 h-6" />
+                  <Sparkles className="w-6 h-6 text-[#C5A46D]" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A5463] mb-3">
                   Preoblikujemo vaše prostore
                 </h3>
-                <p className="text-[#252525] text-sm leading-relaxed mb-6">
+                <p className="text-[#46545A] text-sm leading-relaxed mb-6">
                   Pri Williams Housekeeping ne le čistimo prostorov — preoblikujemo jih v bolj zdrava, svetlejša in prijetnejša okolja za bivanje ter delo.
                 </p>
               </div>
-              <div className="pt-4 border-t border-[#D8ECEE]">
+              <div className="pt-4 border-t border-[rgba(10,84,99,0.10)]">
                 <Button to="/storitve" variant="ghost" size="sm" icon={ArrowRight}>
                   Oglejte si naše storitve
                 </Button>
               </div>
             </div>
 
-            <div className="p-8 sm:p-10 rounded-2xl border border-[#D8ECEE] bg-white shadow-md flex flex-col justify-between">
+            <div className="p-8 sm:p-10 rounded-2xl border border-[rgba(10,84,99,0.10)] bg-[#F8F4EB] shadow-sm flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-[#168B9F]/15 text-[#168B9F] flex items-center justify-center mb-6">
                   <HeartHandshake className="w-6 h-6" />
@@ -179,11 +179,11 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-[#0A5463] mb-3">
                   Osredotočite se na pomembno
                 </h3>
-                <p className="text-[#252525] text-sm leading-relaxed mb-6">
+                <p className="text-[#46545A] text-sm leading-relaxed mb-6">
                   Prepustite nam skrb za čistočo in nered, da se vi lahko brezskrbno posvetite tistemu, kar je za vas najpomembnejše.
                 </p>
               </div>
-              <div className="pt-4 border-t border-[#D8ECEE]">
+              <div className="pt-4 border-t border-[rgba(10,84,99,0.10)]">
                 <Button to="/kontakt" variant="ghost" size="sm" icon={ArrowRight}>
                   Stopite v stik z nami
                 </Button>
@@ -191,14 +191,14 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-8 py-3.5 px-6 rounded-xl bg-white border border-[#D8ECEE] shadow-sm text-center text-xs sm:text-sm text-[#252525] font-semibold">
+          <div className="mt-8 py-3.5 px-6 rounded-xl bg-[#F8F4EB] border border-[rgba(10,84,99,0.10)] shadow-sm text-center text-xs sm:text-sm text-[#46545A] font-semibold">
             Williams Housekeeping &bull; Zaupanja vreden partner za brezhibne prostore &bull; Vrhunska kakovost in zanesljivost
           </div>
         </div>
       </section>
 
       {/* 4. Why Choose Williams Housekeeping Section */}
-      <section className="py-16 sm:py-24 bg-[#EAF7F8]">
+      <section className="py-16 sm:py-24 bg-[#F5F0E6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Zakaj izbrati nas"
@@ -213,7 +213,7 @@ export default function About() {
               return (
                 <div
                   key={idx}
-                  className="bg-white p-7 sm:p-8 rounded-2xl border border-[#D8ECEE] shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+                  className="bg-[#F8F4EB] p-7 sm:p-8 rounded-2xl border border-[rgba(10,84,99,0.10)] shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
                 >
                   <div>
                     <div className="w-12 h-12 rounded-xl bg-[#168B9F]/15 text-[#168B9F] flex items-center justify-center mb-5">
@@ -222,12 +222,12 @@ export default function About() {
                     <h3 className="text-xl font-bold text-[#0A5463] mb-3">
                       {feature.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-[#252525] leading-relaxed mb-5">
+                    <p className="text-xs sm:text-sm text-[#46545A] leading-relaxed mb-5">
                       {feature.description}
                     </p>
                   </div>
 
-                  <ul className="space-y-2.5 text-xs sm:text-sm text-[#252525] pt-4 border-t border-[#D8ECEE]">
+                  <ul className="space-y-2.5 text-xs sm:text-sm text-[#46545A] pt-4 border-t border-[rgba(10,84,99,0.10)]">
                     {feature.bullets.map((bullet, bIdx) => (
                       <li key={bIdx} className="flex items-start gap-2.5">
                         <CheckCircle2 className="w-4 h-4 text-[#168B9F] shrink-0 mt-0.5" />
@@ -243,7 +243,7 @@ export default function About() {
       </section>
 
       {/* 5. Testimonials Section */}
-      <section className="py-16 sm:py-24 bg-white border-t border-[#D8ECEE]">
+      <section className="py-16 sm:py-24 bg-[#F5F0E6] border-t border-[rgba(10,84,99,0.10)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Mnenja partnerjev"

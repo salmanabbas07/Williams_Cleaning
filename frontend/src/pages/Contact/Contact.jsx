@@ -58,7 +58,7 @@ export default function Contact() {
       />
 
       {/* 2. Contact Info Cards */}
-      <section className="py-16 sm:py-20 bg-[#F0FAFA] border-b border-[#D8ECEE]">
+      <section className="py-16 sm:py-20 bg-[#F5F0E6] border-b border-[rgba(10,84,99,0.10)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactDetails.map((item, index) => {
@@ -66,13 +66,13 @@ export default function Contact() {
               return (
                 <div
                   key={index}
-                  className="bg-white p-6 sm:p-7 rounded-2xl border border-[#D8ECEE] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group"
+                  className="bg-[#F8F4EB] p-6 sm:p-7 rounded-2xl border border-[rgba(10,84,99,0.10)] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-[#168B9F]/12 text-[#168B9F] flex items-center justify-center mb-4 border border-[#D8ECEE] group-hover:bg-[#168B9F] group-hover:text-white transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-[#168B9F]/12 text-[#168B9F] flex items-center justify-center mb-4 border border-[rgba(10,84,99,0.10)] group-hover:bg-[#168B9F] group-hover:text-white transition-colors">
                       <IconComp className="w-6 h-6" />
                     </div>
-                    <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">
+                    <h3 className="text-xs font-bold text-[#46545A]/70 uppercase tracking-wider mb-1">
                       {item.title}
                     </h3>
                     {item.phones ? (
@@ -102,7 +102,7 @@ export default function Contact() {
                       </p>
                     )}
                   </div>
-                  <div className="mt-4 pt-3 border-t border-[#D8ECEE] text-xs text-gray-500">
+                  <div className="mt-4 pt-3 border-t border-[rgba(10,84,99,0.10)] text-xs text-[#46545A]/70">
                     {item.note}
                   </div>
                 </div>
@@ -113,13 +113,13 @@ export default function Contact() {
       </section>
 
       {/* 3. Main Form & Info Section */}
-      <section className="py-16 sm:py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-[#F5F0E6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             {/* Left: Section intro and details */}
             <div className="lg:col-span-5">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#F0FAFA] text-[#0A5463] border border-[#D8ECEE] shadow-sm mb-3">
-                <Sparkles className="w-3.5 h-3.5 text-[#168B9F]" />
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#F8F4EB] text-[#0A5463] border border-[rgba(10,84,99,0.10)] shadow-sm mb-3">
+                <Sparkles className="w-3.5 h-3.5 text-[#C5A46D]" />
                 <span>Stopite v stik</span>
               </div>
 
@@ -127,12 +127,12 @@ export default function Contact() {
                 Pošljite nam vaše povpraševanje
               </h2>
 
-              <p className="text-[#252525] text-base leading-relaxed mb-6">
+              <p className="text-[#46545A] text-base leading-relaxed mb-6">
                 Izpolnite obrazec s podatki o vašem objektu ali nas neposredno pokličite. Z veseljem vam bomo svetovali in pripravili optimalno rešitev.
               </p>
 
               {/* Call Widget */}
-              <div className="bg-[#F0FAFA] p-6 rounded-3xl border border-[#D8ECEE] mb-8 shadow-md">
+              <div className="bg-[#F8F4EB] p-6 rounded-3xl border border-[rgba(10,84,99,0.10)] mb-8 shadow-sm">
                 <Button
                   href="tel:+38669803622"
                   variant="primary"
@@ -181,19 +181,19 @@ export default function Contact() {
                     href="https://www.williamscleaning.si"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#252525] hover:text-[#168B9F] flex items-center gap-2 pt-1 border-t border-[#D8ECEE]"
+                    className="text-xs text-[#46545A] hover:text-[#168B9F] flex items-center gap-2 pt-1 border-t border-[rgba(10,84,99,0.10)]"
                   >
                     <Globe className="w-3.5 h-3.5 text-[#168B9F] shrink-0" />
                     <span>www.williamscleaning.si</span>
                   </a>
 
-                  <div className="pt-2 border-t border-[#D8ECEE] flex items-center gap-3">
-                    <span className="text-xs text-gray-500 font-medium">Sledite nam:</span>
+                  <div className="pt-2 border-t border-[rgba(10,84,99,0.10)] flex items-center gap-3">
+                    <span className="text-xs text-[#46545A]/70 font-medium">Sledite nam:</span>
                     <a
                       href="https://www.facebook.com/Williams.Cleanings"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-[#168B9F] transition-colors"
+                      className="text-[#46545A] hover:text-[#168B9F] transition-colors"
                       title="Facebook Business"
                       aria-label="Facebook Business"
                     >
@@ -205,7 +205,7 @@ export default function Contact() {
                       href="https://www.instagram.com/williams.cleaners.slovenia?rpxt=YnB3Zm1vcm1rOXpk"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-[#168B9F] transition-colors"
+                      className="text-[#46545A] hover:text-[#168B9F] transition-colors"
                       title="Instagram"
                       aria-label="Instagram"
                     >

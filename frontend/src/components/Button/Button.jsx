@@ -46,14 +46,16 @@ export default function Button({
   };
 
   const variantStyles = {
-    // Clarivo Teal & Turquoise Gradient button with White text and subtle shadow
-    primary: 'btn-royal-gold text-white hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#249FAF]',
-    golden: 'btn-royal-gold text-white hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#249FAF]',
-    blue: 'btn-royal-gold text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#249FAF]',
-    darkNavy: 'bg-[#0A5463] hover:bg-[#073842] text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#0A5463]',
-    outline: 'border-2 border-[#09768C] bg-white text-[#0A5463] hover:bg-[#0A5463] hover:border-[#0A5463] hover:text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#249FAF]',
-    outlineWhite: 'border-2 border-white text-white hover:bg-white hover:text-[#0A5463] hover:shadow-md hover:-translate-y-0.5 focus:ring-white',
-    ghost: 'text-[#0A5463] hover:text-[#09768C] hover:bg-[#F0FAFA] focus:ring-[#249FAF]'
+    // Clarivo Deep Navy Primary button (#123B50)
+    primary: 'btn-deep-navy text-white hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#123B50]',
+    golden: 'btn-deep-navy text-white hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#123B50]',
+    blue: 'btn-deep-navy text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#123B50]',
+    secondary: 'btn-secondary-teal text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#168B9F]',
+    teal: 'btn-secondary-teal text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#168B9F]',
+    darkNavy: 'bg-[#123B50] hover:bg-[#0B3042] text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#123B50]',
+    outline: 'border-2 border-[#123B50] bg-transparent text-[#123B50] hover:bg-[#123B50] hover:border-[#123B50] hover:text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#123B50]',
+    outlineWhite: 'border-2 border-white text-white hover:bg-white hover:text-[#123B50] hover:shadow-md hover:-translate-y-0.5 focus:ring-white',
+    ghost: 'text-[#0A5463] hover:text-[#09768C] hover:bg-[#EFE9DC] focus:ring-[#249FAF]'
   };
 
   const isPrimary = variant === 'primary' || variant === 'golden' || variant === 'blue';

@@ -4,21 +4,45 @@
 
 @layer base {
   :root {
-    /* Clarivo Cleaning Brand Colour Palette */
+    /* Clarivo Cleaning – Seamless Premium Cream & Teal Theme */
+    --color-cream-main: #F5F0E6;
+    --color-card-bg: #F8F4EB;
+    --color-card-border: rgba(10, 84, 99, 0.10);
+    --color-card-shadow: rgba(10, 84, 99, 0.07);
+
+    /* Brand Colours */
     --color-primary-dark-teal: #0A5463;
     --color-secondary-teal: #09768C;
     --color-primary-teal: #168B9F;
     --color-medium-teal: #249FAF;
-    --color-turquoise: #32B3BF;
+    --color-turquoise: #249FAF;
     --color-bright-turquoise: #40C7CE;
-    --color-white: #FFFFFF;
-    --color-light-bg: #F0FAFA;
-    --color-light-border: #D8ECEE;
-    --color-light-cyan: #EAF7F8;
-    --color-dark-text: #252525;
-    --color-card-bg: #FFFFFF;
 
-    /* Main Brand Gradient */
+    /* Additional Premium Colors */
+    --color-deep-navy: #123B50;
+    --color-navy-hover: #0B3042;
+    --color-champagne-gold: #C5A46D;
+    --color-gold-hover: #B18E57;
+    --color-white: #FFFFFF;
+    --color-light-bg: #F5F0E6;
+    --color-light-border: rgba(10, 84, 99, 0.10);
+    --color-light-cyan: #F8F4EB;
+    --color-body-text: #46545A;
+    --color-placeholder: #82969C;
+
+    /* Cream Theme Background Styling */
+    --color-aqua-main: #F5F0E6;
+    --color-aqua-secondary: #F5F0E6;
+    --color-aqua-alternate: #F5F0E6;
+    --color-aqua-soft: #F8F4EB;
+
+    /* Primary Brand Gradients */
+    --gradient-aqua-mist: linear-gradient(
+      135deg,
+      #F5F0E6 0%,
+      #F8F4EB 100%
+    );
+
     --gradient-primary: linear-gradient(
       135deg,
       #0A5463 0%,
@@ -29,42 +53,49 @@
       #40C7CE 100%
     );
 
+    --gradient-secondary-btn: linear-gradient(
+      135deg,
+      #0A5463 0%,
+      #168B9F 50%,
+      #32B3BF 100%
+    );
+
     /* Strategic gradient variants */
     --gradient-dark-teal: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
-    --gradient-subtle-teal: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 50%, #D8ECEE 100%);
-    --gradient-subtle-hero: linear-gradient(105deg, #F0FAFA 0%, #EAF7F8 50%, #FFFFFF 100%);
+    --gradient-subtle-teal: linear-gradient(135deg, #F5F0E6 0%, #F8F4EB 100%);
+    --gradient-subtle-hero: linear-gradient(105deg, #F5F0E6 0%, #F8F4EB 100%);
     --gradient-teal-cyan: linear-gradient(135deg, #0A5463 0%, #09768C 45%, #168B9F 100%);
 
-    /* Backwards compatibility aliases for existing css rules */
+    /* Backwards compatibility aliases */
     --color-royal-obsidian: #0A5463;
     --color-midnight-black: #0A5463;
     --color-graphite-black: #09768C;
-    --color-rich-metallic-gold: #168B9F;
-    --color-royal-gold: #09768C;
-    --color-champagne-gold: #32B3BF;
-    --color-antique-gold: #0A5463;
-    --color-golden-sand: #168B9F;
-    --color-rich-champagne: #249FAF;
-    --color-warm-gold-cream: #EAF7F8;
-    --color-dark-charcoal: #252525;
+    --color-rich-metallic-gold: #C5A46D;
+    --color-royal-gold: #C5A46D;
+    --color-champagne-gold-alias: #C5A46D;
+    --color-antique-gold: #C5A46D;
+    --color-golden-sand: #C5A46D;
+    --color-rich-champagne: #C5A46D;
+    --color-warm-gold-cream: #F5F0E6;
+    --color-dark-charcoal: #46545A;
     --color-pure-white: #FFFFFF;
 
-    --gradient-primary-rich-champagne: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 50%, #FFFFFF 100%);
-    --gradient-deep-golden-sand: linear-gradient(135deg, #FFFFFF 0%, #F0FAFA 100%);
-    --gradient-royal-champagne: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 100%);
+    --gradient-primary-rich-champagne: linear-gradient(135deg, #F5F0E6 0%, #F8F4EB 100%);
+    --gradient-deep-golden-sand: linear-gradient(135deg, #F5F0E6 0%, #F8F4EB 100%);
+    --gradient-royal-champagne: linear-gradient(135deg, #F5F0E6 0%, #F8F4EB 100%);
     --gradient-premium-black: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
     --gradient-black-gold-luxury: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
-    --gradient-royal-gold: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
-    --gradient-metallic-gold: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
+    --gradient-royal-gold: linear-gradient(135deg, #0A5463 0%, #168B9F 50%, #32B3BF 100%);
+    --gradient-metallic-gold: linear-gradient(135deg, #0A5463 0%, #168B9F 50%, #32B3BF 100%);
 
     --gradient-champagne-main: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
     --gradient-luxury-primary: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
     --gradient-dark: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
-    --gradient-gold: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
+    --gradient-gold: linear-gradient(135deg, #0A5463 0%, #168B9F 50%, #32B3BF 100%);
 
     --color-obsidian-black: #0A5463;
     --color-deep-black: #0A5463;
-    --color-metallic-gold: #168B9F;
+    --color-metallic-gold: #C5A46D;
   }
 
   html {
@@ -73,15 +104,15 @@
   }
 
   body {
-    background-color: #FFFFFF;
-    color: #252525;
+    background-color: #F5F0E6;
+    color: #46545A;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
   }
 
-  /* Headings: #0A5463 or #09768C as required by Clarivo Cleaning PRD */
+  /* Headings: #0A5463 or #09768C as required by PRD */
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight text-[#0A5463];
   }
@@ -92,6 +123,11 @@
   .text-on-dark h3,
   .text-on-dark h4 {
     @apply text-white;
+  }
+
+  ::placeholder {
+    color: #82969C;
+    opacity: 1;
   }
 }
 
