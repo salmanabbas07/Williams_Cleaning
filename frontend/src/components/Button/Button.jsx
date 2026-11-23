@@ -25,7 +25,7 @@ export default function Button({
   disabled = false,
   ...rest
 }) {
-  const baseStyles = 'group inline-flex items-center justify-center font-bold uppercase tracking-wide transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed select-none rounded-full';
+  const baseStyles = 'group/btn inline-flex items-center justify-center font-bold uppercase tracking-wide transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed select-none rounded-full';
 
   const sizeStyles = {
     sm: 'text-xs px-3.5 py-1.5 gap-2',
@@ -47,14 +47,14 @@ export default function Button({
 
   const variantStyles = {
     // Clarivo Deep Navy Primary button (#123B50)
-    primary: 'btn-deep-navy text-white hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#123B50]',
-    golden: 'btn-deep-navy text-white hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-[#123B50]',
-    blue: 'btn-deep-navy text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#123B50]',
-    secondary: 'btn-secondary-teal text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#168B9F]',
-    teal: 'btn-secondary-teal text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#168B9F]',
-    darkNavy: 'bg-[#123B50] hover:bg-[#0B3042] text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#123B50]',
-    outline: 'border-2 border-[#123B50] bg-transparent text-[#123B50] hover:bg-[#123B50] hover:border-[#123B50] hover:text-white hover:shadow-md hover:-translate-y-0.5 focus:ring-[#123B50]',
-    outlineWhite: 'border-2 border-white text-white hover:bg-white hover:text-[#123B50] hover:shadow-md hover:-translate-y-0.5 focus:ring-white',
+    primary: 'btn-deep-navy text-white hover:shadow-lg focus:ring-[#123B50]',
+    golden: 'btn-deep-navy text-white hover:shadow-lg focus:ring-[#123B50]',
+    blue: 'btn-deep-navy text-white hover:shadow-md focus:ring-[#123B50]',
+    secondary: 'btn-secondary-teal text-white hover:shadow-md focus:ring-[#168B9F]',
+    teal: 'btn-secondary-teal text-white hover:shadow-md focus:ring-[#168B9F]',
+    darkNavy: 'bg-[#123B50] hover:bg-[#0B3042] text-white hover:shadow-md focus:ring-[#123B50]',
+    outline: 'border-2 border-[#123B50] bg-transparent text-[#123B50] hover:bg-[#123B50] hover:border-[#123B50] hover:text-white hover:shadow-md focus:ring-[#123B50]',
+    outlineWhite: 'border-2 border-white text-white hover:bg-white hover:text-[#123B50] hover:shadow-md focus:ring-white',
     ghost: 'text-[#0A5463] hover:text-[#09768C] hover:bg-[#EFE9DC] focus:ring-[#249FAF]'
   };
 
@@ -65,10 +65,10 @@ export default function Button({
     <>
       {showIconCircle && Icon && (
         <span
-          className={`shrink-0 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 shadow-sm ${circleSizes[size] || circleSizes.md} ${circleBg}`}
+          className={`shrink-0 rounded-full flex items-center justify-center transition-transform duration-300 group-hover/btn:translate-x-1 shadow-sm ${circleSizes[size] || circleSizes.md} ${circleBg}`}
           aria-hidden="true"
         >
-          <Icon className={`${iconSizes[size] || iconSizes.md} transition-transform duration-300 group-hover:scale-110`} />
+          <Icon className={`${iconSizes[size] || iconSizes.md} transition-transform duration-300 group-hover/btn:scale-110`} />
         </span>
       )}
       <span className="transition-transform duration-200">{children}</span>

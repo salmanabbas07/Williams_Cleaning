@@ -30,7 +30,7 @@ export default function ServiceCard({
   };
 
   return (
-    <article className={`service-card group ${className}`}>
+    <article className={`service-card group/card ${className}`}>
       {/* Image Area */}
       <div className="service-card-img-wrapper">
         <ImagePlaceholder
@@ -39,7 +39,7 @@ export default function ServiceCard({
           aspectRatio={aspectRatio}
           rounded="rounded-xl"
           label={`Slika: ${title}`}
-          className="transition-transform duration-300 group-hover:scale-[1.01]"
+          className="transition-transform duration-300 group-hover/card:scale-[1.01]"
         />
       </div>
 
@@ -68,7 +68,7 @@ export default function ServiceCard({
           <Button
             to={targetUrl}
             onClick={handleButtonClick}
-            variant="primary"
+            variant="primary" mna  
             size="sm"
             icon={ArrowRight}
             className="w-full sm:w-auto"
