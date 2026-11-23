@@ -132,7 +132,7 @@ export default function Navbar() {
             aria-label="Domov - Williams Housekeeping hotelsko in poslovno čiščenje"
           >
             <img
-              src="/images/website logo header.png"
+              src="/images/header_logo.webp"
               alt="Williams Housekeeping — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
               className="nav-logo-img"
               width="180"

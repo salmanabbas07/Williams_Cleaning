@@ -2,9 +2,7 @@
 .review-carousel-section {
   padding-top: 4rem;
   padding-bottom: 5rem;
-  background-color: #F5F0E6;
-  border-top: 1px solid rgba(10, 84, 99, 0.10);
-  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
+  background-color: var(--website-bg, #F5F0E6);
   width: 100%;
   overflow: hidden;
   position: relative;

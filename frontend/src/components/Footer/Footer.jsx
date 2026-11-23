@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="footer-brand-logo-card" aria-label="Domov - Williams Housekeeping hotelsko in poslovno čiščenje">
               <img
-                src="/images/main_logo.webp"
+                src="/images/footer_logo.webp"
                 alt="Williams Housekeeping — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
                 className="footer-logo-img"
               />
@@ -186,7 +186,7 @@ export default function Footer() {
                     className="footer-contact-val"
                     style={{ color: '#ffffff', fontWeight: 700 }}
                   >
-                    +386 69 803 622
+                    +386 69 803 622 ,
                   </a>
                   <a
                     href="tel:040791618"

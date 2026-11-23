@@ -61,7 +61,7 @@ export default function Services() {
         image="/images/service_lp.webp"
       />
 
-      <div className="bg-[#F5F0E6] py-12 sm:py-16">
+      <div className="bg-[var(--website-bg)] py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* 2-Column Content & Sidebar Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">

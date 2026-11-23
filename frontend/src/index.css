@@ -4,18 +4,25 @@
 
 @layer base {
   :root {
-    /* Clarivo Cleaning – Seamless Premium Cream & Teal Theme */
-    --color-cream-main: #F5F0E6;
+    /* ==========================================================================
+       GLOBAL WEBSITE BACKGROUND COLOR (Single Centralized Variable)
+       Change this one variable to update the background of the entire website!
+       ========================================================================== */
+    /* --website-bg: #F5F0E6; */
+    --website-bg:		#F5EEDC;
+
+
+    /* Cards & Component Surfaces */
     --color-card-bg: #F8F4EB;
     --color-card-border: rgba(10, 84, 99, 0.10);
     --color-card-shadow: rgba(10, 84, 99, 0.07);
 
-    /* Brand Colours */
+    /* Clarivo Cleaning Brand Colour Palette */
     --color-primary-dark-teal: #0A5463;
     --color-secondary-teal: #09768C;
     --color-primary-teal: #168B9F;
     --color-medium-teal: #249FAF;
-    --color-turquoise: #249FAF;
+    --color-turquoise: #32B3BF;
     --color-bright-turquoise: #40C7CE;
 
     /* Additional Premium Colors */
@@ -24,22 +31,26 @@
     --color-champagne-gold: #C5A46D;
     --color-gold-hover: #B18E57;
     --color-white: #FFFFFF;
-    --color-light-bg: #F5F0E6;
+    --color-light-bg: var(--website-bg);
     --color-light-border: rgba(10, 84, 99, 0.10);
     --color-light-cyan: #F8F4EB;
     --color-body-text: #46545A;
     --color-placeholder: #82969C;
 
-    /* Cream Theme Background Styling */
-    --color-aqua-main: #F5F0E6;
-    --color-aqua-secondary: #F5F0E6;
-    --color-aqua-alternate: #F5F0E6;
+    /* Centralized aliases linked directly to --website-bg */
+    --color-cream-main: var(--website-bg);
+    --color-aqua-main: var(--website-bg);
+    --color-aqua-secondary: var(--website-bg);
+    --color-aqua-alternate: var(--website-bg);
     --color-aqua-soft: #F8F4EB;
+    --color-warm-gold-cream: var(--website-bg);
+    --color-dark-charcoal: #46545A;
+    --color-pure-white: #FFFFFF;
 
     /* Primary Brand Gradients */
     --gradient-aqua-mist: linear-gradient(
       135deg,
-      #F5F0E6 0%,
+      var(--website-bg) 0%,
       #F8F4EB 100%
     );
 
@@ -62,8 +73,8 @@
 
     /* Strategic gradient variants */
     --gradient-dark-teal: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
-    --gradient-subtle-teal: linear-gradient(135deg, #F5F0E6 0%, #F8F4EB 100%);
-    --gradient-subtle-hero: linear-gradient(105deg, #F5F0E6 0%, #F8F4EB 100%);
+    --gradient-subtle-teal: linear-gradient(135deg, var(--website-bg) 0%, #F8F4EB 100%);
+    --gradient-subtle-hero: linear-gradient(105deg, var(--website-bg) 0%, #F8F4EB 100%);
     --gradient-teal-cyan: linear-gradient(135deg, #0A5463 0%, #09768C 45%, #168B9F 100%);
 
     /* Backwards compatibility aliases */
@@ -76,13 +87,13 @@
     --color-antique-gold: #C5A46D;
     --color-golden-sand: #C5A46D;
     --color-rich-champagne: #C5A46D;
-    --color-warm-gold-cream: #F5F0E6;
-    --color-dark-charcoal: #46545A;
+    --color-warm-gold-cream: #E5F3F3;
+    --color-dark-charcoal: #465A63;
     --color-pure-white: #FFFFFF;
 
-    --gradient-primary-rich-champagne: linear-gradient(135deg, #F5F0E6 0%, #F8F4EB 100%);
-    --gradient-deep-golden-sand: linear-gradient(135deg, #F5F0E6 0%, #F8F4EB 100%);
-    --gradient-royal-champagne: linear-gradient(135deg, #F5F0E6 0%, #F8F4EB 100%);
+    --gradient-primary-rich-champagne: linear-gradient(135deg, #E5F3F3 0%, #D9EEEE 50%, #CDE7E8 100%);
+    --gradient-deep-golden-sand: linear-gradient(135deg, #E5F3F3 0%, #D9EEEE 100%);
+    --gradient-royal-champagne: linear-gradient(135deg, #E5F3F3 0%, #D9EEEE 100%);
     --gradient-premium-black: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
     --gradient-black-gold-luxury: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
     --gradient-royal-gold: linear-gradient(135deg, #0A5463 0%, #168B9F 50%, #32B3BF 100%);
@@ -104,8 +115,8 @@
   }
 
   body {
-    background-color: #F5F0E6;
-    color: #46545A;
+    background-color: #E5F3F3;
+    color: #465A63;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -2,8 +2,7 @@
 .cta-section {
   position: relative;
   padding: 4.5rem 1rem;
-  background-color: #F5F0E6;
-  border-top: 1px solid rgba(10, 84, 99, 0.10);
+  background-color: var(--website-bg, #F5F0E6);
   color: #46545A;
   overflow: hidden;
   width: 100%;

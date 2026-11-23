@@ -28,7 +28,7 @@
 .about-intro-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F5F0E6;
+  background-color: var(--website-bg, #F5F0E6);
 }
 
 @media (min-width: 640px) {
@@ -183,9 +183,7 @@
 .services-overview-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F5F0E6;
-  border-top: 1px solid rgba(10, 84, 99, 0.10);
-  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
+  background-color: var(--website-bg, #F5F0E6);
 }
 
 @media (min-width: 640px) {
@@ -224,8 +222,7 @@
 .why-choose-section {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
-  background-color: #F5F0E6;
-  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
+  background-color: var(--website-bg, #F5F0E6);
   color: #46545A;
   position: relative;
 }
@@ -322,8 +319,7 @@
 .mission-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F5F0E6;
-  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
+  background-color: var(--website-bg, #F5F0E6);
 }
 
 @media (min-width: 640px) {
@@ -423,8 +419,7 @@
 .process-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F5F0E6;
-  border-bottom: 1px solid rgba(10, 84, 99, 0.10);
+  background-color: var(--website-bg, #F5F0E6);
 }
 
 @media (min-width: 640px) {
@@ -587,8 +582,7 @@
 .blog-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F5F0E6;
-  border-top: 1px solid rgba(10, 84, 99, 0.10);
+  background-color: var(--website-bg, #F5F0E6);
 }
 
 @media (min-width: 640px) {

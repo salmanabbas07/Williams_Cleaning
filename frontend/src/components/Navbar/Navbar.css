@@ -199,7 +199,7 @@
   font-size: 0.9375rem;
   font-weight: 600;
   /* color: #FFFFFF; */
-  color: #0A5463;
+  color: #05505f;
   text-decoration: none;
   border-radius: 0.5rem;
   transition: all 0.2s ease;
@@ -207,11 +207,13 @@
 
 .desktop-nav-link:hover {
   color: #32B3BF;
-  background-color: rgba(50, 179, 191, 0.18);
+  background-color: rgba(5, 56, 60, 0.18);
 }
 
 .desktop-nav-link.active {
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
+  color: #32B3BF;
+
   background-color: rgba(50, 179, 191, 0.28);
   font-weight: 700;
 }

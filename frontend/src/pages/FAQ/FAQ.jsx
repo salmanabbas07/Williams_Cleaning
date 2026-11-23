@@ -76,7 +76,7 @@ export default function FAQ() {
         image="/images/FAQ_lp.webp"
       />
 
-      <section className="py-16 sm:py-24 bg-[#F5F0E6]">
+      <section className="py-16 sm:py-24 bg-[var(--website-bg)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Pogosta vprašanja"
@@ -110,7 +110,7 @@ export default function FAQ() {
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 sm:px-6 pb-6 pt-1 text-[#46545A] text-sm leading-relaxed border-t border-[rgba(10,84,99,0.10)] bg-[#F5F0E6]/80 animate-fadeIn">
+                    <div className="px-5 sm:px-6 pb-6 pt-1 text-[#46545A] text-sm leading-relaxed border-t border-[rgba(10,84,99,0.10)] bg-[var(--website-bg)]/80 animate-fadeIn">
                       <p>{faq.a}</p>
                     </div>
                   )}
