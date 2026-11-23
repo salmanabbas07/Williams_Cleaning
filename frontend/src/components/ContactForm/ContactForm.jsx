@@ -138,13 +138,13 @@ export default function ContactForm({ className = '' }) {
   };
 
   return (
-    <div className={`contact-form-wrapper bg-white p-6 sm:p-8 md:p-10 rounded-2xl border border-[#98752C]/35 shadow-sm ${className}`}>
+    <div className={`contact-form-wrapper bg-[#FFFFFF] p-6 sm:p-8 md:p-10 rounded-2xl border border-[#D8ECEE] shadow-md ${className}`}>
       {submitted ? (
         <div className="py-10 text-center animate-fadeIn">
-          <div className="w-16 h-16 rounded-full bg-[#D4AF37]/15 text-[#D4AF37] mx-auto flex items-center justify-center mb-5">
+          <div className="w-16 h-16 rounded-full bg-[#168B9F]/15 text-[#168B9F] mx-auto flex items-center justify-center mb-5">
             <CheckCircle2 className="w-9 h-9" />
           </div>
-          <h3 className="text-2xl font-bold text-[#0B0B0C] mb-3">
+          <h3 className="text-2xl font-bold text-[#0A5463] mb-3">
             Sporočilo je bilo uspešno poslano!
           </h3>
           <p className="text-[#252525] text-sm max-w-md mx-auto mb-6 leading-relaxed">
@@ -181,7 +181,7 @@ export default function ContactForm({ className = '' }) {
                 className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 ${
                   errors.name
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-[#98752C]/40 focus:border-[#D4AF37] focus:ring-[#D4AF37]/20'
+                    : 'border-[#D8ECEE] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
                 }`}
                 aria-invalid={!!errors.name}
                 aria-describedby={errors.name ? 'name-error' : undefined}
@@ -209,7 +209,7 @@ export default function ContactForm({ className = '' }) {
                 className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 ${
                   errors.email
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-[#98752C]/40 focus:border-[#D4AF37] focus:ring-[#D4AF37]/20'
+                    : 'border-[#D8ECEE] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
                 }`}
                 aria-invalid={!!errors.email}
                 aria-describedby={errors.email ? 'email-error' : undefined}
@@ -236,7 +236,7 @@ export default function ContactForm({ className = '' }) {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="+386 69 803 622"
-                className="w-full px-4 py-3 rounded-xl border border-[#98752C]/40 text-sm focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 transition-all focus:outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-[#D8ECEE] text-sm focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)] transition-all focus:outline-none"
               />
             </div>
 
@@ -253,7 +253,7 @@ export default function ContactForm({ className = '' }) {
                 className={`w-full px-4 py-3 rounded-xl border text-sm transition-all bg-white focus:outline-none focus:ring-2 ${
                   errors.subject
                     ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                    : 'border-[#98752C]/40 focus:border-[#D4AF37] focus:ring-[#D4AF37]/20'
+                    : 'border-[#D8ECEE] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
                 }`}
                 aria-invalid={!!errors.subject}
               >
@@ -290,7 +290,7 @@ export default function ContactForm({ className = '' }) {
               className={`w-full px-4 py-3 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 resize-y ${
                 errors.message
                   ? 'border-red-400 bg-red-50/20 focus:ring-red-400'
-                  : 'border-[#98752C]/40 focus:border-[#D4AF37] focus:ring-[#D4AF37]/20'
+                  : 'border-[#D8ECEE] focus:border-[#249FAF] focus:ring-2 focus:ring-[rgba(36,159,175,0.18)]'
               }`}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? 'message-error' : undefined}

@@ -4,59 +4,67 @@
 
 @layer base {
   :root {
-    --color-royal-obsidian: #0B0B0C;
-    --color-midnight-black: #141414;
-    --color-graphite-black: #202020;
-    --color-rich-metallic-gold: #D4AF37;
-    --color-royal-gold: #C69B32;
-    --color-champagne-gold: #F5DF9B;
-    --color-antique-gold: #98752C;
-    --color-warm-ivory: #F8F5ED;
-    --color-pure-white: #FFFFFF;
-    --color-dark-charcoal: #252525;
-
-    /* Theme gradients specified by PRD */
-    --gradient-royal-gold: linear-gradient(135deg, #98752C 0%, #D4AF37 35%, #F5DF9B 55%, #C69B32 80%, #98752C 100%);
-    --gradient-premium-black: linear-gradient(135deg, #0B0B0C 0%, #141414 55%, #202020 100%);
-    --gradient-black-gold-luxury: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
-    --gradient-primary: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
-    --gradient-luxury-primary: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
-    --gradient-dark: linear-gradient(135deg, #0B0B0C 0%, #141414 55%, #202020 100%);
-    --gradient-gold: linear-gradient(135deg, #98752C 0%, #D4AF37 35%, #F5DF9B 55%, #C69B32 80%, #98752C 100%);
-    --gradient-champagne: linear-gradient(135deg, #D4AF37 0%, #F5DF9B 100%);
-    --gradient-warm-white: linear-gradient(135deg, #FFFFFF 0%, #F8F5ED 100%);
-
-    /* Aliases for backwards compatibility */
-    --color-obsidian-black: #0B0B0C;
-    --color-deep-black: #141414;
-    --color-metallic-gold: #D4AF37;
-    --color-warm-white: #F8F5ED;
-    --color-dark-text: #252525;
-    --color-rich-walnut: #0B0B0C;
-    --color-wood-brown: #141414;
-    --color-golden-caramel: #D4AF37;
-    --color-warm-gold: #F5DF9B;
-    --color-cream: #F8F5ED;
+    /* Clarivo Cleaning Brand Colour Palette */
+    --color-primary-dark-teal: #0A5463;
+    --color-secondary-teal: #09768C;
+    --color-primary-teal: #168B9F;
+    --color-medium-teal: #249FAF;
+    --color-turquoise: #32B3BF;
+    --color-bright-turquoise: #40C7CE;
     --color-white: #FFFFFF;
-    --color-secondary-text: #555555;
-    --color-light-border: #98752C;
-    --gradient-walnut-primary: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
-    --gradient-caramel: linear-gradient(135deg, #98752C 0%, #D4AF37 35%, #F5DF9B 55%, #C69B32 80%, #98752C 100%);
-    --gradient-cream: linear-gradient(135deg, #FFFFFF 0%, #F8F5ED 100%);
-    --gradient-rustic-primary: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
-    --gradient-olive-beige: linear-gradient(135deg, #D4AF37 0%, #F5DF9B 100%);
-    --gradient-dark-wood: linear-gradient(135deg, #0B0B0C 0%, #141414 55%, #202020 100%);
-    --gradient-ivory: linear-gradient(135deg, #FFFFFF 0%, #F8F5ED 100%);
-    --gradient-copper: linear-gradient(135deg, #D4AF37 0%, #F5DF9B 100%);
+    --color-light-bg: #F0FAFA;
+    --color-light-border: #D8ECEE;
+    --color-light-cyan: #EAF7F8;
+    --color-dark-text: #252525;
+    --color-card-bg: #FFFFFF;
 
-    --color-primary-blue: #0B0B0C;
-    --color-primary-yellow: #D4AF37;
-    --color-light-blue: #141414;
-    --color-golden: #D4AF37;
-    --color-pale-yellow: #F8F5ED;
-    --color-heading-green: #0B0B0C;
-    --color-bg-white: #FFFFFF;
-    --color-dark-navy: #141414;
+    /* Main Brand Gradient */
+    --gradient-primary: linear-gradient(
+      135deg,
+      #0A5463 0%,
+      #09768C 20%,
+      #168B9F 40%,
+      #249FAF 60%,
+      #32B3BF 80%,
+      #40C7CE 100%
+    );
+
+    /* Strategic gradient variants */
+    --gradient-dark-teal: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
+    --gradient-subtle-teal: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 50%, #D8ECEE 100%);
+    --gradient-subtle-hero: linear-gradient(105deg, #F0FAFA 0%, #EAF7F8 50%, #FFFFFF 100%);
+    --gradient-teal-cyan: linear-gradient(135deg, #0A5463 0%, #09768C 45%, #168B9F 100%);
+
+    /* Backwards compatibility aliases for existing css rules */
+    --color-royal-obsidian: #0A5463;
+    --color-midnight-black: #0A5463;
+    --color-graphite-black: #09768C;
+    --color-rich-metallic-gold: #168B9F;
+    --color-royal-gold: #09768C;
+    --color-champagne-gold: #32B3BF;
+    --color-antique-gold: #0A5463;
+    --color-golden-sand: #168B9F;
+    --color-rich-champagne: #249FAF;
+    --color-warm-gold-cream: #EAF7F8;
+    --color-dark-charcoal: #252525;
+    --color-pure-white: #FFFFFF;
+
+    --gradient-primary-rich-champagne: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 50%, #FFFFFF 100%);
+    --gradient-deep-golden-sand: linear-gradient(135deg, #FFFFFF 0%, #F0FAFA 100%);
+    --gradient-royal-champagne: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 100%);
+    --gradient-premium-black: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
+    --gradient-black-gold-luxury: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
+    --gradient-royal-gold: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
+    --gradient-metallic-gold: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
+
+    --gradient-champagne-main: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
+    --gradient-luxury-primary: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
+    --gradient-dark: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
+    --gradient-gold: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
+
+    --color-obsidian-black: #0A5463;
+    --color-deep-black: #0A5463;
+    --color-metallic-gold: #168B9F;
   }
 
   html {
@@ -65,12 +73,17 @@
   }
 
   body {
-    @apply bg-white text-[#252525] antialiased overflow-x-hidden;
+    background-color: #FFFFFF;
+    color: #252525;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
-  /* Consistent Royal Obsidian tone for headings as required by PRD */
+  /* Headings: #0A5463 or #09768C as required by Clarivo Cleaning PRD */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight text-[#0B0B0C];
+    @apply font-bold tracking-tight text-[#0A5463];
   }
 
   /* When headings are inside dark containers, they can be overridden with text-white */

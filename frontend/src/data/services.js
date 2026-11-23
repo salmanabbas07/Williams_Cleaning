@@ -3,7 +3,7 @@ export const servicesData = [
     id: 'hotel-housekeeping',
     slug: 'hotel-housekeeping',
     title: 'Hotelsko gospodinjstvo',
-    image: '/images/hotel housekeeping.png',
+    image: '/images/hotel housekeeping.webp',
     description: 'Celovita priprava sob, menjava posteljnine in razkuževanje kopalnic, prilagojeno hotelom in letoviščem z vsakodnevno menjavo gostov.',
     features: [
       'Dnevno čiščenje sob in kopalnic',
@@ -61,7 +61,7 @@ export const servicesData = [
     id: 'seasonal-housekeeping',
     slug: 'seasonal-housekeeping-teams',
     title: 'Sezonske ekipe za čiščenje',
-    image: '/images/Seasonal cleaning teams.png',
+    image: '/images/Seasonal cleaning teams.webp',
     description: 'Prilagodljive čistilne ekipe v obdobjih visoke turistične sezone, ki hotelskim obratom pomagajo obvladovati konice prijav in menjav.',
     features: [
       'Prilagodljiva sezonska kadrovska podpora',
@@ -119,7 +119,7 @@ export const servicesData = [
     id: 'temporary-support',
     slug: 'temporary-housekeeping-support',
     title: 'Začasna podpora gospodinjstvu',
-    image: '/images/Temporary household support.png',
+    image: '/images/Temporary household support.webp',
     description: 'Zanesljiva kratkoročna in redna podpora za bivalne enote, apartmaje ter počitniške namestitve, ki potrebujejo zanesljivo tekočo oskrbo.',
     features: [
       'Splošna nega in čiščenje bivalnih površin',
@@ -175,7 +175,7 @@ export const servicesData = [
     id: 'flexible-subcontracting',
     slug: 'flexible-subcontracting',
     title: 'Prilagodljivo podizvajanje',
-    image: '/images/Flexible subcontracting.png',
+    image: '/images/Flexible subcontracting.webp',
     description: 'Zanesljive B2B podizvajalske rešitve za dopolnitev vaših obstoječih ekip ob pomanjkanju kadra in povečanem obsegu dela.',
     features: [
       'Usklajeno vključevanje v vaše procese',
@@ -231,7 +231,7 @@ export const servicesData = [
     id: 'commercial-cleaning',
     slug: 'business-and-office-cleaning',
     title: 'Poslovno in pisarniško čiščenje',
-    image: '/images/Business and office cleaning.png',
+    image: '/images/Business and office cleaning.webp',
     description: 'Redno vzdrževanje poslovnih prostorov, pisarn in skupnih delovnih površin za urejeno, sveže in prijetno delovno okolje.',
     features: [
       'Čiščenje delovnih miz, tal in skupnih prostorov',
@@ -286,7 +286,7 @@ export const servicesData = [
     id: 'specialized-cleaning',
     slug: 'specialized-and-deep-cleaning',
     title: 'Specialno in globinsko čiščenje',
-    image: '/images/Special and deep cleaning.png',
+    image: '/images/Special and deep cleaning.webp',
     description: 'Temeljito, celovito čiščenje ob sezonskih odprtjih, po prenovah ali gradbenih delih ter občasno intenzivno razkuževanje površin.',
     features: [
       'Dezinfekcija pogosto dotikanih površin',

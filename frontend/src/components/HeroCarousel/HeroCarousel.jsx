@@ -22,6 +22,7 @@ const heroSlidesData = [
   {
     id: 1,
     image: '/images/bannerLP1.webp',
+    imagePosition: 'center 20%',
     badge: 'Williams Housekeeping • Zanesljiva hotelska podpora',
     title: 'Vrhunske ekipe za hotelsko gospodinjstvo in poslovno čiščenje',
     description:
@@ -38,6 +39,7 @@ const heroSlidesData = [
   {
     id: 2,
     image: '/images/bannerLP2.webp',
+    imagePosition: 'center 30%',
     badge: 'Vrhunski standardi • Strokovno usposobljeno osebje',
     title: 'Brezhibna čistoča in najvišji higienski standardi',
     description:
@@ -54,6 +56,7 @@ const heroSlidesData = [
   {
     id: 3,
     image: '/images/bannerLP3.webp',
+    imagePosition: 'center 20%',
     badge: 'Prilagodljive rešitve • 24/7 operativna podpora',
     title: 'Zanesljiv partner za sezonske in dolgoročne potrebe',
     description:
@@ -208,12 +211,13 @@ export default function HeroCarousel() {
                     aria-roledescription="slide"
                     aria-label={`${idx + 1} od ${totalSlides}: ${slide.title}`}
                   >
-                    {/* Left Side: Single Image covering left side */}
+                    {/* Left Side: Single Image covering left 45% on desktop (Adjustable in HeroCarousel.css) */}
                     <div className="hero-slide-media">
                       <img
                         src={slide.image}
                         alt={slide.title}
                         className="hero-slide-img"
+                        style={slide.imagePosition ? { objectPosition: slide.imagePosition } : undefined}
                         loading={isInitial ? 'eager' : 'lazy'}
                         fetchpriority={isInitial ? 'high' : 'auto'}
                       />
@@ -264,7 +268,7 @@ export default function HeroCarousel() {
                             variant="outline"
                             size="md"
                             showIconCircle={false}
-                            className="border-2 border-[#D4AF37] text-[#0B0B0C] hover:bg-[#D4AF37] hover:text-[#0B0B0C]"
+                            className="hero-btn-secondary"
                           >
                             {slide.secondaryBtn.text}
                           </Button>
@@ -274,7 +278,7 @@ export default function HeroCarousel() {
                             variant="outline"
                             size="md"
                             showIconCircle={false}
-                            className="border-2 border-[#D4AF37] text-[#0B0B0C] hover:bg-[#D4AF37] hover:text-[#0B0B0C]"
+                            className="hero-btn-secondary"
                           >
                             {slide.secondaryBtn.text}
                           </Button>
@@ -332,14 +336,14 @@ export default function HeroCarousel() {
 
                         <div className="hero-contact-group">
                           <div className="hero-contact-inline">
-                            <Phone className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" aria-hidden="true" />
+                            <Phone className="w-3.5 h-3.5 text-[#168B9F] shrink-0" aria-hidden="true" />
                             <span>Telefon:</span>
                             <a href="tel:+38669803622" className="hero-phone-link">
                               +386 69 803 622
                             </a>
                           </div>
                           <div className="hero-contact-inline">
-                            <Phone className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" aria-hidden="true" />
+                            <Phone className="w-3.5 h-3.5 text-[#168B9F] shrink-0" aria-hidden="true" />
                             <span>Telefon:</span>
                             <a href="tel:040791618" className="hero-phone-link">
                               040 791 618

@@ -17,13 +17,13 @@ export default function TestimonialCard({
   return (
     <div className={`testimonial-card-component ${className}`}>
       <div>
-        {/* Rating Stars using Rich Metallic Gold / Champagne Gold */}
+        {/* Rating Stars using Clarivo Turquoise / Teal */}
         <div className="testimonial-card-stars" aria-label={`Ocena: ${rating} od 5 zvezdic`}>
           {Array.from({ length: 5 }).map((_, i) => (
             <Star
               key={i}
               className={`w-4 h-4 ${
-                i < rating ? 'text-[#D4AF37] fill-[#D4AF37]' : 'text-gray-200'
+                i < rating ? 'text-[#168B9F] fill-[#168B9F]' : 'text-gray-200'
               }`}
             />
           ))}
@@ -40,7 +40,7 @@ export default function TestimonialCard({
         <ImagePlaceholder
           aspectRatio="aspect-square"
           rounded="rounded-full"
-          className="w-11 h-11 shrink-0 border border-[#D4AF37]/40"
+          className="w-11 h-11 shrink-0 border border-[#32B3BF]/40"
           label="Avatar"
         />
         <div className="min-w-0">

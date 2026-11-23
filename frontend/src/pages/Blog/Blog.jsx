@@ -30,7 +30,7 @@ export default function Blog() {
         image="/images/blog_lp.webp"
       />
 
-      <section className="py-16 sm:py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-[#F0FAFA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Novice & Članki"
@@ -47,8 +47,8 @@ export default function Blog() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all ${
                   selectedCategory === cat
-                    ? 'bg-[#D4AF37] text-[#0B0B0C] font-bold shadow-sm'
-                    : 'bg-[#F8F5ED] text-[#252525] border border-[#98752C]/35 hover:bg-white'
+                    ? 'bg-[#0A5463] text-white font-bold shadow-sm'
+                    : 'bg-white text-[#252525] border border-[#D8ECEE] shadow-sm hover:bg-[#EAF7F8]'
                 }`}
               >
                 {cat === 'all' ? 'Vsi prispevki' : cat}

@@ -1,8 +1,8 @@
-/* Hero Carousel Styles */
+/* Hero Carousel Styles - Clarivo Teal & Turquoise Theme */
 .hero-carousel-section {
   padding: 0;
   margin: 0;
-  background-color: #F8F5ED;
+  background: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 50%, #D8ECEE 100%);
   overflow: hidden;
   width: 100%;
 }
@@ -40,7 +40,7 @@
   overflow: hidden;
   box-shadow: none;
   border: none;
-  background-color: #F8F5ED;
+  background: transparent;
   outline: none;
 }
 
@@ -72,7 +72,7 @@
   min-width: 100%;
   position: relative;
   box-sizing: border-box;
-  background-color: #F8F5ED;
+  background: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 50%, #D8ECEE 100%);
   overflow: hidden;
   border-radius: 0;
   display: flex;
@@ -81,65 +81,54 @@
 
 @media (min-width: 768px) {
   .hero-slide-item {
-    display: block;
-    height: calc(100vh - 114px);
-    height: calc(100dvh - 114px);
-    min-height: 540px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 550px;
+    min-height: 550px;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-slide-item {
-    height: calc(100vh - 114px);
-    height: calc(100dvh - 114px);
-    min-height: 580px;
+    height: 560px;
+    min-height: 560px;
   }
 }
 
 @media (min-width: 1280px) {
   .hero-slide-item {
-    height: calc(100vh - 114px);
-    height: calc(100dvh - 114px);
-    min-height: 600px;
+    height: 591px;
+    min-height: 591px;
   }
 }
 
-/* Left Side: Media Covering the Left Half */
 .hero-slide-media {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 260px;
   overflow: hidden;
-  background-color: #F8F5ED;
+  background-color: #EAF7F8;
 }
 
 @media (min-width: 480px) {
   .hero-slide-media {
-    height: 290px;
+    height: 300px;
   }
 }
 
 @media (min-width: 768px) {
   .hero-slide-media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 58%;
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: 45%;
+    flex: 0 0 45%;
     height: 100%;
     z-index: 1;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-slide-media {
-    width: 55%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .hero-slide-media {
-    width: 52%;
+    overflow: hidden;
   }
 }
 
@@ -147,11 +136,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 30%;
   display: block;
 }
 
-/* Smooth gradient fade into background on the right */
+/* Narrow Seam Gradient: subtle overlay on desktop right edge */
 .hero-slide-media-overlay {
   display: none;
 }
@@ -160,62 +149,65 @@
   .hero-slide-media-overlay {
     display: block;
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
     background: linear-gradient(
-      90deg,
-      rgba(248, 245, 237, 0) 0%,
-      rgba(248, 245, 237, 0) 25%,
-      rgba(248, 245, 237, 0.4) 45%,
-      rgba(248, 245, 237, 0.85) 70%,
-      #F8F5ED 92%,
-      #F8F5ED 100%
+      to right,
+      rgba(234, 247, 248, 0) 0%,
+      rgba(234, 247, 248, 0.45) 45%,
+      rgba(240, 250, 250, 0.85) 75%,
+      #F0FAFA 100%
     );
     pointer-events: none;
     z-index: 2;
   }
 }
 
-/* Right Side: Slide Content */
+/* Hero Content Panel */
 .hero-slide-content {
   position: relative;
   z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem 1.25rem 3.5rem 1.25rem;
-  background-color: #F8F5ED;
+  width: 100%;
+  padding: 1.75rem 1.25rem 3.5rem 1.25rem;
+  background: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 50%, #FFFFFF 100%);
   box-sizing: border-box;
 }
 
 @media (min-width: 640px) {
   .hero-slide-content {
-    padding: 2rem 1.75rem 3.5rem 1.75rem;
+    padding: 2.25rem 2rem 3.5rem 2rem;
   }
 }
 
 @media (min-width: 768px) {
   .hero-slide-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 54%;
-    padding: 2.5rem 2.5rem 2.5rem 1.5rem;
-    background-color: transparent;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 55%;
+    flex: 0 0 55%;
+    height: 100%;
+    padding: 1.5rem 2rem 1.25rem 2rem;
+    background: linear-gradient(105deg, #F0FAFA 0%, #EAF7F8 50%, #FFFFFF 100%);
   }
 }
 
 @media (min-width: 1024px) {
   .hero-slide-content {
-    width: 52%;
-    padding: 3rem 3.5rem 3rem 2rem;
+    padding: 1.75rem 2.75rem 1.5rem 2.5rem;
   }
 }
 
 @media (min-width: 1280px) {
   .hero-slide-content {
-    width: 50%;
-    padding: 3.5rem 4.5rem 3.5rem 2.5rem;
+    padding: 2rem 3.5rem 1.75rem 3rem;
   }
 }
 
@@ -230,9 +222,10 @@
   letter-spacing: 0.05em;
   padding: 0.375rem 0.875rem;
   border-radius: 9999px;
-  background-color: rgba(212, 175, 55, 0.12);
-  color: #0B0B0C;
-  border: 1px solid rgba(152, 117, 44, 0.35);
+  background-color: #FFFFFF;
+  color: #0A5463;
+  border: 1px solid #D8ECEE;
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.06);
   margin-bottom: 0.875rem;
   width: fit-content;
   max-width: 100%;
@@ -242,7 +235,7 @@
 .hero-slide-badge-icon {
   width: 0.875rem;
   height: 0.875rem;
-  color: #D4AF37;
+  color: #168B9F;
   flex-shrink: 0;
 }
 
@@ -250,7 +243,7 @@
 .hero-slide-title {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #0B0B0C;
+  color: #0A5463;
   letter-spacing: -0.025em;
   line-height: 1.18;
   margin: 0 0 0.875rem 0;
@@ -282,7 +275,7 @@
   color: #252525;
   line-height: 1.6;
   margin: 0 0 1.25rem 0;
-  max-width: 36rem;
+  max-width: 38rem;
 }
 
 @media (min-width: 640px) {
@@ -296,6 +289,7 @@
   .hero-slide-desc {
     font-size: 1rem;
     line-height: 1.65;
+    max-width: 48rem;
   }
 }
 
@@ -318,10 +312,11 @@
 /* Social & Contact row */
 .hero-slide-meta {
   padding-top: 1rem;
-  border-top: 1px solid rgba(152, 117, 44, 0.25);
+  border-top: 1px solid #D8ECEE;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  max-width: 48rem;
 }
 
 @media (min-width: 640px) {
@@ -337,7 +332,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #0B0B0C;
+  color: #0A5463;
 }
 
 .hero-social-list {
@@ -350,22 +345,22 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 0.75rem;
-  background-color: #ffffff;
-  color: #0B0B0C;
+  background-color: #FFFFFF;
+  color: #0A5463;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(152, 117, 44, 0.4);
+  box-shadow: 0 1px 2px rgba(10, 84, 99, 0.05);
+  border: 1px solid #D8ECEE;
   text-decoration: none;
 }
 
 .hero-social-btn:hover {
-  background-color: #D4AF37;
-  color: #0B0B0C;
+  background-color: #168B9F;
+  color: #FFFFFF;
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px -1px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 4px 10px -1px rgba(22, 139, 159, 0.35);
 }
 
 .hero-social-btn svg {
@@ -391,19 +386,36 @@
   gap: 0.5rem;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #0B0B0C;
+  color: #0A5463;
 }
 
 .hero-phone-link {
-  color: #D4AF37;
+  color: #0A5463;
   font-weight: 800;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  border-bottom: 1.5px solid transparent;
 }
 
 .hero-phone-link:hover {
-  color: #F5DF9B;
-  text-decoration: underline;
+  color: #09768C;
+  border-bottom-color: #09768C;
+  text-decoration: none;
+}
+
+/* Secondary Action Button on Hero Slides */
+.hero-btn-secondary {
+  border: 2px solid #09768C !important;
+  color: #0A5463 !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.25s ease !important;
+}
+
+.hero-btn-secondary:hover {
+  background-color: #0A5463 !important;
+  border-color: #0A5463 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(10, 84, 99, 0.25) !important;
 }
 
 /* Carousel Controls (Arrows) */
@@ -415,10 +427,10 @@
   width: 2.75rem;
   height: 2.75rem;
   border-radius: 9999px;
-  background-color: rgba(255, 255, 255, 0.95);
-  color: #0B0B0C;
-  border: 1px solid rgba(152, 117, 44, 0.4);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+  color: #0A5463;
+  border: 1px solid #D8ECEE;
+  box-shadow: 0 4px 12px rgba(10, 84, 99, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,14 +440,14 @@
 }
 
 .hero-nav-arrow:hover {
-  background-color: #D4AF37;
-  color: #0B0B0C;
+  background-color: #168B9F;
+  color: #FFFFFF;
   transform: translateY(-50%) scale(1.08);
-  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 6px 16px rgba(22, 139, 159, 0.35);
 }
 
 .hero-nav-arrow:focus-visible {
-  outline: 2px solid #D4AF37;
+  outline: 2px solid #249FAF;
   outline-offset: 2px;
 }
 
@@ -475,17 +487,24 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.375rem 0.75rem;
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(4px);
   border-radius: 9999px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(10, 84, 99, 0.1);
+  border: 1px solid #D8ECEE;
+}
+
+@media (min-width: 768px) {
+  .hero-carousel-dots {
+    left: 22.5%;
+  }
 }
 
 .hero-dot {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 9999px;
-  background-color: rgba(152, 117, 44, 0.4);
+  background-color: rgba(9, 118, 140, 0.35);
   border: none;
   cursor: pointer;
   padding: 0;
@@ -493,10 +512,10 @@
 }
 
 .hero-dot:hover {
-  background-color: #D4AF37;
+  background-color: #168B9F;
 }
 
 .hero-dot.active {
   width: 1.5rem;
-  background-color: #D4AF37;
+  background-color: #0A5463;
 }

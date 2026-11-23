@@ -33,12 +33,12 @@ export default function PageBanner({
         />
       ) : (
         <>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/20 via-[#141414] to-[#0B0B0C] opacity-90 pointer-events-none" />
-          <div className="absolute right-0 top-0 w-96 h-96 bg-[#D4AF37]/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/20 via-[#0A5463] to-[#073842] opacity-90 pointer-events-none" />
+          <div className="absolute right-0 top-0 w-96 h-96 bg-[#40C7CE]/15 rounded-full blur-3xl pointer-events-none" />
         </>
       )}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-left pt-14 sm:pt-20 lg:pt-24 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-left py-12 sm:py-16">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-3 drop-shadow-md text-left">
           {title}
         </h1>
@@ -57,17 +57,17 @@ export default function PageBanner({
               {crumb.path ? (
                 <Link
                   to={crumb.path}
-                  className="hover:text-[#D4AF37] transition-colors"
+                  className="hover:text-[#40C7CE] transition-colors"
                 >
                   {crumb.name}
                 </Link>
               ) : (
-                <span className="text-[#D4AF37] font-semibold">{crumb.name}</span>
+                <span className="text-[#40C7CE] font-semibold">{crumb.name}</span>
               )}
             </React.Fragment>
           ))}
           <ChevronRight className="w-4 h-4 text-slate-300 drop-shadow" />
-          <span className="text-[#D4AF37] font-semibold">{title}</span>
+          <span className="text-[#40C7CE] font-semibold">{title}</span>
         </nav>
       </div>
     </section>

@@ -97,7 +97,7 @@ export default function Home() {
             {/* Right Column: Information & Bullet Points */}
             <div className="about-content-col">
               <div className="about-pill-badge">
-                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#168B9F]" />
                 <span>O nas &bull; Williams Housekeeping</span>
               </div>
 

@@ -1,17 +1,17 @@
-/* Button Component Styles */
+/* Button Component Styles - Clarivo Teal & Turquoise Theme */
 .btn-royal-gold {
-  background: linear-gradient(135deg, #98752C 0%, #D4AF37 35%, #F5DF9B 55%, #C69B32 80%, #98752C 100%);
-  color: #0B0B0C !important;
-  border: 1px solid rgba(245, 223, 155, 0.4);
-  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.28);
+  background: linear-gradient(135deg, #0A5463 0%, #09768C 20%, #168B9F 40%, #249FAF 60%, #32B3BF 80%, #40C7CE 100%);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(64, 199, 206, 0.4);
+  box-shadow: 0 4px 14px rgba(10, 84, 99, 0.25);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-royal-gold:hover {
-  background: #F5DF9B !important;
-  color: #0B0B0C !important;
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45);
-  border-color: #D4AF37;
+  background: linear-gradient(135deg, #073842 0%, #0A5463 35%, #09768C 70%, #168B9F 100%) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(10, 84, 99, 0.35);
+  border-color: #32B3BF;
 }
 
 .btn-golden-pill {

@@ -1,10 +1,10 @@
-/* Review / Testimonials Continuous Carousel Styles */
+/* Review / Testimonials Continuous Carousel Styles - Clarivo Teal & Turquoise Theme */
 .review-carousel-section {
   padding-top: 4rem;
   padding-bottom: 5rem;
-  background-color: #F8F5ED;
-  border-top: 1px solid rgba(152, 117, 44, 0.25);
-  border-bottom: 1px solid rgba(152, 117, 44, 0.25);
+  background: linear-gradient(135deg, #F0FAFA 0%, #EAF7F8 100%);
+  border-top: 1px solid #D8ECEE;
+  border-bottom: 1px solid #D8ECEE;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -90,11 +90,11 @@
 
 /* Individual Review Card */
 .review-card {
-  background-color: #ffffff;
-  border: 1px solid rgba(152, 117, 44, 0.3);
+  background-color: #FFFFFF;
+  border: 1px solid #D8ECEE;
   border-radius: 1.25rem;
   padding: 1.5rem 1.25rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -120,8 +120,8 @@
 
 .review-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
-  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 12px 20px -3px rgba(10, 84, 99, 0.12), 0 4px 6px -4px rgba(10, 84, 99, 0.04);
+  border-color: #32B3BF;
 }
 
 .review-card-top {
@@ -140,16 +140,16 @@
 .review-star-icon {
   width: 1.125rem;
   height: 1.125rem;
-  color: #D4AF37;
-  fill: #D4AF37;
+  color: #168B9F;
+  fill: #168B9F;
 }
 
 .review-quote-badge {
   width: 2rem;
   height: 2rem;
   border-radius: 0.5rem;
-  background-color: rgba(212, 175, 55, 0.12);
-  color: #D4AF37;
+  background-color: rgba(22, 139, 159, 0.12);
+  color: #168B9F;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,23 +179,23 @@
   align-items: center;
   gap: 0.875rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(152, 117, 44, 0.25);
+  border-top: 1px solid #D8ECEE;
 }
 
 .review-avatar {
   width: 3rem;
   height: 3rem;
   border-radius: 9999px;
-  background: linear-gradient(135deg, #0B0B0C 0%, #141414 100%);
-  color: #D4AF37;
+  background: linear-gradient(135deg, #0A5463 0%, #09768C 100%);
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 1rem;
   flex-shrink: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border: 2px solid #D4AF37;
+  box-shadow: 0 2px 4px rgba(10, 84, 99, 0.2);
+  border: 2px solid #32B3BF;
 }
 
 .review-author-meta {
@@ -204,7 +204,7 @@
 
 .review-author-name {
   font-weight: 700;
-  color: #0B0B0C;
+  color: #0A5463;
   font-size: 0.9375rem;
   white-space: nowrap;
   overflow: hidden;
@@ -213,7 +213,7 @@
 
 .review-author-role {
   font-size: 0.8125rem;
-  color: #D4AF37;
+  color: #168B9F;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;

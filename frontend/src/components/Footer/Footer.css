@@ -1,11 +1,11 @@
-/* Footer Component Styles */
+/* Footer Component Styles - Clarivo Teal & Turquoise Theme */
 .site-footer {
   position: relative;
-  background-color: #0B0B0C;
-  color: #F8F5ED;
+  background-color: #0A5463;
+  color: #D8ECEE;
   padding-top: 4.5rem;
   padding-bottom: 2.5rem;
-  border-top: 1px solid rgba(152, 117, 44, 0.3);
+  border-top: 1px solid rgba(216, 236, 238, 0.2);
   width: 100%;
 }
 
@@ -32,7 +32,7 @@
   grid-template-columns: 1fr;
   gap: 2.5rem;
   padding-bottom: 3.5rem;
-  border-bottom: 1px solid rgba(152, 117, 44, 0.25);
+  border-bottom: 1px solid rgba(216, 236, 238, 0.18);
 }
 
 @media (min-width: 640px) {
@@ -43,18 +43,25 @@
 
 @media (min-width: 1024px) {
   .footer-columns-grid {
-    grid-template-columns: 4fr 2.5fr 2.5fr 3fr;
+    grid-template-columns: 2.8fr 1.6fr 2.2fr 5.4fr;
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-columns-grid {
+    grid-template-columns: 3fr 1.8fr 2.4fr 4.8fr;
     gap: 2rem;
   }
 }
 
 .footer-brand-logo-card {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 0.625rem 1rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(152, 117, 44, 0.35);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+  border: 1px solid #D8ECEE;
   margin-bottom: 1rem;
 }
 
@@ -67,7 +74,7 @@
 .footer-brand-desc {
   font-size: 0.875rem;
   line-height: 1.65;
-  color: #F8F5ED;
+  color: #D8ECEE;
   margin: 0 0 1.25rem 0;
   max-width: 22rem;
 }
@@ -82,22 +89,22 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
-  background-color: #ffffff;
-  color: #0B0B0C;
+  background-color: #FFFFFF;
+  color: #0A5463;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(152, 117, 44, 0.35);
+  border: 1px solid #D8ECEE;
   text-decoration: none;
 }
 
 .footer-social-btn:hover {
-  background-color: #D4AF37;
-  color: #0B0B0C;
+  background-color: #32B3BF;
+  color: #FFFFFF;
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 6px 12px rgba(50, 179, 191, 0.35);
 }
 
 .footer-social-btn svg {
@@ -108,7 +115,7 @@
 .footer-heading {
   font-size: 1rem;
   font-weight: 700;
-  color: #F5DF9B;
+  color: #FFFFFF;
   margin: 0 0 1.25rem 0;
   display: flex;
   align-items: center;
@@ -120,7 +127,7 @@
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 9999px;
-  background-color: #D4AF37;
+  background-color: #32B3BF;
 }
 
 .footer-links-list {
@@ -137,13 +144,13 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
-  color: #F8F5ED;
+  color: #FFFFFF;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .footer-link-item a:hover {
-  color: #F5DF9B;
+  color: #40C7CE;
   transform: translateX(2px);
 }
 
@@ -155,7 +162,7 @@
 
 .footer-contact-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.75rem;
 }
 
@@ -163,38 +170,56 @@
   width: 2rem;
   height: 2rem;
   border-radius: 0.5rem;
-  background-color: rgba(212, 175, 55, 0.15);
+  background-color: rgba(50, 179, 191, 0.18);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #D4AF37;
-  border: 1px solid rgba(152, 117, 44, 0.3);
+  color: #32B3BF;
+  border: 1px solid rgba(216, 236, 238, 0.25);
   flex-shrink: 0;
-  margin-top: 0.125rem;
+}
+
+.footer-contact-text-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  line-height: 1.45;
 }
 
 .footer-contact-label {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #F5DF9B;
+  color: #32B3BF;
   letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
 .footer-contact-val {
   font-size: 0.8125rem;
-  color: #F8F5ED;
-  margin-top: 0.125rem;
+  color: #D8ECEE;
   line-height: 1.45;
   text-decoration: none;
-  display: inline-block;
-  padding: 12px 10px;
-  margin: 5px 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   transition: color 0.2s ease;
 }
 
 .footer-contact-val:hover {
-  color: #D4AF37;
+  color: #40C7CE;
+}
+
+.footer-contact-address {
+  white-space: nowrap;
+}
+
+@media (max-width: 639px) {
+  .footer-contact-address {
+    white-space: normal;
+  }
 }
 
 .footer-bottom-bar {
@@ -205,7 +230,8 @@
   justify-content: space-between;
   gap: 1rem;
   font-size: 0.75rem;
-  color: rgba(248, 245, 237, 0.7);
+  color: #D8ECEE;
+  opacity: 0.85;
   text-align: center;
 }
 

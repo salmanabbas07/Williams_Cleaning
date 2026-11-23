@@ -1,4 +1,4 @@
-/* Home Page Component Styles */
+/* Home Page Component Styles - Clarivo Teal & Turquoise Theme */
 .home-page {
   position: relative;
   width: 100%;
@@ -28,7 +28,7 @@
 .about-intro-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 @media (min-width: 640px) {
@@ -66,8 +66,8 @@
 }
 
 .about-main-img-card {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
-  border: 2px solid rgba(152, 117, 44, 0.35);
+  box-shadow: 0 20px 25px -5px rgba(10, 84, 99, 0.08), 0 8px 10px -6px rgba(10, 84, 99, 0.03);
+  border: 2px solid #D8ECEE;
   border-radius: 1.25rem;
   overflow: hidden;
 }
@@ -78,11 +78,11 @@
   right: -1rem;
   width: 50%;
   max-width: 14rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 0.5rem;
   border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(152, 117, 44, 0.35);
+  box-shadow: 0 25px 50px -12px rgba(10, 84, 99, 0.12);
+  border: 1px solid #D8ECEE;
 }
 
 @media (min-width: 640px) {
@@ -107,9 +107,10 @@
   letter-spacing: 0.05em;
   padding: 0.35rem 0.85rem;
   border-radius: 9999px;
-  background-color: rgba(212, 175, 55, 0.12);
-  color: #0B0B0C;
-  border: 1px solid rgba(152, 117, 44, 0.35);
+  background-color: #F0FAFA;
+  color: #0A5463;
+  border: 1px solid #D8ECEE;
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.06);
   margin-bottom: 0.875rem;
   width: fit-content;
 }
@@ -117,7 +118,7 @@
 .about-title {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #0B0B0C;
+  color: #0A5463;
   line-height: 1.25;
   letter-spacing: -0.02em;
   margin: 0 0 1rem 0;
@@ -174,7 +175,7 @@
 .about-feature-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: #D4AF37;
+  color: #168B9F;
   flex-shrink: 0;
 }
 
@@ -182,9 +183,9 @@
 .services-overview-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F8F5ED;
-  border-top: 1px solid rgba(152, 117, 44, 0.25);
-  border-bottom: 1px solid rgba(152, 117, 44, 0.25);
+  background-color: #F0FAFA;
+  border-top: 1px solid #D8ECEE;
+  border-bottom: 1px solid #D8ECEE;
 }
 
 @media (min-width: 640px) {
@@ -223,7 +224,7 @@
 .why-choose-section {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
-  background: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
+  background: linear-gradient(135deg, #073842 0%, #0A5463 50%, #09768C 100%);
   color: #ffffff;
   position: relative;
 }
@@ -261,8 +262,8 @@
 }
 
 .why-feature-card {
-  background-color: rgba(32, 32, 32, 0.85);
-  border: 1px solid rgba(152, 117, 44, 0.3);
+  background-color: rgba(7, 56, 66, 0.85);
+  border: 1px solid rgba(216, 236, 238, 0.25);
   border-radius: 1rem;
   padding: 1.5rem 1.25rem;
   display: flex;
@@ -273,31 +274,31 @@
 }
 
 .why-feature-card:hover {
-  background-color: rgba(20, 20, 20, 0.95);
-  border-color: rgba(212, 175, 55, 0.7);
+  background-color: rgba(10, 84, 99, 0.95);
+  border-color: #32B3BF;
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
 }
 
 .why-icon-box {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 0.875rem;
-  background-color: rgba(212, 175, 55, 0.15);
-  border: 1px solid rgba(152, 117, 44, 0.35);
+  background-color: rgba(50, 179, 191, 0.15);
+  border: 1px solid rgba(216, 236, 238, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #D4AF37;
+  color: #40C7CE;
   margin-bottom: 1.25rem;
   transition: all 0.3s ease;
 }
 
 .why-feature-card:hover .why-icon-box {
   transform: scale(1.1);
-  color: #0B0B0C;
-  background-color: #D4AF37;
-  border-color: #D4AF37;
+  color: #FFFFFF;
+  background-color: #32B3BF;
+  border-color: #32B3BF;
 }
 
 .why-card-title {
@@ -311,7 +312,7 @@
 .why-card-desc {
   font-size: 0.75rem;
   line-height: 1.6;
-  color: #F8F5ED;
+  color: #D8ECEE;
   margin: 0;
 }
 
@@ -319,7 +320,7 @@
 .mission-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #ffffff;
+  background-color: #EAF7F8;
 }
 
 @media (min-width: 640px) {
@@ -344,9 +345,9 @@
 .mission-card {
   padding: 2rem 1.75rem;
   border-radius: 1.25rem;
-  border: 1px solid rgba(152, 117, 44, 0.3);
-  background: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid #D8ECEE;
+  background: #FFFFFF;
+  box-shadow: 0 4px 15px -2px rgba(10, 84, 99, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -362,8 +363,8 @@
 
 .mission-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07);
-  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 10px 20px -3px rgba(10, 84, 99, 0.12);
+  border-color: #32B3BF;
 }
 
 .mission-icon-box {
@@ -378,15 +379,15 @@
 
 .mission-icon-box.blue,
 .mission-icon-box.gold {
-  background-color: rgba(212, 175, 55, 0.15);
-  color: #D4AF37;
-  border: 1px solid rgba(152, 117, 44, 0.3);
+  background-color: rgba(22, 139, 159, 0.12);
+  color: #168B9F;
+  border: 1px solid #D8ECEE;
 }
 
 .mission-card-title {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #0B0B0C;
+  color: #0A5463;
   margin: 0 0 0.75rem 0;
 }
 
@@ -399,26 +400,27 @@
 
 .mission-card-footer {
   padding-top: 1rem;
-  border-top: 1px solid rgba(152, 117, 44, 0.25);
+  border-top: 1px solid #D8ECEE;
 }
 
 .mission-banner-pill {
   margin-top: 2.5rem;
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
-  background-color: #F8F5ED;
-  border: 1px solid rgba(152, 117, 44, 0.3);
+  background-color: #FFFFFF;
+  border: 1px solid #D8ECEE;
   text-align: center;
   font-size: 0.8125rem;
-  color: #252525;
-  font-weight: 500;
+  color: #0A5463;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(10, 84, 99, 0.06);
 }
 
 /* 5. 5-Step Hiring Timeline */
 .process-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #ffffff;
+  background-color: #F0FAFA;
 }
 
 @media (min-width: 640px) {
@@ -461,7 +463,7 @@
   top: 1.25rem;
   bottom: 1.25rem;
   width: 2px;
-  background-color: rgba(152, 117, 44, 0.3);
+  background-color: #D8ECEE;
 }
 
 @media (min-width: 640px) {
@@ -481,15 +483,15 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 9999px;
-  background-color: #ffffff;
-  border: 2px solid #D4AF37;
-  color: #D4AF37;
+  background-color: #FFFFFF;
+  border: 2px solid #168B9F;
+  color: #168B9F;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.875rem;
   font-weight: 900;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(10, 84, 99, 0.08);
   transition: all 0.25s ease;
   z-index: 2;
 }
@@ -504,18 +506,19 @@
 }
 
 .process-step-item:hover .process-step-badge {
-  background-color: #D4AF37;
-  color: #0B0B0C;
+  background-color: #0A5463;
+  color: #FFFFFF;
+  border-color: #0A5463;
   transform: scale(1.08);
 }
 
 .process-step-card {
   margin-left: 1rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 1.5rem 1.25rem;
   border-radius: 1rem;
-  border: 1px solid rgba(152, 117, 44, 0.3);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #D8ECEE;
+  box-shadow: 0 2px 8px rgba(10, 84, 99, 0.05);
   transition: all 0.25s ease;
 }
 
@@ -528,14 +531,14 @@
 }
 
 .process-step-card:hover {
-  box-shadow: 0 8px 16px -2px rgba(0, 0, 0, 0.08);
-  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 8px 16px -2px rgba(10, 84, 99, 0.1);
+  border-color: #32B3BF;
 }
 
 .process-step-title {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #0B0B0C;
+  color: #0A5463;
   margin: 0 0 0.5rem 0;
 }
 
@@ -572,7 +575,7 @@
 .process-check-icon {
   width: 1rem;
   height: 1rem;
-  color: #D4AF37;
+  color: #168B9F;
   flex-shrink: 0;
 }
 
@@ -580,8 +583,8 @@
 .blog-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #F8F5ED;
-  border-top: 1px solid rgba(152, 117, 44, 0.25);
+  background-color: #FFFFFF;
+  border-top: 1px solid #D8ECEE;
 }
 
 @media (min-width: 640px) {

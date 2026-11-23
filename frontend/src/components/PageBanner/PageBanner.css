@@ -1,10 +1,12 @@
-/* Page banner styling */
+/* Page banner styling - Matches Home Hero banner height for visual consistency across all pages */
 .page-banner {
   position: relative;
   width: 100%;
   height: 290px;
   overflow: hidden;
-  background: linear-gradient(135deg, #0B0B0C 0%, #141414 40%, #98752C 75%, #D4AF37 100%);
+  background: linear-gradient(135deg, #073842 0%, #0A5463 40%, #09768C 75%, #168B9F 100%);
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 640px) {
@@ -13,9 +15,31 @@
   }
 }
 
+/* ==========================================================================
+   DESKTOP BANNER HEIGHT CONFIGURATION:
+   - Matches exactly the Home Page Hero Carousel height from HeroCarousel.css
+   - 768px+: 540px
+   - 1024px+: 550px
+   - 1280px+: 560px
+   ========================================================================== */
+@media (min-width: 768px) {
+  .page-banner {
+    height: 540px;
+    min-height: 540px;
+  }
+}
+
 @media (min-width: 1024px) {
   .page-banner {
-    height: 380px;
+    height: 550px;
+    min-height: 550px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-banner {
+    height: 591px;
+    min-height: 591px;
   }
 }
 
