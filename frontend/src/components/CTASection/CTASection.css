@@ -112,3 +112,44 @@
     flex-wrap: wrap;
   }
 }
+
+/* ==========================================================================
+   PRD: CTA Section Mobile Responsive Optimization (300px - 430px)
+   ========================================================================== */
+@media (min-width: 300px) and (max-width: 430px) {
+  .cta-section {
+    padding: 3rem 1rem;
+  }
+
+  .cta-badge {
+    font-size: 0.6875rem;
+    padding: 0.3rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-title {
+    font-size: 1.35rem;
+    line-height: 1.28;
+    margin-bottom: 0.875rem;
+    text-wrap: balance;
+  }
+
+  .cta-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-buttons-row {
+    width: 100%;
+    gap: 0.625rem;
+  }
+
+  .cta-buttons-row > * {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+

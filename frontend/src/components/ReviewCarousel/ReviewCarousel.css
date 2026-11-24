@@ -235,3 +235,39 @@
     transform: translateX(-50%);
   }
 }
+
+/* ==========================================================================
+   PRD: Review Carousel Mobile Responsive Optimization (300px - 430px)
+   ========================================================================== */
+@media (min-width: 300px) and (max-width: 430px) {
+  .review-carousel-section {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .review-slide-card {
+    width: 285px;
+    flex: 0 0 285px;
+  }
+
+  .review-card {
+    padding: 1.25rem 1rem;
+    min-height: 240px;
+    border-radius: 1rem;
+  }
+
+  .review-text {
+    font-size: 0.825rem;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+
+  .review-author-name {
+    font-size: 0.85rem;
+  }
+
+  .review-author-role {
+    font-size: 0.75rem;
+  }
+}
+

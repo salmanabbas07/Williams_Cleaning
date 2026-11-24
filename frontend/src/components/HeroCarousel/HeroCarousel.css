@@ -136,9 +136,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  /* object-position: center 80%; */
+  object-position: center 35% !important;;
   display: block;
 }
+
+
+
 
 /* Narrow Seam Gradient: subtle overlay on desktop right edge */
 .hero-slide-media-overlay {
@@ -522,3 +526,97 @@
   width: 1.5rem;
   background-color: #123B50;
 }
+
+@media (max-width: 767px) {
+  /* Slide 1 */
+  .hero-slide-item:nth-child(1) .hero-slide-img {
+    object-position: center 90% !important;
+  }
+
+  /* Slide 2 */
+  .hero-slide-item:nth-child(2) .hero-slide-img {
+    object-position: center 60% !important;
+  }
+
+  /* Slide 3 */
+  .hero-slide-item:nth-child(3) .hero-slide-img {
+    object-position: center 35% !important; /* Apne hisab se adjust karein */
+  }
+}
+
+/* ==========================================================================
+   PRD: Hero Slider Mobile Optimization & Button Consistency (300px - 430px)
+   ========================================================================== */
+@media (min-width: 300px) and (max-width: 430px) {
+  .hero-slide-content {
+    padding: 1.5rem 1rem 3.25rem 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-slide-badge {
+    font-size: 0.6875rem;
+    padding: 0.3rem 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  .hero-slide-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  .hero-slide-desc {
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+
+  /* Option 1: Consistent Full-Width Stacked Buttons Across All Slides */
+  .hero-slide-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.625rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-slide-actions > * {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-slide-meta {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 0.625rem;
+  }
+
+  .hero-slide-meta .flex {
+    justify-content: center;
+  }
+
+  .hero-social-list {
+    justify-content: center;
+  }
+
+  .hero-contact-group {
+    align-items: center;
+  }
+
+  .hero-carousel-dots {
+    bottom: 1rem;
+  }
+}
+
+

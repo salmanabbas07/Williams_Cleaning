@@ -104,3 +104,35 @@
 .section-heading-subtitle.dark {
   color: #D8ECEE;
 }
+
+/* ==========================================================================
+   PRD: Section Heading Mobile Optimization (300px - 430px)
+   ========================================================================== */
+@media (min-width: 300px) and (max-width: 430px) {
+  .section-heading-wrapper {
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .section-heading-badge {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-heading-title {
+    font-size: 1.4rem;
+    line-height: 1.28;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    word-break: normal;
+  }
+
+  .section-heading-subtitle {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    text-wrap: pretty;
+  }
+}
+

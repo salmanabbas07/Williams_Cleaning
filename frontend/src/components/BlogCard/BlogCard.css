@@ -103,3 +103,36 @@
 .blog-card:hover .blog-read-more-icon {
   transform: translateX(4px);
 }
+
+/* ==========================================================================
+   PRD: Blog Card Mobile Responsive Optimization (300px - 430px)
+   ========================================================================== */
+@media (min-width: 300px) and (max-width: 430px) {
+  .blog-card {
+    border-radius: 1rem;
+  }
+
+  .blog-card-img-wrapper {
+    padding: 0.625rem 0.625rem 0 0.625rem;
+  }
+
+  .blog-card-body {
+    padding: 1.125rem 0.875rem;
+  }
+
+  .blog-card-title {
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .blog-card-excerpt {
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+
+  .blog-meta-item {
+    font-size: 0.725rem;
+  }
+}
+

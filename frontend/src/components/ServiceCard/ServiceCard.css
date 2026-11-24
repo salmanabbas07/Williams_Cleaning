@@ -81,3 +81,38 @@
   align-items: center;
   justify-content: flex-start;
 }
+
+/* ==========================================================================
+   PRD: Service Card Mobile Responsive Optimization (300px - 430px)
+   ========================================================================== */
+@media (min-width: 300px) and (max-width: 430px) {
+  .service-card {
+    border-radius: 1rem;
+  }
+
+  .service-card-img-wrapper {
+    padding: 0.625rem 0.625rem 0 0.625rem;
+  }
+
+  .service-card-body {
+    padding: 1.125rem 0.875rem;
+  }
+
+  .service-card-title {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .service-card-desc {
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    margin-bottom: 0.875rem;
+  }
+
+  .service-card-features {
+    font-size: 0.725rem;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+  }
+}
+
