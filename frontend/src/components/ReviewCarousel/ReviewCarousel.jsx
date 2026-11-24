@@ -85,7 +85,7 @@ export default function ReviewCarousel() {
                       {/* Author Metadata */}
                       <div className="review-author-row">
                         <div className="review-avatar" aria-hidden="true">
-                          {initials || "WH"}
+                          {initials || "CC"}
                         </div>
                         <div className="review-author-meta">
                           <div className="review-author-name">
@@ -151,7 +151,7 @@ export default function ReviewCarousel() {
                       {/* Author Metadata */}
                       <div className="review-author-row">
                         <div className="review-avatar" aria-hidden="true">
-                          {initials || "WH"}
+                          {initials || "CC"}
                         </div>
                         <div className="review-author-meta">
                           <div className="review-author-name">

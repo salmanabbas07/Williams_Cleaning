@@ -7,8 +7,8 @@ import { useLocation } from 'react-router-dom';
  * for client-side route transitions without external library dependencies.
  */
 export default function SEO({
-  title = 'Williams Housekeeping | Hotelsko gospodinjstvo in čiščenje',
-  description = 'Williams Housekeeping ponuja profesionalno hotelsko gospodinjstvo, zanesljive ekipe za čiščenje hotelov ter vrhunsko poslovno čiščenje po vsej Sloveniji.',
+  title = 'Claviro Cleaning | Hotelsko gospodinjstvo in čiščenje',
+  description = 'Claviro Cleaning ponuja profesionalno hotelsko gospodinjstvo, zanesljive ekipe za čiščenje hotelov ter vrhunsko poslovno čiščenje po vsej Sloveniji.',
   canonical = null,
   ogType = 'website',
   ogImage = 'https://www.williamscleaning.si/images/bannerLP1.png',
@@ -61,7 +61,7 @@ export default function SEO({
     };
 
     // 4. Open Graph Tags
-    setMetaTag('property', 'og:site_name', 'Williams Housekeeping');
+    setMetaTag('property', 'og:site_name', 'Claviro Cleaning');
     setMetaTag('property', 'og:locale', 'sl_SI');
     setMetaTag('property', 'og:type', ogType);
     setMetaTag('property', 'og:url', currentUrl);

@@ -64,8 +64,8 @@ export default function FAQ() {
   return (
     <div className="faq-page">
       <SEO
-        title="Pogosta vprašanja | Williams Housekeeping čiščenje"
-        description="Poiščite odgovore na pogosta vprašanja o hotelskem gospodinjstvu, odzivnem času, standardih kakovosti in najemu ekip za čiščenje pri Williams Housekeeping."
+        title="Pogosta vprašanja | Claviro Cleaning čiščenje"
+        description="Poiščite odgovore na pogosta vprašanja o hotelskem gospodinjstvu, odzivnem času, standardih kakovosti in najemu ekip za čiščenje pri Claviro Cleaning."
         canonical="https://www.williamscleaning.si/pogosta-vprasanja"
         schemaJson={faqSchema}
       />

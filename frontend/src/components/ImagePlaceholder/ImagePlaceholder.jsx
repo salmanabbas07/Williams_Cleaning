@@ -12,7 +12,7 @@ export default function ImagePlaceholder({
   className = '',
   label = '',
   src = null,
-  alt = 'Slika storitve Williams Housekeeping'
+  alt = 'Slika storitve Claviro Cleaning'
 }) {
   // If an image source is provided in the future, render it directly
   if (src) {

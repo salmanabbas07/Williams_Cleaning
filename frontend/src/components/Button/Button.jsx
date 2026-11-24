@@ -5,7 +5,7 @@ import './Button.css';
 
 /**
  * Reusable Button Component
- * Styled after Clarivo Cleaning Premium Teal & Turquoise Theme:
+ * Styled after Claviro Cleaning Premium Teal & Turquoise Theme:
  * - Primary buttons: Teal Gradient (#0A5463 -> #09768C -> #168B9F -> #249FAF -> #32B3BF -> #40C7CE)
  * - Text: White (#FFFFFF)
  * - Hover: Slightly darker Teal
@@ -46,7 +46,7 @@ export default function Button({
   };
 
   const variantStyles = {
-    // Clarivo Deep Navy Primary button (#123B50)
+    // Claviro Deep Navy Primary button (#123B50)
     primary: 'btn-deep-navy text-white hover:shadow-lg focus:ring-[#123B50]',
     golden: 'btn-deep-navy text-white hover:shadow-lg focus:ring-[#123B50]',
     blue: 'btn-deep-navy text-white hover:shadow-md focus:ring-[#123B50]',

@@ -8,16 +8,14 @@
        GLOBAL WEBSITE BACKGROUND COLOR (Single Centralized Variable)
        Change this one variable to update the background of the entire website!
        ========================================================================== */
-    /* --website-bg: #F5F0E6; */
-    --website-bg:		#F5EEDC;
-
+    --website-bg: #F5EEDC;
 
     /* Cards & Component Surfaces */
     --color-card-bg: #F8F4EB;
     --color-card-border: rgba(10, 84, 99, 0.10);
     --color-card-shadow: rgba(10, 84, 99, 0.07);
 
-    /* Clarivo Cleaning Brand Colour Palette */
+    /* Claviro Cleaning Brand Colour Palette */
     --color-primary-dark-teal: #0A5463;
     --color-secondary-teal: #09768C;
     --color-primary-teal: #168B9F;
@@ -43,8 +41,8 @@
     --color-aqua-secondary: var(--website-bg);
     --color-aqua-alternate: var(--website-bg);
     --color-aqua-soft: #F8F4EB;
-    --color-warm-gold-cream: var(--website-bg);
-    --color-dark-charcoal: #46545A;
+    --color-warm-gold-cream: #E5F3F3;
+    --color-dark-charcoal: #465A63;
     --color-pure-white: #FFFFFF;
 
     /* Primary Brand Gradients */
@@ -87,9 +85,6 @@
     --color-antique-gold: #C5A46D;
     --color-golden-sand: #C5A46D;
     --color-rich-champagne: #C5A46D;
-    --color-warm-gold-cream: #E5F3F3;
-    --color-dark-charcoal: #465A63;
-    --color-pure-white: #FFFFFF;
 
     --gradient-primary-rich-champagne: linear-gradient(135deg, #E5F3F3 0%, #D9EEEE 50%, #CDE7E8 100%);
     --gradient-deep-golden-sand: linear-gradient(135deg, #E5F3F3 0%, #D9EEEE 100%);

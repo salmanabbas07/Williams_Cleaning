@@ -1,4 +1,4 @@
-/* Hero Carousel Styles - Clarivo Seamless Warm Cream & Teal Theme */
+/* Hero Carousel Styles - Claviro Seamless Warm Cream & Teal Theme */
 .hero-carousel-section {
   padding: 0;
   margin: 0;
@@ -136,8 +136,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* object-position: center 80%; */
-  object-position: center 35% !important;;
+  object-position: center 35% !important;
   display: block;
 }
 
@@ -540,7 +539,7 @@
 
   /* Slide 3 */
   .hero-slide-item:nth-child(3) .hero-slide-img {
-    object-position: center 35% !important; /* Apne hisab se adjust karein */
+    object-position: center 35% !important;
   }
 }
 

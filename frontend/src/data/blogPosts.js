@@ -5,7 +5,7 @@ export const blogPostsData = [
     image: '/images/The Future of Hospitality Staffing.webp',
     date: '24. Oktobra 2025',
     category: 'Gospodinjstvo',
-    author: 'Ekipa Williams',
+    author: 'Ekipa Claviro Cleaning',
     excerpt: 'Sodobni hoteli se soočajo z dinamičnimi izzivi pri zagotavljanju zanesljivega osebja. Odkrijte, kako premišljene kadrovske rešitve zagotavljajo brezhibno čistočo in zadovoljstvo gostov.',
     readTime: '4 min branja'
   },
@@ -15,7 +15,7 @@ export const blogPostsData = [
     image: '/images/flexible outsourcing reduces operational costs Subcontracting housekeeping services.webp',
     date: '18. Oktobra 2025',
     category: 'Optimizacija',
-    author: 'Ekipa Williams',
+    author: 'Ekipa Claviro Cleaning',
     excerpt: 'Podizvajalske storitve v gospodinjstvu omogočajo hotelskim hišam večjo prilagodljivost in nižje fiksne stroške ob ohranjanju najvišjih higienskih standardov.',
     readTime: '5 min branja'
   },
@@ -25,7 +25,7 @@ export const blogPostsData = [
     image: '/images/The importance of seasonal teams for impeccable service during peak tourist season.webp',
     date: '12. Oktobra 2025',
     category: 'Upravljanje kakovosti',
-    author: 'Ekipa Williams',
+    author: 'Ekipa Claviro Cleaning',
     excerpt: 'Visoka turistična sezona zahteva hitro odzivnost in usklajene ekipe. Preverite, kako učinkovito obvladati povečan obseg menjav gostov brez kompromisov pri kakovosti.',
     readTime: '3 min branja'
   }

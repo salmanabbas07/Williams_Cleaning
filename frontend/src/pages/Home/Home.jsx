@@ -69,8 +69,8 @@ export default function Home() {
   return (
     <div className="home-page">
       <SEO
-        title="Williams Housekeeping | Hotelsko gospodinjstvo in čiščenje"
-        description="Williams Housekeeping ponuja profesionalno hotelsko gospodinjstvo, zanesljive ekipe za čiščenje hotelov ter vrhunsko poslovno čiščenje po vsej Sloveniji."
+        title="Claviro Cleaning | Hotelsko gospodinjstvo in čiščenje"
+        description="Claviro Cleaning ponuja profesionalno hotelsko gospodinjstvo, zanesljive ekipe za čiščenje hotelov ter vrhunsko poslovno čiščenje po vsej Sloveniji."
         canonical="https://www.williamscleaning.si/"
       />
 
@@ -86,7 +86,7 @@ export default function Home() {
               <div className="about-main-img-card">
                 <ImagePlaceholder
                   src="/images/about_image.webp"
-                  alt="Williams Housekeeping — Profesionalne ekipe za hotelsko in poslovno čiščenje"
+                  alt="Claviro Cleaning — Profesionalne ekipe za hotelsko in poslovno čiščenje"
                   aspectRatio="aspect-[4/5]"
                   rounded="rounded-2xl"
                   label="Glavna predstavitvena slika podjetja"
@@ -98,15 +98,15 @@ export default function Home() {
             <div className="about-content-col">
               <div className="about-pill-badge">
                 <Sparkles className="w-3.5 h-3.5 text-[#C5A46D]" />
-                <span>O nas &bull; Williams Housekeeping</span>
+                <span>O nas &bull; Claviro Cleaning</span>
               </div>
 
               <h2 className="about-title">
-                Dobrodošli pri Williams Housekeeping — Vaš zanesljiv partner za brezhibne in zdrave prostore
+                Dobrodošli pri Claviro Cleaning — Vaš zanesljiv partner za brezhibne in zdrave prostore
               </h2>
 
               <p className="about-desc-primary">
-                Pri Williams Housekeeping verjamemo, da je čisto okolje temelj zdravja, produktivnosti in miru. Smo ponudnik profesionalnih rešitev za čiščenje, predan zagotavljanju vrhunskih storitev, prilagojenih edinstvenim potrebam stanovanjskih, poslovnih in komercialnih naročnikov.
+                Pri Claviro Cleaning verjamemo, da je čisto okolje temelj zdravja, produktivnosti in miru. Smo ponudnik profesionalnih rešitev za čiščenje, predan zagotavljanju vrhunskih storitev, prilagojenih edinstvenim potrebam stanovanjskih, poslovnih in komercialnih naročnikov.
               </p>
 
               <p className="about-desc-secondary">
@@ -269,7 +269,7 @@ export default function Home() {
 
           {/* Banner Tag */}
           <div className="mission-banner-pill">
-            Williams Housekeeping &bull; Vrhunske ekipe za hotelsko gospodinjstvo &bull; Evropski standardi kakovosti
+            Claviro Cleaning &bull; Vrhunske ekipe za hotelsko gospodinjstvo &bull; Evropski standardi kakovosti
           </div>
         </div>
       </section>

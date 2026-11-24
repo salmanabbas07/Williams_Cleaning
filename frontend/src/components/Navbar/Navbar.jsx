@@ -66,17 +66,6 @@ export default function Navbar() {
               <Mail className="top-bar-icon" />
               <span>E-pošta: <strong>info.willamscleaning@gmail.com</strong></span>
             </a>
-            <span className="top-bar-divider">|</span>
-            {/* <a
-              href="https://www.williamscleaning.si"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="top-bar-link"
-              aria-label="Obiščite našo spletno stran"
-            >
-              <Globe className="top-bar-icon" />
-              <span>Splet: <strong>www.williamscleaning.si</strong></span>
-            </a> */}
           </div>
 
           {/* Social Media Links */}
@@ -129,11 +118,11 @@ export default function Navbar() {
             to="/"
             onClick={closeMobileMenu}
             className="nav-brand"
-            aria-label="Domov - Williams Housekeeping hotelsko in poslovno čiščenje"
+            aria-label="Domov - Claviro Cleaning hotelsko in poslovno čiščenje"
           >
             <img
               src="/images/header_logo.webp"
-              alt="Williams Housekeeping — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
+              alt="Claviro Cleaning — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
               className="nav-logo-img"
               width="180"
               height="70"

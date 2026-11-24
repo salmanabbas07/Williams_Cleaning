@@ -6,7 +6,7 @@ import './Footer.css';
 
 /**
  * Footer Component
- * Matches the official Williams Housekeeping branding and contact details
+ * Matches the official Claviro Cleaning branding and contact details
  */
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,16 +17,16 @@ export default function Footer() {
         <div className="footer-columns-grid">
           {/* Column 1: Brand & Logo */}
           <div>
-            <Link to="/" className="footer-brand-logo-card" aria-label="Domov - Williams Housekeeping hotelsko in poslovno čiščenje">
+            <Link to="/" className="footer-brand-logo-card" aria-label="Domov - Claviro Cleaning hotelsko in poslovno čiščenje">
               <img
                 src="/images/footer_logo.webp"
-                alt="Williams Housekeeping — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
+                alt="Claviro Cleaning — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
                 className="footer-logo-img"
               />
             </Link>
 
             <p className="footer-brand-desc">
-              Williams Housekeeping zagotavlja zanesljive, strokovne in usposobljene ekipe za hotelsko ter poslovno čiščenje po najvišjih evropskih standardih.
+              Claviro Cleaning zagotavlja zanesljive, strokovne in usposobljene ekipe za hotelsko ter poslovno čiščenje po najvišjih evropskih standardih.
             </p>
 
             {/* Social Media Buttons */}
@@ -200,7 +200,7 @@ export default function Footer() {
 
               <div className="footer-contact-item">
                 <div className="footer-contact-icon-box">
-                  <svg className="w-4 h-4 text-[#32B3BF]" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#ffffff]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12.031 0C5.396 0 .029 5.367.029 11.987c0 2.112.551 4.177 1.6 6l-1.7 6.2 6.35-1.66c1.76.96 3.75 1.46 5.752 1.46h.005c6.634 0 12.001-5.367 12.001-11.988 0-3.205-1.248-6.218-3.518-8.487C18.25 1.252 15.238 0 12.031 0zm0 21.98c-1.79 0-3.55-.48-5.09-1.39l-.36-.22-3.78.99 1.01-3.68-.24-.38a9.98 9.98 0 01-1.53-5.31c0-5.52 4.49-10.01 10.01-10.01 2.67 0 5.18 1.04 7.07 2.93 1.89 1.89 2.93 4.4 2.93 7.07 0 5.52-4.49 10-9.99 10zm5.48-7.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.89-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z" />
                   </svg>
                 </div>
@@ -267,7 +267,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="footer-bottom-bar">
           <p>
-            &copy; {currentYear} Williams Housekeeping &bull; Čiščenje storitve. Vse pravice pridržane.
+            &copy; {currentYear} Claviro Cleaning &bull; Čiščenje storitve. Vse pravice pridržane.
           </p>
           <p>
             Uradna stran:{' '}
@@ -275,7 +275,7 @@ export default function Footer() {
               href="https://www.williamscleaning.si"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#40C7CE', fontWeight: 600, textDecoration: 'none' }}
+              style={{  fontWeight: 600, textDecoration: 'none' }}
             >
               williamscleaning.si
             </a>

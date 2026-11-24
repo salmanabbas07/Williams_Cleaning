@@ -8,7 +8,7 @@ import './PageBanner.css';
  * Displays page title, breadcrumb navigation, and dark background matching reference.
  */
 export default function PageBanner({
-  title = 'Williams Housekeeping',
+  title = 'Claviro Cleaning',
   subtitle = '',
   breadcrumbs = [{ name: 'Domov', path: '/' }],
   image = null

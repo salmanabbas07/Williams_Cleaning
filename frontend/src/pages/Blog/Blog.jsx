@@ -19,7 +19,7 @@ export default function Blog() {
   return (
     <div className="blog-page">
       <SEO
-        title="Blog in novice | Williams Housekeeping hotelsko čiščenje"
+        title="Blog in novice | Claviro Cleaning hotelsko čiščenje"
         description="Preberite strokovne članke in nasvete o hotelskem gospodinjstvu, optimizaciji čiščenja, higienskih standardih in učinkovitem vodenju ekip v turizmu."
         canonical="https://www.williamscleaning.si/blog"
       />

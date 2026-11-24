@@ -1,11 +1,9 @@
-/* Navbar Component Styles - Clarivo Teal & Turquoise Theme */
+/* Navbar Component Styles - Claviro Teal & Turquoise Theme */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  /* background-color: #0A5463; */
   background-color: #FEFEFD;
-
   border-bottom: 1px solid rgba(216, 236, 238, 0.2);
   box-shadow: 0 4px 20px -2px rgba(10, 84, 99, 0.35);
   transition: all 0.25s ease-in-out;
@@ -143,17 +141,8 @@
   text-decoration: none;
   outline: none;
   padding: 0.35rem 0.75rem;
-  /* background-color: #FFFFFF; */
   border-radius: 0.75rem;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); */
-  /* border: 1px solid #D8ECEE; */
-  /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
 }
-
-/* .nav-brand:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(50, 179, 191, 0.3);
-} */
 
 .nav-brand:focus-visible {
   outline: 2px solid #32B3BF;
@@ -165,7 +154,6 @@
   width: auto;
   object-fit: contain;
   transition: transform 0.2s ease;
-  /* background-color: red; */
 }
 
 @media (min-width: 640px) {
@@ -198,7 +186,6 @@
   padding: 0.5rem 0.875rem;
   font-size: 0.9375rem;
   font-weight: 600;
-  /* color: #FFFFFF; */
   color: #05505f;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -211,9 +198,7 @@
 }
 
 .desktop-nav-link.active {
-  /* color: #FFFFFF; */
   color: #32B3BF;
-
   background-color: rgba(50, 179, 191, 0.28);
   font-weight: 700;
 }
@@ -249,9 +234,7 @@
   justify-content: center;
   padding: 0.625rem;
   border-radius: 0.75rem;
-  /* color: #FFFFFF; */
   color: #40C7CE;
-  /* background: transparent; */
   background-color: rgba(50, 179, 191, 0.15);
   border: 1px solid transparent;
   cursor: pointer;

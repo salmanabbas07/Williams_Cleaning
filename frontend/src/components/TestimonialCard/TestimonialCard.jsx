@@ -7,7 +7,7 @@ import './TestimonialCard.css';
  * Reusable Testimonial Card
  */
 export default function TestimonialCard({
-  quote = 'Williams Housekeeping nam zagotavlja izjemno zanesljivo in profesionalno ekipo.',
+  quote = 'Claviro Cleaning nam zagotavlja izjemno zanesljivo in profesionalno ekipo.',
   author = 'Zadovoljen naročnik',
   position = 'Vodja operacij',
   company = 'Hotelski partner',
@@ -17,7 +17,7 @@ export default function TestimonialCard({
   return (
     <div className={`testimonial-card-component ${className}`}>
       <div>
-        {/* Rating Stars using Clarivo Champagne Gold */}
+        {/* Rating Stars using Claviro Champagne Gold */}
         <div className="testimonial-card-stars" aria-label={`Ocena: ${rating} od 5 zvezdic`}>
           {Array.from({ length: 5 }).map((_, i) => (
             <Star

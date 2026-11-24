@@ -45,8 +45,8 @@ export default function Contact() {
   return (
     <div className="contact-page">
       <SEO
-        title="Kontakt | Williams Housekeeping čiščenje Ljubljana"
-        description="Stopite v stik z Williams Housekeeping za ponudbo hotelskega gospodinjstva in poslovnega čiščenja: +386 69 803 622, Kotnikova ulica 28, 1000 Ljubljana."
+        title="Kontakt | Claviro Cleaning čiščenje Ljubljana"
+        description="Stopite v stik s Claviro Cleaning za ponudbo hotelskega gospodinjstva in poslovnega čiščenja: +386 69 803 622, Kotnikova ulica 28, 1000 Ljubljana."
         canonical="https://www.williamscleaning.si/kontakt"
       />
       {/* 1. Page Banner */}

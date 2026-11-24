@@ -49,7 +49,7 @@ export default function Services() {
   return (
     <div className="services-page">
       <SEO
-        title="Storitve čiščenja | Williams Hotelsko gospodinjstvo"
+        title="Storitve čiščenja | Claviro Cleaning hotelsko gospodinjstvo"
         description="Celovite storitve čiščenja: hotelsko gospodinjstvo, sezonske ekipe, poslovno in pisarniško čiščenje ter globinsko vzdrževanje objektov po vsej Sloveniji."
         canonical="https://www.williamscleaning.si/storitve"
       />
@@ -72,7 +72,7 @@ export default function Services() {
             <div className="service-detail-image-box mb-6 sm:mb-8">
               <img
                 src={activeService.image}
-                alt={`${activeService.title} — Profesionalne storitve Williams Housekeeping`}
+                alt={`${activeService.title} — Profesionalne storitve Claviro Cleaning`}
                 className="w-full h-auto max-h-[460px] object-cover rounded-2xl sm:rounded-3xl shadow-sm border border-[rgba(10,84,99,0.10)]"
               />
             </div>

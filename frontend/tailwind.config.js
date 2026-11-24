@@ -7,7 +7,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Clarivo Cleaning – Seamless Premium Cream & Teal Theme
+        // Claviro Cleaning – Seamless Premium Cream & Teal Theme
+        claviro: {
+          darkTeal: '#0A5463',
+          secondaryTeal: '#09768C',
+          primaryTeal: '#168B9F',
+          mediumTeal: '#249FAF',
+          turquoise: '#249FAF',
+          brightTurquoise: '#40C7CE',
+          deepNavy: '#123B50',
+          darkNavyHover: '#0B3042',
+          champagneGold: '#C5A46D',
+          goldHover: '#B18E57',
+          white: '#FFFFFF',
+          creamMain: 'var(--website-bg)',
+          cardBg: '#F8F4EB',
+          creamBorder: 'rgba(10, 84, 99, 0.10)',
+          lightBg: 'var(--website-bg)',
+          lightBorder: 'rgba(10, 84, 99, 0.10)',
+          lightCyan: '#F8F4EB',
+          aquaMain: 'var(--website-bg)',
+          aquaSecondary: 'var(--website-bg)',
+          aquaAlternate: 'var(--website-bg)',
+          aquaSoft: 'var(--website-bg)',
+          bodyText: '#46545A',
+          placeholder: '#82969C',
+        },
         clarivo: {
           darkTeal: '#0A5463',
           secondaryTeal: '#09768C',
@@ -39,6 +64,7 @@ export default {
           DEFAULT: 'var(--website-bg)',
           card: '#F8F4EB',
           border: 'rgba(10, 84, 99, 0.10)',
+          soft: '#FFFFFF',
         },
         navy: {
           DEFAULT: '#123B50',
@@ -103,7 +129,7 @@ export default {
         placeholder: '#82969C',
         lightborder: 'rgba(10, 84, 99, 0.10)',
 
-        // Backwards compatibility mappings for older theme keys mapped to Clarivo palette
+        // Backwards compatibility mappings for older theme keys mapped to Claviro palette
         goldensand: {
           DEFAULT: '#168B9F',
         },
@@ -129,10 +155,6 @@ export default {
         sand: {
           DEFAULT: '#E5F3F3',
           warm: '#D9EEEE',
-        },
-        cream: {
-          DEFAULT: '#EFF8F8',
-          soft: '#FFFFFF',
         },
         deepbeige: {
           DEFAULT: '#D8ECEE',

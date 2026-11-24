@@ -12,7 +12,7 @@ export const servicesData = [
     ],
     aspectRatio: '16/10',
     subtitle: 'Celovita oskrba hotelskih sob, perila in javnih prostorov za brezhibno izkušnjo vaših gostov.',
-    intro: 'Vrhunsko hotelsko gospodinjstvo je temelj ugleda vsakega hotela. Williams Housekeeping zagotavlja strokovno usposobljene sobarice, nadzornike in podporno osebje, ki delujejo po najvišjih evropskih higienskih standardih. Naše ekipe prevzamejo celotno skrb za čistočo in pripravo sob, kar vam omogoča, da se popolnoma posvetite gostoljubju.',
+    intro: 'Vrhunsko hotelsko gospodinjstvo je temelj ugleda vsakega hotela. Claviro Cleaning zagotavlja strokovno usposobljene sobarice, nadzornike in podporno osebje, ki delujejo po najvišjih evropskih higienskih standardih. Naše ekipe prevzamejo celotno skrb za čistočo in pripravo sob, kar vam omogoča, da se popolnoma posvetite gostoljubju.',
     perfectFor: [
       'Mestni in butični hoteli',
       'Poslovni hoteli z visoko frekvenco nočitev',
@@ -70,7 +70,7 @@ export const servicesData = [
     ],
     aspectRatio: '16/10',
     subtitle: 'Prilagodljiva okrepitev delovnih ekip v obdobjih visoke turistične sezone in vrhuncev zasedenosti.',
-    intro: 'V času visoke turistične sezone se hoteli in letovišča soočajo z nenadnim porastom zasedenosti ter velikim pritiskom na obstoječe osebje. Williams Housekeeping zagotavlja vnaprej usposobljene sezonske ekipe, ki se nemudoma vključijo v vaše delovne procese in poskrbijo za nemoteno poslovanje vašega objekta.',
+    intro: 'V času visoke turistične sezone se hoteli in letovišča soočajo z nenadnim porastom zasedenosti ter velikim pritiskom na obstoječe osebje. Claviro Cleaning zagotavlja vnaprej usposobljene sezonske ekipe, ki se nemudoma vključijo v vaše delovne procese in poskrbijo za nemoteno poslovanje vašega objekta.',
     perfectFor: [
       'Poletna obmorska sezona in obalni hoteli',
       'Zimska smučišča in alpska letovišča',
@@ -128,7 +128,7 @@ export const servicesData = [
     ],
     aspectRatio: '16/10',
     subtitle: 'Zanesljiva operativna pomoč ob kadrovskih izpadih, bolniških odsotnostih in nenadnih konicah.',
-    intro: 'Nenačrtovane odsotnosti osebja, nepričakovani dogodki ali nenaden porast rezervacij lahko hitro ogrozijo delovanje nastanitvenega obrata. Williams Housekeeping vam ponuja zanesljivo kratkoročno in projektno podporo za nemoteno tekoče vzdrževanje bivalnih enot, apartmajev in hotelskih sob.',
+    intro: 'Nenačrtovane odsotnosti osebja, nepričakovani dogodki ali nenaden porast rezervacij lahko hitro ogrozijo delovanje nastanitvenega obrata. Claviro Cleaning vam ponuja zanesljivo kratkoročno in projektno podporo za nemoteno tekoče vzdrževanje bivalnih enot, apartmajev in hotelskih sob.',
     perfectFor: [
       'Kratkoročne bolniške odsotnosti in dopusti rednega kadra',
       'Nenadni prihodi večjih skupin ali podaljšanja bivanja',
@@ -184,7 +184,7 @@ export const servicesData = [
     ],
     aspectRatio: '16/10',
     subtitle: 'Strateško B2B podizvajanje za optimizacijo stroškov in celovito rešitev pomanjkanja delovne sile.',
-    intro: 'Pomanjkanje kakovostnega kadra je eden največjih izzivov sodobnega hotelirstva. Kot vaš zaupanja vreden podizvajalec Williams Housekeeping prevzame celotno operativno izvedbo in upravljanje storitev čiščenja. S tem zmanjšate tveganja zaposlovanja ter optimizirate operativne stroške poslovanja.',
+    intro: 'Pomanjkanje kakovostnega kadra je eden največjih izzivov sodobnega hotelirstva. Kot vaš zaupanja vreden podizvajalec Claviro Cleaning prevzame celotno operativno izvedbo in upravljanje storitev čiščenja. S tem zmanjšate tveganja zaposlovanja ter optimizirate operativne stroške poslovanja.',
     perfectFor: [
       'Srednje in velike hotelske verige',
       'Turistična letovišča in apartmajska naselja',
@@ -240,7 +240,7 @@ export const servicesData = [
     ],
     aspectRatio: '16/10',
     subtitle: 'Redno vzdrževanje poslovnih prostorov, pisarn in objektov za urejeno, zdravo in reprezentativno delovno okolje.',
-    intro: 'Čisti in urejeni delovni prostori neposredno vplivajo na dobro počutje zaposlenih ter profesionalen prvi vtis vaših poslovnih partnerjev. Williams Housekeeping ponuja prilagojene urnike čiščenja poslovnih stavb, pisarn in komercialnih prostorov zunaj vašega delovnega časa, s čimer zagotavljamo nemoten potek vašega poslovanja.',
+    intro: 'Čisti in urejeni delovni prostori neposredno vplivajo na dobro počutje zaposlenih ter profesionalen prvi vtis vaših poslovnih partnerjev. Claviro Cleaning ponuja prilagojene urnike čiščenja poslovnih stavb, pisarn in komercialnih prostorov zunaj vašega delovnega časa, s čimer zagotavljamo nemoten potek vašega poslovanja.',
     perfectFor: [
       'Poslovne stavbe in sedeži podjetij',
       'Odvetniške, finančne, računovodske in svetovalne pisarne',
@@ -295,7 +295,7 @@ export const servicesData = [
     ],
     aspectRatio: '16/10',
     subtitle: 'Intenzivno čiščenje ob sezonskih odprtjih, po prenovah, gradbenih delih ali pred zahtevnimi inšpekcijskimi pregledi.',
-    intro: 'Redno dnevno čiščenje ne zadostuje za odstranitev trdovratne umazanije, vodnega kamna, globokega prahu ali neprijetnih vonjav. Specialno in globinsko čiščenje Williams Housekeeping obsega temeljito obdelavo vsakega kotička vašega objekta z uporabo najsodobnejših profesionalnih strojev in namenskih ekoloških čistil.',
+    intro: 'Redno dnevno čiščenje ne zadostuje za odstranitev trdovratne umazanije, vodnega kamna, globokega prahu ali neprijetnih vonjav. Specialno in globinsko čiščenje Claviro Cleaning obsega temeljito obdelavo vsakega kotička vašega objekta z uporabo najsodobnejših profesionalnih strojev in namenskih ekoloških čistil.',
     perfectFor: [
       'Priprava hotelskih objektov pred začetkom turistične sezone',
       'Temeljito čiščenje po zaključku sezone in priprava na mirovanje',

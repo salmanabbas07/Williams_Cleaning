@@ -2,7 +2,7 @@ export const testimonialsData = [
   {
     id: 1,
     rating: 5,
-    quote: 'Williams Housekeeping nam zagotavlja izjemno zanesljivo in strokovno ekipo. V času visoke turistične sezone so ključni partner pri ohranjanju najvišjih standardov čistoče v hotelskih sobah.',
+    quote: 'Claviro Cleaning nam zagotavlja izjemno zanesljivo in strokovno ekipo. V času visoke turistične sezone so ključni partner pri ohranjanju najvišjih standardov čistoče v hotelskih sobah.',
     author: 'Marko K.',
     position: 'Vodja hotela',
     company: 'Vzorec ocene partnerja · Ljubljana'
@@ -18,7 +18,7 @@ export const testimonialsData = [
   {
     id: 3,
     rating: 5,
-    quote: 'Sodelovanje z ekipo Williams nam je znatno olajšalo organizacijo v času polne zasedenosti. Sobe so vedno pravočasno in brezhibno pripravljene za nove goste.',
+    quote: 'Sodelovanje z ekipo Claviro Cleaning nam je znatno olajšalo organizacijo v času polne zasedenosti. Sobe so vedno pravočasno in brezhibno pripravljene za nove goste.',
     author: 'Matej Z.',
     position: 'Direktor boutique hotela',
     company: 'Vzorec ocene partnerja · Portorož'

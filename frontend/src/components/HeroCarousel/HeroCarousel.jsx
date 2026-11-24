@@ -23,7 +23,7 @@ const heroSlidesData = [
     id: 1,
     image: '/images/bannerLP1.webp',
     imagePosition: 'center 20%',
-    badge: 'Williams Housekeeping • Zanesljiva hotelska podpora',
+    badge: 'Claviro Cleaning • Zanesljiva hotelska podpora',
     title: 'Vrhunske ekipe za hotelsko gospodinjstvo in poslovno čiščenje',
     description:
       'Zanesljive, usposobljene in strokovno vodene ekipe za brezhibno čistočo vaših hotelov, letovišč in poslovnih prostorov. Prilagodljive kadrovske rešitve z najvišjo stopnjo evropske kakovosti in 24/7 podporo.',
@@ -192,7 +192,7 @@ export default function HeroCarousel() {
           onTouchEnd={handleTouchEnd}
           role="region"
           aria-roledescription="carousel"
-          aria-label="Williams Housekeeping predstavitveni vrtiljak"
+          aria-label="Claviro Cleaning predstavitveni vrtiljak"
         >
           {/* Viewport with sliding track */}
           <div className="hero-carousel-viewport">

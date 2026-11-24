@@ -70,14 +70,14 @@ export default function About() {
   return (
     <div className="about-page">
       <SEO
-        title="O nas | Williams Housekeeping strokovno hotelsko čiščenje"
-        description="Spoznajte Williams Housekeeping — vaš zanesljiv partner za profesionalno hotelsko gospodinjstvo, poslovno čiščenje in vzdrževanje objektov po Sloveniji."
+        title="O nas | Claviro Cleaning strokovno hotelsko čiščenje"
+        description="Spoznajte Claviro Cleaning — vaš zanesljiv partner za profesionalno hotelsko gospodinjstvo, poslovno čiščenje in vzdrževanje objektov po Sloveniji."
         canonical="https://www.williamscleaning.si/o-nas"
       />
       {/* 1. Page Banner */}
       <PageBanner
         title="O nas"
-        subtitle="Dobrodošli pri Williams Housekeeping — vašem zanesljivem partnerju za brezhibno čiste in zdrave prostore."
+        subtitle="Dobrodošli pri Claviro Cleaning — vašem zanesljivem partnerju za brezhibno čiste in zdrave prostore."
         breadcrumbs={[{ name: 'Domov', path: '/' }]}
         image="/images/about_lp.webp"
       />
@@ -91,10 +91,10 @@ export default function About() {
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <ImagePlaceholder
                   src="/images/about_image.webp"
-                  alt="Predstavitev ekipe Williams Housekeeping za hotelsko gospodinjstvo in poslovno čiščenje"
+                  alt="Predstavitev ekipe Claviro Cleaning za hotelsko gospodinjstvo in poslovno čiščenje"
                   aspectRatio="aspect-[4/5]"
                   rounded="rounded-2xl"
-                  label="Predstavitev ekipe Williams"
+                  label="Predstavitev ekipe Claviro Cleaning"
                   className="shadow-xl border-2 border-[rgba(10,84,99,0.10)]"
                 />
               </div>
@@ -104,15 +104,15 @@ export default function About() {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#F8F4EB] text-[#0A5463] border border-[rgba(10,84,99,0.10)] shadow-sm mb-3">
                 <Sparkles className="w-3.5 h-3.5 text-[#C5A46D]" />
-                <span>O nas &bull; Williams Housekeeping</span>
+                <span>O nas &bull; Claviro Cleaning</span>
               </div>
 
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0A5463] leading-tight mb-4">
-                Dobrodošli pri Williams Housekeeping — Vaš zanesljiv partner za brezhibne in zdrave prostore
+                Dobrodošli pri Claviro Cleaning — Vaš zanesljiv partner za brezhibne in zdrave prostore
               </h2>
 
               <p className="text-[#46545A] text-base leading-relaxed mb-4">
-                Pri Williams Housekeeping verjamemo, da je čisto okolje temelj zdravja, produktivnosti in miru. Smo ponudnik profesionalnih rešitev za čiščenje, predan zagotavljanju vrhunskih storitev, prilagojenih edinstvenim potrebam stanovanjskih, poslovnih in komercialnih naročnikov.
+                Pri Claviro Cleaning verjamemo, da je čisto okolje temelj zdravja, produktivnosti in miru. Smo ponudnik profesionalnih rešitev za čiščenje, predan zagotavljanju vrhunskih storitev, prilagojenih edinstvenim potrebam stanovanjskih, poslovnih in komercialnih naročnikov.
               </p>
 
               <p className="text-[#46545A] text-sm leading-relaxed mb-6">
@@ -161,7 +161,7 @@ export default function About() {
                   Preoblikujemo vaše prostore
                 </h3>
                 <p className="text-[#46545A] text-sm leading-relaxed mb-6">
-                  Pri Williams Housekeeping ne le čistimo prostorov — preoblikujemo jih v bolj zdrava, svetlejša in prijetnejša okolja za bivanje ter delo.
+                  Pri Claviro Cleaning ne le čistimo prostorov — preoblikujemo jih v bolj zdrava, svetlejša in prijetnejša okolja za bivanje ter delo.
                 </p>
               </div>
               <div className="pt-4 border-t border-[rgba(10,84,99,0.10)]">
@@ -192,17 +192,17 @@ export default function About() {
           </div>
 
           <div className="mt-8 py-3.5 px-6 rounded-xl bg-[#F8F4EB] border border-[rgba(10,84,99,0.10)] shadow-sm text-center text-xs sm:text-sm text-[#46545A] font-semibold">
-            Williams Housekeeping &bull; Zaupanja vreden partner za brezhibne prostore &bull; Vrhunska kakovost in zanesljivost
+            Claviro Cleaning &bull; Zaupanja vreden partner za brezhibne prostore &bull; Vrhunska kakovost in zanesljivost
           </div>
         </div>
       </section>
 
-      {/* 4. Why Choose Williams Housekeeping Section */}
+      {/* 4. Why Choose Claviro Cleaning Section */}
       <section className="py-16 sm:py-24 bg-[var(--website-bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Zakaj izbrati nas"
-            title="Zakaj izbrati Williams Housekeeping?"
+            title="Zakaj izbrati Claviro Cleaning?"
             subtitle="Zanesljivost, strokovnost in celovita podpora za brezhibno urejene prostore."
             centered={true}
           />
@@ -270,7 +270,7 @@ export default function About() {
       {/* 6. CTA Section */}
       <CTASection
         title="Prepustite nam skrb za čistočo"
-        subtitle="Pri Williams Housekeeping ne le čistimo prostorov — preoblikujemo jih v bolj zdrava, svetlejša in prijetnejša okolja. Stopite v stik z nami!"
+        subtitle="Pri Claviro Cleaning ne le čistimo prostorov — preoblikujemo jih v bolj zdrava, svetlejša in prijetnejša okolja. Stopite v stik z nami!"
         primaryBtnText="Pošljite povpraševanje"
         primaryBtnTo="/kontakt"
       />
