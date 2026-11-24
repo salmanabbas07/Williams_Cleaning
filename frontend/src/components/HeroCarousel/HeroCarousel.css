@@ -545,9 +545,9 @@
 }
 
 /* ==========================================================================
-   PRD: Hero Slider Mobile Optimization & Button Consistency (300px - 430px)
+   PRD: Hero Slider Mobile Optimization & Button Consistency (300px - 425px)
    ========================================================================== */
-@media (min-width: 300px) and (max-width: 430px) {
+@media (min-width: 300px) and (max-width: 425px) {
   .hero-slide-content {
     padding: 1.5rem 1rem 3.25rem 1rem;
     text-align: center;
@@ -577,7 +577,7 @@
     text-align: center;
   }
 
-  /* Option 1: Consistent Full-Width Stacked Buttons Across All Slides */
+  /* Option 1: Consistent Full-Width Stacked Buttons Across All Slides (Mobile) */
   .hero-slide-actions {
     display: flex;
     flex-direction: column;
@@ -618,5 +618,113 @@
     bottom: 1rem;
   }
 }
+
+/* ==========================================================================
+   PRD: Hero Slider Tablet Responsive Optimization (426px - 768px)
+   ========================================================================== */
+@media (min-width: 426px) and (max-width: 768px) {
+  .hero-slide-media {
+    height: 330px;
+  }
+
+  .hero-slide-content {
+    padding: 2rem 2rem 3.5rem 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-slide-badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.875rem;
+    text-align: center;
+  }
+
+  .hero-slide-title {
+    font-size: 1.75rem;
+    line-height: 1.24;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.875rem;
+    text-align: center;
+    max-width: 36rem;
+  }
+
+  .hero-slide-desc {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin: 0 auto 1.5rem auto;
+    max-width: 34rem;
+    text-align: center;
+  }
+
+  /* Mandatory 50%-50% Side-by-Side Consistent Button Layout Across All Slides */
+  .hero-slide-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 34rem !important;
+    margin: 0 auto 1.5rem auto !important;
+    gap: 0.875rem !important;
+  }
+
+  .hero-slide-actions > * {
+    flex: 1 1 0% !important;
+    width: 50% !important;
+    min-width: 0 !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    padding-left: 0.875rem !important;
+    padding-right: 0.875rem !important;
+    font-size: 0.8125rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-slide-meta {
+    width: 100%;
+    max-width: 34rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .hero-carousel-dots {
+    bottom: 1.25rem;
+  }
+}
+
+/* ==========================================================================
+   Hero Slider Image Fix for 570px - 767px (Fix Top Cropping)
+   ========================================================================== */
+@media (min-width: 570px) and (max-width: 767px) {
+  /* 1. Container ko thoda extra vertical space dein taaki aggressive zoom na ho */
+  .hero-slide-media {
+    height: 380px !important;
+  }
+
+  /* 2. Images ko Top-focused karein taaki sar aur upar ka hissa na kate */
+  .hero-slide-item:nth-child(1) .hero-slide-img {
+    object-position: center 85% !important;
+  }
+
+  .hero-slide-item:nth-child(2) .hero-slide-img {
+    object-position: center 20% !important;
+  }
+
+  .hero-slide-item:nth-child(3) .hero-slide-img {
+    object-position: center 35% !important;
+  }
+}
+
+
 
 

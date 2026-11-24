@@ -364,3 +364,34 @@
 .mobile-drawer-contact-item:hover {
   color: #40C7CE;
 }
+
+/* ==========================================================================
+   PRD: Tablet Responsive Optimization (426px - 768px)
+   ========================================================================== */
+@media (min-width: 426px) and (max-width: 768px) {
+  .main-navbar-container {
+    height: 5.25rem;
+    padding: 0 1.5rem;
+  }
+
+  .nav-logo-img {
+    height: 54px;
+    width: auto;
+  }
+
+  .mobile-toggle-btn {
+    padding: 0.625rem;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .mobile-drawer {
+    padding: 1.25rem 1.5rem 1.75rem 1.5rem;
+  }
+
+  .mobile-nav-link {
+    font-size: 1.05rem;
+    padding: 0.85rem 1.125rem;
+  }
+}
+

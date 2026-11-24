@@ -611,9 +611,9 @@
 }
 
 /* ==========================================================================
-   PRD: Home Page Mobile Responsive Optimization (300px - 430px)
+   PRD: Home Page Mobile Responsive Optimization (300px - 425px)
    ========================================================================== */
-@media (min-width: 300px) and (max-width: 430px) {
+@media (min-width: 300px) and (max-width: 425px) {
   .home-section-container {
     padding: 0 1rem;
   }
@@ -824,4 +824,195 @@
     text-align: center !important;
   }
 }
+
+/* ==========================================================================
+   PRD: Home Page Tablet Responsive Optimization (426px - 768px)
+   ========================================================================== */
+@media (min-width: 426px) and (max-width: 768px) {
+  .home-section-container {
+    padding: 0 1.5rem;
+  }
+
+  /* Balanced Tablet Section Spacing */
+  .about-intro-section,
+  .services-overview-section,
+  .why-choose-section,
+  .mission-section,
+  .process-section,
+  .blog-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  /* 1. About Company Section */
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .about-media-stack {
+    max-width: 26rem;
+    margin: 0 auto;
+  }
+
+  .about-content-col {
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-pill-badge {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 38rem;
+  }
+
+  .about-desc-primary,
+  .about-desc-secondary {
+    font-size: 0.925rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 38rem;
+  }
+
+  .about-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.875rem;
+    margin-bottom: 1.75rem;
+    max-width: 38rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .about-feature-item {
+    font-size: 0.85rem;
+    padding: 0.625rem 0.875rem;
+    background-color: #F8F4EB;
+    border: 1px solid rgba(10, 84, 99, 0.08);
+    border-radius: 0.75rem;
+  }
+
+  .about-content-col > div:last-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* 2. Services Overview Grid: Clean 2-Column Layout on Tablet */
+  .services-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .services-action-center {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* 3. Why Choose Us Section: 2-Column Grid with Equal Height Cards */
+  .why-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .why-feature-card {
+    padding: 1.5rem 1.25rem;
+    height: 100%;
+  }
+
+  .why-card-title {
+    font-size: 0.9375rem;
+  }
+
+  .why-card-desc {
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+
+  /* 4. Mission Section: 2-Column Equal Height Cards */
+  .mission-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .mission-card {
+    padding: 1.75rem 1.5rem;
+    height: 100%;
+  }
+
+  .mission-card-title {
+    font-size: 1.35rem;
+  }
+
+  .mission-card-desc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .mission-banner-pill {
+    margin-top: 2rem;
+    padding: 0.875rem 1.25rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+
+  /* 5. 5-Step Process Timeline */
+  .process-container-narrow {
+    max-width: 42rem;
+    padding: 0 1.5rem;
+  }
+
+  .process-timeline {
+    padding-left: 2.5rem;
+    gap: 1.75rem;
+  }
+
+  .process-timeline::before {
+    left: 1.125rem;
+  }
+
+  .process-step-badge {
+    left: -2.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.875rem;
+  }
+
+  .process-step-card {
+    margin-left: 0.875rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: 1rem;
+  }
+
+  .process-step-title {
+    font-size: 1.1rem;
+  }
+
+  .process-step-desc {
+    font-size: 0.85rem;
+  }
+
+  /* 6. Blog Section: 2-Column Grid on Tablet */
+  .blog-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .blog-action-center {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 

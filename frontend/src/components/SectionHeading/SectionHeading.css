@@ -106,9 +106,9 @@
 }
 
 /* ==========================================================================
-   PRD: Section Heading Mobile Optimization (300px - 430px)
+   PRD: Section Heading Mobile Optimization (300px - 425px)
    ========================================================================== */
-@media (min-width: 300px) and (max-width: 430px) {
+@media (min-width: 300px) and (max-width: 425px) {
   .section-heading-wrapper {
     margin-bottom: 2rem;
     padding: 0 0.5rem;
@@ -135,4 +135,36 @@
     text-wrap: pretty;
   }
 }
+
+/* ==========================================================================
+   PRD: Section Heading Tablet Responsive Optimization (426px - 768px)
+   ========================================================================== */
+@media (min-width: 426px) and (max-width: 768px) {
+  .section-heading-wrapper {
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .section-heading-badge {
+    font-size: 0.725rem;
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .section-heading-title {
+    font-size: 1.85rem;
+    line-height: 1.24;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  .section-heading-subtitle {
+    margin-top: 0.875rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 38rem;
+    text-wrap: pretty;
+  }
+}
+
 
