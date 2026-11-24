@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Star, Quote } from "lucide-react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import { testimonialsData } from "../../data/testimonials";
@@ -11,13 +11,33 @@ import "./ReviewCarousel.css";
  * - Automatically continues moving and restarts smoothly without a visible jump
  * - Preserves existing design, colors, typography, spacing, and styling
  * - Fully responsive on desktop, tablet, and mobile
+ * - Pauses when off-screen to avoid wasting CPU/GPU cycles during page load
  * - Pauses on hover/touch for comfortable reading
  */
 export default function ReviewCarousel() {
   const [isPaused, setIsPaused] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      setIsVisible(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { rootMargin: '250px 0px' }
+    );
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section className="review-carousel-section" aria-label="Mnenja partnerjev">
+    <section ref={sectionRef} className="review-carousel-section" aria-label="Mnenja partnerjev">
       <div className="review-carousel-container">
         {/* Section Heading */}
         <SectionHeading
@@ -39,7 +59,7 @@ export default function ReviewCarousel() {
         >
           <div
             className="review-carousel-marquee"
-            style={{ animationPlayState: isPaused ? "paused" : "running" }}
+            style={{ animationPlayState: !isVisible || isPaused ? "paused" : "running" }}
           >
             {/* Set 1: 5 Testimonial Cards */}
             <div className="review-marquee-set">

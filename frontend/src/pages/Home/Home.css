@@ -420,6 +420,8 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   background-color: var(--website-bg, #F5F0E6);
+  content-visibility: auto;
+  contain-intrinsic-size: 600px;
 }
 
 @media (min-width: 640px) {
@@ -583,6 +585,8 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   background-color: var(--website-bg, #F5F0E6);
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
 }
 
 @media (min-width: 640px) {
@@ -611,9 +615,9 @@
 }
 
 /* ==========================================================================
-   PRD: Home Page Mobile Responsive Optimization (300px - 425px)
+   PRD: Home Page Mobile Responsive Optimization (up to 425px)
    ========================================================================== */
-@media (min-width: 300px) and (max-width: 425px) {
+@media (max-width: 425px) {
   .home-section-container {
     padding: 0 1rem;
   }

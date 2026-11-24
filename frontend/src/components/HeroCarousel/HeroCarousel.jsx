@@ -22,11 +22,15 @@ const heroSlidesData = [
   {
     id: 1,
     image: '/images/bannerLP1.webp',
+    imageMobile: '/images/bannerLP1-mobile.webp',
+    imageDesktop: '/images/bannerLP1-desktop.webp',
+    width: 720,
+    height: 720,
     imagePosition: 'center 20%',
     badge: 'Claviro Cleaning • Zanesljiva hotelska podpora',
-    title: 'Vrhunske ekipe za hotelsko gospodinjstvo in poslovno čiščenje',
+    title: 'Profesionalno hotelsko gospodinjstvo in čiščenje',
     description:
-      'Zanesljive, usposobljene in strokovno vodene ekipe za brezhibno čistočo vaših hotelov, letovišč in poslovnih prostorov. Prilagodljive kadrovske rešitve z najvišjo stopnjo evropske kakovosti in 24/7 podporo.',
+      'Zanesljive, usposobljene in strokovno vodene čistilne ekipe za brezhibno čistočo vaših hotelov, letovišč in poslovnih prostorov. Prilagodljive kadrovske rešitve z najvišjo stopnjo evropske kakovosti in 24/7 podporo po vsej Sloveniji.',
     primaryBtn: {
       text: 'Pošljite povpraševanje',
       to: '/kontakt'
@@ -39,6 +43,10 @@ const heroSlidesData = [
   {
     id: 2,
     image: '/images/bannerLP2.webp',
+    imageMobile: '/images/bannerLP2-mobile.webp',
+    imageDesktop: '/images/bannerLP2-desktop.webp',
+    width: 720,
+    height: 538,
     imagePosition: 'center 30%',
     badge: 'Vrhunski standardi • Strokovno usposobljeno osebje',
     title: 'Brezhibna čistoča in najvišji higienski standardi',
@@ -56,6 +64,10 @@ const heroSlidesData = [
   {
     id: 3,
     image: '/images/bannerLP3.webp',
+    imageMobile: '/images/bannerLP3-mobile.webp',
+    imageDesktop: '/images/bannerLP3-desktop.webp',
+    width: 720,
+    height: 1073,
     imagePosition: 'center 20%',
     badge: 'Prilagodljive rešitve • 24/7 operativna podpora',
     title: 'Zanesljiv partner za sezonske in dolgoročne potrebe',
@@ -75,21 +87,33 @@ const heroSlidesData = [
 export default function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [loadSecondarySlides, setLoadSecondarySlides] = useState(false);
   const touchStartXRef = useRef(null);
   const touchEndXRef = useRef(null);
   const autoPlayIntervalRef = useRef(null);
 
+  useEffect(() => {
+    // Defer loading secondary slides until after initial page paint and LCP settles
+    const timer = setTimeout(() => {
+      setLoadSecondarySlides(true);
+    }, 8000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const totalSlides = heroSlidesData.length;
 
   const goToNextSlide = useCallback(() => {
+    setLoadSecondarySlides(true);
     setCurrentIndex((prev) => (prev + 1) % totalSlides);
   }, [totalSlides]);
 
   const goToPrevSlide = useCallback(() => {
+    setLoadSecondarySlides(true);
     setCurrentIndex((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
   }, [totalSlides]);
 
   const goToSlide = (index) => {
+    setLoadSecondarySlides(true);
     setCurrentIndex(index);
   };
 
@@ -101,11 +125,11 @@ export default function HeroCarousel() {
     if (!isPaused) {
       autoPlayIntervalRef.current = setInterval(() => {
         goToNextSlide();
-      }, 5000);
+      }, 6000);
     }
   }, [isPaused, goToNextSlide]);
 
-  // Autoplay management
+  // Autoplay management: settles initial slide first before beginning rotation
   useEffect(() => {
     if (isPaused) {
       if (autoPlayIntervalRef.current) {
@@ -114,11 +138,14 @@ export default function HeroCarousel() {
       return;
     }
 
-    autoPlayIntervalRef.current = setInterval(() => {
-      goToNextSlide();
-    }, 5000);
+    const startTimer = setTimeout(() => {
+      autoPlayIntervalRef.current = setInterval(() => {
+        goToNextSlide();
+      }, 6000);
+    }, 8000);
 
     return () => {
+      clearTimeout(startTimer);
       if (autoPlayIntervalRef.current) {
         clearInterval(autoPlayIntervalRef.current);
       }
@@ -213,14 +240,35 @@ export default function HeroCarousel() {
                   >
                     {/* Left Side: Single Image covering left 45% on desktop (Adjustable in HeroCarousel.css) */}
                     <div className="hero-slide-media">
-                      <img
-                        src={slide.image}
-                        alt={slide.title}
-                        className="hero-slide-img"
-                        style={slide.imagePosition ? { objectPosition: slide.imagePosition } : undefined}
-                        loading={isInitial ? 'eager' : 'lazy'}
-                        fetchpriority={isInitial ? 'high' : 'auto'}
-                      />
+                      {isInitial || currentIndex === idx || loadSecondarySlides ? (
+                        <picture>
+                          <source
+                            media="(max-width: 768px)"
+                            srcSet={slide.imageMobile || slide.image}
+                            width="640"
+                            height="640"
+                          />
+                          <source
+                            media="(min-width: 769px)"
+                            srcSet={slide.imageDesktop || slide.image}
+                            width={slide.width || 1280}
+                            height={slide.height || 1280}
+                          />
+                          <img
+                            src={slide.imageMobile || slide.image}
+                            alt={slide.title}
+                            width={slide.width || 720}
+                            height={slide.height || 720}
+                            className="hero-slide-img"
+                            style={slide.imagePosition ? { objectPosition: slide.imagePosition } : undefined}
+                            loading={isInitial ? 'eager' : 'lazy'}
+                            fetchpriority={isInitial ? 'high' : 'auto'}
+                            decoding={isInitial ? 'sync' : 'async'}
+                          />
+                        </picture>
+                      ) : (
+                        <div className="hero-slide-img bg-[#EFE9DD]" aria-hidden="true" />
+                      )}
                       <div className="hero-slide-media-overlay" aria-hidden="true" />
                     </div>
 

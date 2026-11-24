@@ -38,31 +38,31 @@ export default function Home() {
       icon: Users,
       title: 'Strokovno in usposobljeno osebje',
       description:
-        'Rigorozno preverjanje preteklih izkušenj, referenc in doslednega odnosa do dela.'
+        'Rigorozno preverjanje preteklih izkušenj, referenc in doslednega odnosa do dela za brezhibno čiščenje hotelov in poslovnih stavb.'
     },
     {
       icon: Clock,
       title: '24/7 Podpora partnerjem',
       description:
-        'Stalna odzivnost naše koordinacijske ekipe in takojšnje reševanje nujnih primerov.'
+        'Stalna odzivnost naše koordinacijske ekipe ter hitro reševanje nujnih primerov za nemoteno hotelsko gospodinjstvo.'
     },
     {
       icon: Shield,
       title: 'Prilagodljive rešitve po meri',
       description:
-        'Enostavno in hitro prilagajanje števila osebja trenutni zasedenosti vaših objektov.'
+        'Enostavno in hitro prilagajanje števila osebja trenutni zasedenosti vaših objektov in specifičnim zahtevam.'
     },
     {
       icon: Sparkles,
       title: 'Hitra odzivnost in zamenjava',
       description:
-        'Zagotovljena hitra menjava osebja v primeru odsotnosti ali nepredvidenih situacij.'
+        'Zagotovljena takojšnja menjava osebja v primeru odsotnosti, s čimer ohranjamo neprekinjene čistilne storitve.'
     },
     {
       icon: Award,
       title: 'Evropski standardi kakovosti',
       description:
-        'Popolna skladnost z veljavnimi evropskimi higienskimi standardi in protokoli čiščenja.'
+        'Popolna skladnost z veljavnimi evropskimi higienskimi protokoli in standardi za profesionalno čiščenje.'
     }
   ];
 
@@ -106,34 +106,34 @@ export default function Home() {
               </h2>
 
               <p className="about-desc-primary">
-                Pri Claviro Cleaning verjamemo, da je čisto okolje temelj zdravja, produktivnosti in miru. Smo ponudnik profesionalnih rešitev za čiščenje, predan zagotavljanju vrhunskih storitev, prilagojenih edinstvenim potrebam stanovanjskih, poslovnih in komercialnih naročnikov.
+                Pri Claviro Cleaning verjamemo, da je čisto okolje temelj zdravja, produktivnosti in miru. Smo zaupanja vreden ponudnik, specializiran za profesionalno čiščenje, celovito hotelsko gospodinjstvo ter vrhunsko poslovno čiščenje, prilagojeno edinstvenim potrebam hotelskih, poslovnih in komercialnih naročnikov po vsej Sloveniji.
               </p>
 
               <p className="about-desc-secondary">
-                Ne glede na to, ali gre za osvežitev vašega doma, vzdrževanje higienskega in navdihujočega pisarniškega delovnega prostora, vrhunsko oskrbo vrtov in urejanje okolice ali ponudbo globinskega čiščenja in vzdrževanja za hotele ter nastanitvene obrate — poskrbimo za vse. Naše strokovno znanje zajema vse vrste specializiranih storitev čiščenja, s čimer zagotavljamo, da vsak kotiček prejme skrb in pozornost, ki si jo zasluži.
+                Ne glede na to, ali gre za vsakodnevno hotelsko čiščenje in pripravo sob, vzdrževanje higienskih pisarniških delovnih prostorov ali generalno čiščenje hotelov in poslovnih stavb — naše strokovne čistilne storitve poskrbijo za vsak kotiček z najvišjo stopnjo natančnosti in diskretnosti.
               </p>
 
               <p className="about-desc-secondary">
-                Zavedamo se, da vsak objekt zahteva individualen pristop. Pred pričetkom sodelovanja natančno analiziramo vaše operativne potrebe, pripravimo prilagojen načrt vzdrževanja ter določimo natančne standarde kakovosti. Naše strokovne ekipe zagotavljajo 24/7 operativno podporo ter zanesljivo izvedbo del po celotni Sloveniji.
+                Zavedamo se, da vsak objekt zahteva individualen pristop. Pred pričetkom sodelovanja natančno analiziramo vaše operativne potrebe, pripravimo prilagojen načrt vzdrževanja ter določimo natančne evropske higienske standarde kakovosti. Naše strokovne ekipe za hotelsko in poslovno čiščenje zagotavljajo 24/7 operativno podporo ter zanesljivo izvedbo del po celotni Sloveniji.
               </p>
 
               {/* 4 Feature Bullet points with checkmarks */}
               <div className="about-features-grid">
                 <div className="about-feature-item">
                   <CheckCircle2 className="about-feature-icon" />
-                  <span>Osvežitev domov in stanovanj</span>
+                  <span>Hotelsko gospodinjstvo in priprava sob</span>
                 </div>
                 <div className="about-feature-item">
                   <CheckCircle2 className="about-feature-icon" />
-                  <span>Higienski pisarniški in poslovni prostori</span>
+                  <span>Higiensko poslovno čiščenje pisarn</span>
                 </div>
                 <div className="about-feature-item">
                   <CheckCircle2 className="about-feature-icon" />
-                  <span>Vrhunska oskrba vrtov in urejanje okolice</span>
+                  <span>Strokovne čistilne storitve po meri</span>
                 </div>
                 <div className="about-feature-item">
                   <CheckCircle2 className="about-feature-icon" />
-                  <span>Globinsko čiščenje hotelov in nastanitev</span>
+                  <span>Globinsko profesionalno čiščenje hotelov</span>
                 </div>
               </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
           <SectionHeading
             badge="Naše storitve"
             title="Prilagojene rešitve za vsak objekt"
-            subtitle="Izberite profesionalne storitve čiščenja in vzdrževanja, prilagojene specifičnim potrebam vaše dejavnosti."
+            subtitle="Izberite profesionalne čistilne storitve, prilagojene za hotelsko gospodinjstvo, čiščenje hotelov ter celovito poslovno čiščenje vaše dejavnosti."
             centered={true}
           />
 
@@ -236,7 +236,7 @@ export default function Home() {
                   Naše poslanstvo
                 </h3>
                 <p className="mission-card-desc">
-                  Ustvarjamo brezhibno čista in varna okolja za hotelske goste in poslovne partnerje z najvišjo stopnjo zanesljivosti ter predanosti stroki.
+                  Ustvarjamo brezhibno čista, varna in urejena okolja za hotelske goste in poslovne partnerje z najvišjo stopnjo zanesljivosti, profesionalnosti ter predanosti čistilni stroki.
                 </p>
               </div>
               <div className="mission-card-footer">
@@ -256,7 +256,7 @@ export default function Home() {
                   Sodelujte z nami
                 </h3>
                 <p className="mission-card-desc">
-                  Iščete zanesljivega partnerja za dolgoročno sodelovanje ali sezonsko okrepitev ekipe? Naša prilagodljiva kadrovska struktura ponuja takojšnjo rešitev za vaše objekte.
+                  Iščete zanesljivega partnerja za dolgoročno poslovno čiščenje ali sezonsko hotelsko čiščenje? Naša prilagodljiva kadrovska struktura ponuja takojšnjo rešitev za vaše objekte po vsej Sloveniji.
                 </p>
               </div>
               <div className="mission-card-footer">
@@ -283,7 +283,7 @@ export default function Home() {
           <SectionHeading
             badge="Izbirni postopek"
             title="Celovit 5-stopenjski sistem izbire in usposabljanja"
-            subtitle="Zagotavljamo preverjeno, strokovno usposobljeno in motivirano osebje za vaše objekte."
+            subtitle="Zagotavljamo preverjeno, strokovno usposobljeno in motivirano osebje za hotelsko gospodinjstvo in poslovno čiščenje."
             centered={true}
           />
 
@@ -354,7 +354,7 @@ export default function Home() {
       {/* 9. REUSABLE CTA SECTION */}
       <CTASection
         title="Potrebujete zanesljivo ekipo za vaše prostore?"
-        subtitle="Stopite v stik z našo ekipo in pripravili vam bomo neobvezujočo ponudbo, prilagojeno vašim zahtevam."
+        subtitle="Stopite v stik z našo ekipo in pripravili vam bomo neobvezujočo ponudbo za profesionalno čiščenje in hotelsko gospodinjstvo, prilagojeno vašim zahtevam."
         badge="POVVPRAŠEVANJE & REZERVACIJE"
         primaryBtnText="Pošljite povpraševanje"
         primaryBtnTo="/kontakt"

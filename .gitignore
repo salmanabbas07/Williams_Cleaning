@@ -28,3 +28,17 @@ yarn-error.log*
 Thumbs.db
 .vscode/
 .idea/
+
+# Private SEO Documentation & Reports
+/SEO-Documentation/
+/SEO-Report.pdf
+/Website-SEO-Report.pdf
+/Complete-Website-SEO-Documentation.pdf
+/Complete_Website_and_SEO_Documentation_Report.pdf
+*.pdf
+
+# Temporary Reports & Audit Outputs
+/seo-temp/
+/seo-audit/
+/documentation-private/
+

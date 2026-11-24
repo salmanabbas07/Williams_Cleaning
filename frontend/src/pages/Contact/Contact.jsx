@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Globe, Sparkles } from 'lucide-react';
+import { MapPin, Phone, Mail, Globe, Sparkles, ArrowUpRight } from 'lucide-react';
 import PageBanner from '../../components/PageBanner/PageBanner';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import ContactForm from '../../components/ContactForm/ContactForm';
@@ -221,6 +221,46 @@ export default function Contact() {
             {/* Right: Validated Contact Form */}
             <div className="lg:col-span-7">
               <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Interactive Location Map */}
+      <section className="pb-16 sm:pb-24 bg-[var(--website-bg)]" aria-label="Lokacija na zemljevidu">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#F8F4EB] p-4 sm:p-6 rounded-3xl border border-[rgba(10,84,99,0.10)] shadow-sm overflow-hidden">
+            <div className="mb-4 flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <h3 className="text-lg font-bold text-[#0A5463]">
+                  Naša lokacija v Ljubljani
+                </h3>
+                <p className="text-sm text-[#46545A]">
+                  Kotnikova ulica 28, 1000 Ljubljana, Slovenija
+                </p>
+              </div>
+              <Button
+                href="https://maps.google.com/?q=Kotnikova+ulica+28,+1000+Ljubljana,+Slovenia"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="outline"
+                size="sm"
+                icon={ArrowUpRight}
+              >
+                Odpri v Google Maps
+              </Button>
+            </div>
+            <div className="w-full h-80 sm:h-96 rounded-2xl overflow-hidden border border-[rgba(10,84,99,0.10)] bg-neutral-100">
+              <iframe
+                title="Lokacija podjetja Claviro Cleaning - Kotnikova ulica 28, Ljubljana"
+                src="https://maps.google.com/maps?q=Kotnikova%20ulica%2028,%201000%20Ljubljana,%20Slovenia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>

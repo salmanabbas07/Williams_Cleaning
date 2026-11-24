@@ -12,7 +12,9 @@ export default function ImagePlaceholder({
   className = '',
   label = '',
   src = null,
-  alt = 'Slika storitve Claviro Cleaning'
+  alt = 'Slika storitve Claviro Cleaning',
+  width = 800,
+  height = 500
 }) {
   // If an image source is provided in the future, render it directly
   if (src) {
@@ -20,8 +22,11 @@ export default function ImagePlaceholder({
       <img
         src={src}
         alt={alt}
+        width={width}
+        height={height}
         className={`w-full ${aspectRatio} object-cover ${rounded} ${className}`}
         loading="lazy"
+        decoding="async"
       />
     );
   }

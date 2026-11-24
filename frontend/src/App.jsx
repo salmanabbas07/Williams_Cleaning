@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, useParams, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Button from './components/Button/Button';
 import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Services from './pages/Services/Services';
-import Contact from './pages/Contact/Contact';
-import FAQ from './pages/FAQ/FAQ';
-import Blog from './pages/Blog/Blog';
+
+// Route-level code splitting for secondary pages to minimize initial bundle size
+const About = lazy(() => import('./pages/About/About'));
+const Services = lazy(() => import('./pages/Services/Services'));
+const Contact = lazy(() => import('./pages/Contact/Contact'));
+const FAQ = lazy(() => import('./pages/FAQ/FAQ'));
+const Blog = lazy(() => import('./pages/Blog/Blog'));
 import './App.css';
 
 /**
@@ -18,37 +20,16 @@ import './App.css';
  * the new page always starts cleanly from the top (0, 0).
  */
 function ScrollToTop() {
-  const { pathname, search, hash } = useLocation();
+  const { pathname } = useLocation();
+  const isFirstMount = React.useRef(true);
 
   useEffect(() => {
-    // 1. Disable browser default automatic scroll restoration
-    if ('scrollRestoration' in window.history) {
-      window.history.scrollRestoration = 'manual';
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      return;
     }
-
-    // 2. Helper to immediately snap scroll position to the top (0, 0)
-    const resetScrollToTop = () => {
-      // Temporarily bypass smooth scrolling during route transitions
-      const originalScrollBehavior = document.documentElement.style.scrollBehavior;
-      document.documentElement.style.scrollBehavior = 'auto';
-
-      window.scrollTo(0, 0);
-      document.documentElement.scrollTop = 0;
-      document.body.scrollTop = 0;
-
-      // Restore default scroll behavior for normal in-page scrolling
-      requestAnimationFrame(() => {
-        document.documentElement.style.scrollBehavior = originalScrollBehavior;
-      });
-    };
-
-    // Execute immediately on route change
-    resetScrollToTop();
-
-    // Secondary execution right after DOM commit to catch any asynchronously rendered elements
-    const timerId = setTimeout(resetScrollToTop, 15);
-    return () => clearTimeout(timerId);
-  }, [pathname, search, hash]);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [pathname]);
 
   return null;
 }
@@ -101,18 +82,20 @@ export default function App() {
         </a>
         <Navbar />
         <main id="main-content" className="flex-1 page-container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/o-nas" element={<About />} />
-            <Route path="/storitve" element={<Services />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/service/:slug" element={<ServiceRedirect />} />
-            <Route path="/storitve/:slug" element={<ServiceRedirect />} />
-            <Route path="/pogosta-vprasanja" element={<FAQ />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/kontakt" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<div className="min-h-[60vh] bg-transparent" aria-hidden="true" />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/o-nas" element={<About />} />
+              <Route path="/storitve" element={<Services />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/service/:slug" element={<ServiceRedirect />} />
+              <Route path="/storitve/:slug" element={<ServiceRedirect />} />
+              <Route path="/pogosta-vprasanja" element={<FAQ />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/kontakt" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>

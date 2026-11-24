@@ -6,6 +6,8 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  content-visibility: auto;
+  contain-intrinsic-size: 550px;
 }
 
 @media (min-width: 640px) {
@@ -39,6 +41,7 @@
   overflow: hidden;
   width: 100%;
   padding: 0.75rem 0 1.5rem 0;
+  contain: layout paint;
   mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
 }

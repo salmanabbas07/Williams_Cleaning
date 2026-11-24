@@ -22,6 +22,10 @@ export default function Footer() {
                 src="/images/footer_logo.webp"
                 alt="Claviro Cleaning — Vrhunske storitve čiščenja in hotelskega gospodinjstva"
                 className="footer-logo-img"
+                width="180"
+                height="68"
+                loading="lazy"
+                decoding="async"
               />
             </Link>
 

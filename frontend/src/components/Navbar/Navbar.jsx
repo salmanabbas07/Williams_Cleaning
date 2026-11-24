@@ -126,6 +126,7 @@ export default function Navbar() {
               className="nav-logo-img"
               width="180"
               height="70"
+              decoding="async"
             />
           </Link>
 
