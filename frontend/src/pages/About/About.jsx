@@ -83,7 +83,7 @@ export default function About() {
       />
 
       {/* 2. Company Introduction */}
-      <section className="py-16 sm:py-24 bg-[var(--website-bg)]">
+      <section className="py-10 sm:py-14 bg-[var(--website-bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Left Column: Image */}
@@ -149,7 +149,7 @@ export default function About() {
       </section>
 
       {/* 3. Preobrazba prostorov in brezskrbnost naročnikov */}
-      <section className="py-16 bg-[var(--website-bg)]">
+      <section className="py-10 sm:py-12 bg-[var(--website-bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-8 sm:p-10 rounded-2xl border border-[rgba(10,84,99,0.10)] bg-[#F8F4EB] shadow-sm flex flex-col justify-between">
@@ -198,7 +198,7 @@ export default function About() {
       </section>
 
       {/* 4. Why Choose Claviro Cleaning Section */}
-      <section className="py-16 sm:py-24 bg-[var(--website-bg)]">
+      <section className="py-10 sm:py-14 bg-[var(--website-bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Zakaj izbrati nas"
@@ -243,7 +243,7 @@ export default function About() {
       </section>
 
       {/* 5. Testimonials Section */}
-      <section className="py-16 sm:py-24 bg-[var(--website-bg)]">
+      <section className="py-10 sm:py-14 bg-[var(--website-bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Mnenja partnerjev"

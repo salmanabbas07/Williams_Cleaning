@@ -163,7 +163,7 @@ export default function Home() {
           />
 
           <div className="services-cards-grid">
-            {servicesData.slice(0, 6).map((service) => (
+            {servicesData.slice(0, 3).map((service) => (
               <ServiceCard
                 key={service.id}
                 id={service.id}

@@ -1,7 +1,7 @@
 /* Review / Testimonials Continuous Carousel Styles - Claviro Warm Cream Theme */
 .review-carousel-section {
-  padding-top: 4rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.75rem;
   background-color: var(--website-bg, #F5F0E6);
   width: 100%;
   overflow: hidden;
@@ -12,8 +12,8 @@
 
 @media (min-width: 640px) {
   .review-carousel-section {
-    padding-top: 5rem;
-    padding-bottom: 6rem;
+    padding-top: 3.25rem;
+    padding-bottom: 3.5rem;
   }
 }
 

@@ -58,7 +58,7 @@ export default function Contact() {
       />
 
       {/* 2. Contact Info Cards */}
-      <section className="py-16 sm:py-20 bg-[var(--website-bg)]">
+      <section className="py-10 sm:py-12 bg-[var(--website-bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactDetails.map((item, index) => {
@@ -113,7 +113,7 @@ export default function Contact() {
       </section>
 
       {/* 3. Main Form & Info Section */}
-      <section className="py-16 sm:py-24 bg-[var(--website-bg)]">
+      <section className="py-10 sm:py-14 bg-[var(--website-bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             {/* Left: Section intro and details */}
@@ -227,7 +227,7 @@ export default function Contact() {
       </section>
 
       {/* 4. Interactive Location Map */}
-      <section className="pb-16 sm:pb-24 bg-[var(--website-bg)]" aria-label="Lokacija na zemljevidu">
+      {/* <section className="pb-16 sm:pb-24 bg-[var(--website-bg)]" aria-label="Lokacija na zemljevidu">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#F8F4EB] p-4 sm:p-6 rounded-3xl border border-[rgba(10,84,99,0.10)] shadow-sm overflow-hidden">
             <div className="mb-4 flex items-center justify-between flex-wrap gap-2">
@@ -264,7 +264,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

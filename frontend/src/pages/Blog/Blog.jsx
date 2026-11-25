@@ -30,7 +30,7 @@ export default function Blog() {
         image="/images/blog_lp.webp"
       />
 
-      <section className="py-16 sm:py-24 bg-[var(--website-bg)]">
+      <section className="py-10 sm:py-14 bg-[var(--website-bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Novice & Članki"
