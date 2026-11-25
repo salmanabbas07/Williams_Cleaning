@@ -13,6 +13,7 @@ export default function Footer() {
 
   return (
     <footer className="site-footer">
+      <h2 className="sr-only">Noga spletnega mesta in kontaktni podatki</h2>
       <div className="footer-container">
         <div className="footer-columns-grid">
           {/* Column 1: Brand & Logo */}

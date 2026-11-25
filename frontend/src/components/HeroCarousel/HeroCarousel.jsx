@@ -28,7 +28,7 @@ const heroSlidesData = [
     height: 720,
     imagePosition: 'center 20%',
     badge: 'Claviro Cleaning • Zanesljiva hotelska podpora',
-    title: 'Profesionalno hotelsko gospodinjstvo in čiščenje',
+    title: 'Profesionalno čiščenje za podjetja in hotele',
     description:
       'Zanesljive, usposobljene in strokovno vodene čistilne ekipe za brezhibno čistočo vaših hotelov, letovišč in poslovnih prostorov. Prilagodljive kadrovske rešitve z najvišjo stopnjo evropske kakovosti in 24/7 podporo po vsej Sloveniji.',
     primaryBtn: {
