@@ -6,8 +6,7 @@ import {
   ShieldCheck,
   Clock,
   ArrowRight,
-  Layers,
-  HeartHandshake
+  Layers
 } from 'lucide-react';
 import PageBanner from '../../components/PageBanner/PageBanner';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
@@ -17,6 +16,7 @@ import CTASection from '../../components/CTASection/CTASection';
 import Button from '../../components/Button/Button';
 import SEO from '../../components/SEO/SEO';
 import { testimonialsData } from '../../data/testimonials';
+import { processStepsData } from '../../data/processSteps';
 import './About.css';
 
 export default function About() {
@@ -148,51 +148,43 @@ export default function About() {
         </div>
       </section>
 
-      {/* 3. Preobrazba prostorov in brezskrbnost naročnikov */}
-      <section className="py-10 sm:py-12 bg-[var(--website-bg)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-8 sm:p-10 rounded-2xl border border-[rgba(10,84,99,0.10)] bg-[#F8F4EB] shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-[#168B9F]/15 text-[#168B9F] flex items-center justify-center mb-6">
-                  <Sparkles className="w-6 h-6 text-[#C5A46D]" />
-                </div>
-                <h3 className="text-2xl font-bold text-[#0A5463] mb-3">
-                  Preoblikujemo vaše prostore
-                </h3>
-                <p className="text-[#46545A] text-sm leading-relaxed mb-6">
-                  Pri Claviro Cleaning ne le čistimo prostorov — preoblikujemo jih v bolj zdrava, svetlejša in prijetnejša okolja za bivanje ter delo.
-                </p>
-              </div>
-              <div className="pt-4 border-t border-[rgba(10,84,99,0.10)]">
-                <Button to="/storitve" variant="ghost" size="sm" icon={ArrowRight}>
-                  Oglejte si naše storitve
-                </Button>
-              </div>
-            </div>
+      {/* 3. 5-STEP HIRING & TRAINING SYSTEM */}
+      <section className="process-section" aria-label="Izbirni postopek">
+        <div className="process-container-narrow">
+          <SectionHeading
+            badge="Izbirni postopek"
+            title="Celovit 5-stopenjski sistem izbire in usposabljanja"
+            subtitle="Zagotavljamo preverjeno, strokovno usposobljeno in motivirano osebje za hotelsko gospodinjstvo in poslovno čiščenje."
+            centered={true}
+          />
 
-            <div className="p-8 sm:p-10 rounded-2xl border border-[rgba(10,84,99,0.10)] bg-[#F8F4EB] shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-[#168B9F]/15 text-[#168B9F] flex items-center justify-center mb-6">
-                  <HeartHandshake className="w-6 h-6" />
+          <div className="process-timeline">
+            {processStepsData.map((stepItem) => (
+              <div key={stepItem.step} className="process-step-item">
+                {/* Step Number Circle */}
+                <div className="process-step-badge">
+                  {stepItem.step}
                 </div>
-                <h3 className="text-2xl font-bold text-[#0A5463] mb-3">
-                  Osredotočite se na pomembno
-                </h3>
-                <p className="text-[#46545A] text-sm leading-relaxed mb-6">
-                  Prepustite nam skrb za čistočo in nered, da se vi lahko brezskrbno posvetite tistemu, kar je za vas najpomembnejše.
-                </p>
-              </div>
-              <div className="pt-4 border-t border-[rgba(10,84,99,0.10)]">
-                <Button to="/kontakt" variant="ghost" size="sm" icon={ArrowRight}>
-                  Stopite v stik z nami
-                </Button>
-              </div>
-            </div>
-          </div>
 
-          <div className="mt-8 py-3.5 px-6 rounded-xl bg-[#F8F4EB] border border-[rgba(10,84,99,0.10)] shadow-sm text-center text-xs sm:text-sm text-[#46545A] font-semibold">
-            Claviro Cleaning &bull; Zaupanja vreden partner za brezhibne prostore &bull; Vrhunska kakovost in zanesljivost
+                {/* Step Content */}
+                <div className="process-step-card">
+                  <h3 className="process-step-title">
+                    {stepItem.title}
+                  </h3>
+                  <p className="process-step-desc">
+                    {stepItem.description}
+                  </p>
+                  <ul className="process-bullets">
+                    {stepItem.items.map((bullet, idx) => (
+                      <li key={idx} className="process-bullet-item">
+                        <CheckCircle2 className="process-check-icon" />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

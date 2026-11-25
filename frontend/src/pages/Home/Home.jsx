@@ -21,7 +21,6 @@ import Button from '../../components/Button/Button';
 import CTASection from '../../components/CTASection/CTASection';
 import { servicesData } from '../../data/services';
 import { blogPostsData } from '../../data/blogPosts';
-import { processStepsData } from '../../data/processSteps';
 import './Home.css';
 
 /**
@@ -277,48 +276,7 @@ export default function Home() {
       {/* 6. PARTNER TESTIMONIALS CAROUSEL */}
       <ReviewCarousel />
 
-      {/* 7. 5-STEP HIRING & TRAINING SYSTEM */}
-      <section className="process-section" aria-label="Izbirni postopek">
-        <div className="process-container-narrow">
-          <SectionHeading
-            badge="Izbirni postopek"
-            title="Celovit 5-stopenjski sistem izbire in usposabljanja"
-            subtitle="Zagotavljamo preverjeno, strokovno usposobljeno in motivirano osebje za hotelsko gospodinjstvo in poslovno čiščenje."
-            centered={true}
-          />
-
-          <div className="process-timeline">
-            {processStepsData.map((stepItem) => (
-              <div key={stepItem.step} className="process-step-item">
-                {/* Step Number Circle */}
-                <div className="process-step-badge">
-                  {stepItem.step}
-                </div>
-
-                {/* Step Content */}
-                <div className="process-step-card">
-                  <h3 className="process-step-title">
-                    {stepItem.title}
-                  </h3>
-                  <p className="process-step-desc">
-                    {stepItem.description}
-                  </p>
-                  <ul className="process-bullets">
-                    {stepItem.items.map((bullet, idx) => (
-                      <li key={idx} className="process-bullet-item">
-                        <CheckCircle2 className="process-check-icon" />
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 8. NEWS & BLOG SECTION */}
+      {/* 7. NEWS & BLOG SECTION */}
       <section className="blog-section" aria-label="Novice in strokovni članki">
         <div className="home-section-container">
           <SectionHeading
