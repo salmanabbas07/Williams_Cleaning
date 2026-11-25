@@ -214,7 +214,7 @@
 
 .review-author-role {
   font-size: 0.8125rem;
-  color: #168B9F;
+  color: #09768C;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
@@ -223,7 +223,7 @@
 
 .review-author-company {
   font-size: 0.75rem;
-  color: #82969C;
+  color: #526368;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -16,22 +16,22 @@
   box-shadow: 0 6px 20px rgba(18, 59, 80, 0.28);
 }
 
-/* Secondary Button: Primary Teal (#168B9F) */
+/* Secondary Button: Primary Teal (#0D768A for 5.25:1 WCAG AA contrast against white text) */
 .btn-teal-gradient,
 .btn-secondary-teal {
-  background-color: #168B9F;
+  background-color: #0D768A;
   color: #FFFFFF !important;
-  border: 1px solid #168B9F;
-  box-shadow: 0 4px 14px rgba(22, 139, 159, 0.16);
+  border: 1px solid #0D768A;
+  box-shadow: 0 4px 14px rgba(13, 118, 138, 0.18);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-teal-gradient:hover,
 .btn-secondary-teal:hover {
-  background-color: #09768C !important;
-  border-color: #09768C !important;
+  background-color: #095F70 !important;
+  border-color: #095F70 !important;
   color: #FFFFFF !important;
-  box-shadow: 0 6px 20px rgba(9, 118, 140, 0.26);
+  box-shadow: 0 6px 20px rgba(9, 95, 112, 0.28);
 }
 
 .btn-golden-pill {
