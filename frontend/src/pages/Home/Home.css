@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   overflow-x: hidden;
+   background-color: var(--website-bg, #F5EEDC);
 }
 
 /* Common Section Layout */
@@ -418,6 +419,7 @@
 
 /* 5. 5-Step Hiring Timeline */
 .process-section {
+  margin-top: -1px;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: var(--website-bg, #F5F0E6);
