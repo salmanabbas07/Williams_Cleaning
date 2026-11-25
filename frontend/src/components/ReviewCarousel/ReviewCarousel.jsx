@@ -42,7 +42,6 @@ export default function ReviewCarousel() {
         {/* Section Heading */}
         <SectionHeading
           badge="Mnenja partnerjev"
-          iconSrc="/images/title_icon.svg"
           title="Kaj o naših storitvah pravijo hotelski partnerji"
           centered={true}
         />
